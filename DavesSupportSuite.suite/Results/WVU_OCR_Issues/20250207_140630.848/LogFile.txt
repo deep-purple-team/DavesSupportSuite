@@ -1,0 +1,4 @@
+﻿2025-02-07 14:06:30.855 -0500	START		Running WVU_OCR_Issues.script
+2025-02-07 14:08:40.340 -0500	Exception	(TEXT:"E2")	No Text Found On Screen: "(TEXT:"E2")". Text not found.	1	on_wvu_ocr_issues	WVU_OCR_Issues.script
+2025-02-07 14:08:40.434 -0500	EndTestCase		(Duration:"129.575", Errors:"1", Exceptions:"1", StartTime:"2025-02-07 14:06:30 -0500", Successes:"0", TestCase:"WVU_OCR_Issues.script", Warnings:"0")
+2025-02-07 14:08:40.444 -0500	ABORTED		Execution Time 0:02:09 WVU_OCR_Issues.script

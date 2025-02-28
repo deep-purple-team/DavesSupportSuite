@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Salesforce Development_DMH_script" package="DavesSupportSuite.suite" timestamp="2025-02-24 14:48:37.459 -0500"
+ tests="1"  failures="1" errors="0" time="90.612000">
+  <properties>
+   <property name="RunDate" value="2025-02-24 14:48:37.459 -0500"/>
+   <property name="Status" value="Aborted"/>
+  </properties>
+  <testcase name="Salesforce Development_DMH.script" assertions="3" status="failure"  time="90.602">
+    <failure type="LogError" message="Authentication challenge received, but no credentials have been provided." />
+  </testcase>
+ </testsuite>
+</testsuites>

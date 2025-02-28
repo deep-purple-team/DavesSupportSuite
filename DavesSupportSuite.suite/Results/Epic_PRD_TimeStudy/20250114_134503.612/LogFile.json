@@ -1,0 +1,44 @@
+{
+	"entries": [
+		{
+				"message": "Running Epic_PRD_TimeStudy.script",
+				"identifier": "START",
+				"timestamp": "2025-01-14 13:45:03.619 -0500"
+			},
+		{
+				"handlerName": "on_epic_prd_timestudy",
+				"timestamp": "2025-01-14 13:45:03.716 -0500",
+				"message": "Workbook(\"C:/ScriptRepositories/DavesSupportSuite.suite/Resources/DataFile.xlsx\")",
+				"scriptName": "Epic_PRD_TimeStudy.script",
+				"handlerLine": 24,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_epic_prd_timestudy",
+				"timestamp": "2025-01-14 13:45:03.722 -0500",
+				"message": "Worksheet(\"Users\") of Workbook(\"C:/ScriptRepositories/DavesSupportSuite.suite/Resources/DataFile.xlsx\")",
+				"scriptName": "Epic_PRD_TimeStudy.script",
+				"handlerLine": 27,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_epic_prd_timestudy",
+				"timestamp": "2025-01-14 13:45:03.724 -0500",
+				"message": "Worksheet(\"Locations\") of Workbook(\"C:/ScriptRepositories/DavesSupportSuite.suite/Resources/DataFile.xlsx\")",
+				"scriptName": "Epic_PRD_TimeStudy.script",
+				"handlerLine": 30,
+				"identifier": "Log"
+			},
+		{
+				"message": "(Duration:\"76.255\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2025-01-14 13:45:03 -0500\", Successes:\"0\", TestCase:\"Epic_PRD_TimeStudy.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-01-14 13:46:19.879 -0500"
+			},
+		{
+				"message": "Execution Time 0:01:16 Epic_PRD_TimeStudy.script",
+				"identifier": "ABORTED",
+				"timestamp": "2025-01-14 13:46:19.890 -0500"
+			}
+	],
+	"createdTimestamp": "2025-01-14 13:45:03.623 -0500"
+}

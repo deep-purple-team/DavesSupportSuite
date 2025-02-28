@@ -1,0 +1,27 @@
+﻿2025-02-28 14:32:48.978 -0500	START		Running Salesforce Development_DMH.script
+2025-02-28 14:32:49.099 -0500	Log		15388	9	on_getdelineacreds	Salesforce Development_DMH.script
+2025-02-28 14:32:49.765 -0500	Log		AgK3JIB1VOSii8PV6AAoSLIM5mOynlQfOST2HZPRnvgz-ebi1ZiUFfBTkzCVDD-JwPS0hc5h5UkyQb292buXQlBDYialx3J9VnyZHUt-wipj6CSisMDQXoi6G1o1uwujV5j_djKt5q6LdjMH25umGlzOsKP4dNlvDxkQgSFiCU5J10Wnfyaw_yQUcYAWiVk3vepWg8fb06LVRFRZd3_L6yW7ehuITtJLGcvkiu7RrJTkbIV3Y_c0y3ybr1nkikquEKly0Gd3f3b-8SdmU1ek49ylhmftTMtpxZcXQ0UHXJihCpS1VXYmni39eWaCuytrBZsRcwbjaB84IwaYwTHKkDSIYAWrmpGIo4k5lxZ5_PTwZUMdzTWJGvMeWlvxnE1Ni6HjTlWXwYwx1zbPYz-gCnBLd8jGZOQ3yl2DUorRatzzKrqBWqkf9q_r206GPa2LnAbbKkq1fl-J8Qh9g8zqGdqQ6gnSRgDOHctIBa_TYR16Hm6NU3llBOCnKUIsl7XOa-q_Dwq5GCTwOVlvq7H4FGWzi8I8v74iStzFKU_keMhCNbg4zETHa2tcHqp4nAOCUYwMImYNQa5bwKiwtFMj4Mb0xb61gFfBIgbYjNxcip3T3Q	23	on_getdelineacreds	Salesforce Development_DMH.script
+2025-02-28 14:32:50.709 -0500	Log		The query of Salesforce will use a Client ID of: 3MVG9wy_WnyGrHdMk_EZ4aCLW9dphEgZYbJfp61Fn5WURlECDMd2.90U_s3eda4UprSo4jjj6eV6Vm4Qw3ITh and a Client Secret of F154CE3D085A50615C4DA1420DF26D8F57F8CDA47EF596E3B187B081D1F9B7EA	35	on_getdelineacreds	Salesforce Development_DMH.script
+2025-02-28 14:32:51.568 -0500	Log		Status Code is=200	45	on_getdelineacreds	Salesforce Development_DMH.script
+2025-02-28 14:32:51.572 -0500	LogSuccess		Validated that the Status code is 200. Able to access Salesforce, and grab an access token	46	on_getdelineacreds	Salesforce Development_DMH.script
+2025-02-28 14:32:51.576 -0500	Log		00D8J0000004fWS!AQEAQCP_OUqAeqVDk.ceuzlgFLVQ7I7wg7Lia3.gMZ1WUNsGGx6HT8byPwwv4Dp1h2jZn3udimPHvTPtOqXhIdNeyvjB9r.P	55	on_getdelineacreds	Salesforce Development_DMH.script
+2025-02-28 14:32:51.587 -0500	Log		02/28/25	43	on_salesforce_development_dmh	Salesforce Development_DMH.script
+2025-02-28 14:32:51.590 -0500	Log		022825	46	on_salesforce_development_dmh	Salesforce Development_DMH.script
+2025-02-28 14:32:51.595 -0500	Log		baseFileName022825	50	on_salesforce_development_dmh	Salesforce Development_DMH.script
+2025-02-28 14:32:52.181 -0500	Log		Field already matches. No update needed.	16	on_getresponseandupdate	Salesforce Development_DMH.script
+2025-02-28 14:32:52.196 -0500	Log		Field already matches. No update needed.	16	on_getresponseandupdate	Salesforce Development_DMH.script
+2025-02-28 14:32:52.211 -0500	Log		Field already matches. No update needed.	16	on_getresponseandupdate	Salesforce Development_DMH.script
+2025-02-28 14:32:52.228 -0500	Log		Field already matches. No update needed.	16	on_getresponseandupdate	Salesforce Development_DMH.script
+2025-02-28 14:32:52.246 -0500	Log		Field already matches. No update needed.	16	on_getresponseandupdate	Salesforce Development_DMH.script
+2025-02-28 14:32:52.262 -0500	Log		Field already matches. No update needed.	16	on_getresponseandupdate	Salesforce Development_DMH.script
+2025-02-28 14:32:52.277 -0500	Log		Field already matches. No update needed.	16	on_getresponseandupdate	Salesforce Development_DMH.script
+2025-02-28 14:32:52.294 -0500	Log		Field already matches. No update needed.	16	on_getresponseandupdate	Salesforce Development_DMH.script
+2025-02-28 14:32:52.311 -0500	Log		Field already matches. No update needed.	16	on_getresponseandupdate	Salesforce Development_DMH.script
+2025-02-28 14:32:52.327 -0500	Log		Field already matches. No update needed.	16	on_getresponseandupdate	Salesforce Development_DMH.script
+2025-02-28 14:32:52.342 -0500	Log		Field already matches. No update needed.	16	on_getresponseandupdate	Salesforce Development_DMH.script
+2025-02-28 14:32:52.357 -0500	Log		Field already matches. No update needed.	16	on_getresponseandupdate	Salesforce Development_DMH.script
+2025-02-28 14:32:52.375 -0500	Log		Field already matches. No update needed.	16	on_getresponseandupdate	Salesforce Development_DMH.script
+2025-02-28 14:32:52.392 -0500	Log		Field already matches. No update needed.	16	on_getresponseandupdate	Salesforce Development_DMH.script
+2025-02-28 14:32:52.408 -0500	Log		Field already matches. No update needed.	16	on_getresponseandupdate	Salesforce Development_DMH.script
+2025-02-28 14:33:15.061 -0500	EndTestCase		(Duration:"26.079", Errors:"1", Exceptions:"0", StartTime:"2025-02-28 14:32:48 -0500", Successes:"1", TestCase:"Salesforce Development_DMH.script", Warnings:"0")
+2025-02-28 14:33:15.071 -0500	ABORTED		Execution Time 0:00:26 Salesforce Development_DMH.script

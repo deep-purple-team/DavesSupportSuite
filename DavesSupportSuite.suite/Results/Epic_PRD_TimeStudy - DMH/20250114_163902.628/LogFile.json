@@ -1,0 +1,44 @@
+{
+	"entries": [
+		{
+				"message": "Running Epic_PRD_TimeStudy - DMH.script",
+				"identifier": "START",
+				"timestamp": "2025-01-14 16:39:02.634 -0500"
+			},
+		{
+				"handlerName": "on_epic_prd_timestudy___dmh",
+				"timestamp": "2025-01-14 16:39:02.692 -0500",
+				"message": "[{password:@\"m8zrRWv\\\\i4XH&GT|dJ?%\", username:\"svc_eggplt10\"},{password:\"`cCFd~Sd\", username:\"ESDESK\"},{password:\"@cCFy[%d@WBslv\", username:\"64838\"}]",
+				"scriptName": "Epic_PRD_TimeStudy - DMH.script",
+				"handlerLine": 7,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_epic_prd_timestudy___dmh",
+				"timestamp": "2025-01-14 16:39:02.697 -0500",
+				"message": "[{department:\"104343007\", pcid:\"SCOUTBEES107\"}]",
+				"scriptName": "Epic_PRD_TimeStudy - DMH.script",
+				"handlerLine": 10,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_epic_prd_timestudy___dmh",
+				"timestamp": "2025-01-14 16:39:02.700 -0500",
+				"message": "[]",
+				"scriptName": "Epic_PRD_TimeStudy - DMH.script",
+				"handlerLine": 13,
+				"identifier": "Log"
+			},
+		{
+				"message": "(Duration:\"0.095\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2025-01-14 16:39:02 -0500\", Successes:\"0\", TestCase:\"Epic_PRD_TimeStudy - DMH.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-01-14 16:39:02.733 -0500"
+			},
+		{
+				"message": "STDatabaseException: Can't Add records a non-Writable database connection -- Execution Time 0:00:00 Epic_PRD_TimeStudy - DMH.script",
+				"identifier": "FAILURE",
+				"timestamp": "2025-01-14 16:39:02.756 -0500"
+			}
+	],
+	"createdTimestamp": "2025-01-14 16:39:02.637 -0500"
+}

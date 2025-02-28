@@ -1,0 +1,9 @@
+﻿2025-02-06 15:58:31.792 -0500	START		Running WVU_OCR_Issues.script
+2025-02-06 15:58:40.767 -0500	Exception	(TEXT:"E2")	No Text Found On Screen: "(TEXT:"E2")". Text not found.	1	on_wvu_ocr_issues	WVU_OCR_Issues.script
+2025-02-06 15:58:41.083 -0500	readtext		(1158,856,1574,928)	2	on_wvu_ocr_issues	WVU_OCR_Issues.script
+2025-02-06 15:58:41.109 -0500	moveto		at current mouse point (1364, 915)	3	on_wvu_ocr_issues	WVU_OCR_Issues.script
+2025-02-06 15:58:49.801 -0500	Exception	(TEXT:"E2")	No Text Found On Screen: "(TEXT:"E2")". Text not found.	5	on_wvu_ocr_issues	WVU_OCR_Issues.script
+2025-02-06 15:58:50.067 -0500	readtext		(1155,873,1575,903)	6	on_wvu_ocr_issues	WVU_OCR_Issues.script
+2025-02-06 15:58:50.098 -0500	moveto		at current mouse point (1364, 915)	7	on_wvu_ocr_issues	WVU_OCR_Issues.script
+2025-02-06 15:58:50.132 -0500	EndTestCase		(Duration:"18.335", Errors:"0", Exceptions:"2", StartTime:"2025-02-06 15:58:31 -0500", Successes:"1", TestCase:"WVU_OCR_Issues.script", Warnings:"0")
+2025-02-06 15:58:50.175 -0500	SUCCESS		Execution Time 0:00:18 WVU_OCR_Issues.script

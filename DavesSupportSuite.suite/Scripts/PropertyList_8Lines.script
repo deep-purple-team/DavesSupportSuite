@@ -1,0 +1,8 @@
+﻿set screenPortions to {
+	HyperspaceToolbar:((0,.022),(1,.048)), -- Epic specific
+	HyperspaceToolbarRightEdge:((0.836,.022),(1,.044)), -- Epic specific
+	HyperspaceToolbarLeftEdge:((0,.021),(0.284,.044)), -- Epic specific
+	HyperspaceHorizontalTabbar:((0,.056),(1,.086)), -- Epic specific
+	HyperspaceTabbar:((0,0),(.065,1)), -- Epic specific
+	SectionTabs:((0.12,0.090),(.811,0.119)), -- Epic specific
+	}

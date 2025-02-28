@@ -1,0 +1,8 @@
+﻿2025-01-14 16:14:22.488 -0500	START		Running Epic_PRD_TimeStudy.script
+2025-01-14 16:14:22.558 -0500	Log		Workbook("C:/ScriptRepositories/DavesSupportSuite.suite/Resources/DataFile.xlsx")	24	on_epic_prd_timestudy	Epic_PRD_TimeStudy.script
+2025-01-14 16:14:22.562 -0500	Log		Worksheet("Users") of Workbook("C:/ScriptRepositories/DavesSupportSuite.suite/Resources/DataFile.xlsx")	27	on_epic_prd_timestudy	Epic_PRD_TimeStudy.script
+2025-01-14 16:14:22.565 -0500	Log		Worksheet("Locations") of Workbook("C:/ScriptRepositories/DavesSupportSuite.suite/Resources/DataFile.xlsx")	30	on_epic_prd_timestudy	Epic_PRD_TimeStudy.script
+2025-01-14 16:14:33.595 -0500	Log		SCOUTBEES107	55	on_epic_prd_timestudy	Epic_PRD_TimeStudy.script
+2025-01-14 16:14:33.598 -0500	Log		104343007	55	on_epic_prd_timestudy	Epic_PRD_TimeStudy.script
+2025-01-14 16:14:41.044 -0500	EndTestCase		(Duration:"18.552", Errors:"1", Exceptions:"0", StartTime:"2025-01-14 16:14:22 -0500", Successes:"0", TestCase:"Epic_PRD_TimeStudy.script", Warnings:"0")
+2025-01-14 16:14:41.065 -0500	ABORTED		Execution Time 0:00:18 Epic_PRD_TimeStudy.script

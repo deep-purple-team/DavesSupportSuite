@@ -1,0 +1,198 @@
+{
+	"entries": [
+		{
+				"message": "Running OurGroceries.script",
+				"identifier": "START",
+				"timestamp": "2025-02-25 16:27:43.931 -0500"
+			},
+		{
+				"handlerName": "on_ourgroceries",
+				"timestamp": "2025-02-25 16:27:44.032 -0500",
+				"message": "MotorolaG7:(null)",
+				"scriptName": "OurGroceries.script",
+				"handlerLine": 1,
+				"identifier": "Connect"
+			},
+		{
+				"handlerName": "on_ourgroceries",
+				"timestamp": "2025-02-25 16:27:44.044 -0500",
+				"scriptName": "OurGroceries.script",
+				"identifier": "presshomebutton",
+				"handlerLine": 2
+			},
+		{
+				"handlerName": "on_ourgroceries",
+				"timestamp": "2025-02-25 16:27:44.777 -0500",
+				"scriptName": "OurGroceries.script",
+				"message": "at (553, 2173)",
+				"image": "OurGroceries_mobile",
+				"handlerLine": 4,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_ourgroceries",
+				"timestamp": "2025-02-25 16:27:45.312 -0500",
+				"scriptName": "OurGroceries.script",
+				"message": "found at (960, 2194)",
+				"image": "OurGroceries_add",
+				"handlerLine": 5,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_ourgroceries",
+				"timestamp": "2025-02-25 16:27:45.469 -0500",
+				"scriptName": "OurGroceries.script",
+				"message": "found at (83, 193)",
+				"image": "OurGroceries_backbutton",
+				"handlerLine": 6,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_ourgroceries",
+				"timestamp": "2025-02-25 16:27:45.586 -0500",
+				"message": "at (83, 193)",
+				"scriptName": "OurGroceries.script",
+				"handlerLine": 7,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_ourgroceries",
+				"timestamp": "2025-02-25 16:27:45.687 -0500",
+				"scriptName": "OurGroceries.script",
+				"message": "found at (83, 193)",
+				"image": "OurGroceries_backbutton",
+				"handlerLine": 8,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_ourgroceries",
+				"timestamp": "2025-02-25 16:27:46.862 -0500",
+				"scriptName": "OurGroceries.script",
+				"message": "Unable to Find Image OurGroceries_backbutton",
+				"image": "OurGroceries_backbutton",
+				"handlerLine": 8,
+				"identifier": "imagefound"
+			},
+		{
+				"handlerName": "on_ourgroceries",
+				"timestamp": "2025-02-25 16:27:52.514 -0500",
+				"scriptName": "OurGroceries.script",
+				"message": "at (57, 1014)",
+				"image": "(TEXT:\"BJ\")",
+				"handlerLine": 11,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_ourgroceries",
+				"timestamp": "2025-02-25 16:27:52.653 -0500",
+				"scriptName": "OurGroceries.script",
+				"message": "found at (960, 2194)",
+				"image": "OurGroceries_add",
+				"handlerLine": 12,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_ourgroceries",
+				"timestamp": "2025-02-25 16:27:53.460 -0500",
+				"scriptName": "OurGroceries.script",
+				"message": "found at (347, 427)",
+				"image": "(TEXT:\"Remember Shopping Bags\")",
+				"handlerLine": 13,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_ourgroceries",
+				"timestamp": "2025-02-25 16:27:54.720 -0500",
+				"scriptName": "OurGroceries.script",
+				"message": "at (960, 2194)",
+				"image": "OurGroceries_add",
+				"handlerLine": 15,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_ourgroceries",
+				"timestamp": "2025-02-25 16:27:54.921 -0500",
+				"message": "milk",
+				"scriptName": "OurGroceries.script",
+				"handlerLine": 16,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_ourgroceries",
+				"timestamp": "2025-02-25 16:27:55.028 -0500",
+				"message": "[return]",
+				"scriptName": "OurGroceries.script",
+				"handlerLine": 17,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_ourgroceries",
+				"timestamp": "2025-02-25 16:27:55.370 -0500",
+				"scriptName": "OurGroceries.script",
+				"message": "at (83, 193)",
+				"image": "OurGroceries_backbutton",
+				"handlerLine": 18,
+				"identifier": "click"
+			},
+		{
+				"handlerName": "on_ourgroceries",
+				"timestamp": "2025-02-25 16:27:55.464 -0500",
+				"scriptName": "OurGroceries.script",
+				"identifier": "presshomebutton",
+				"handlerLine": 22
+			},
+		{
+				"handlerName": "on_ourgroceries",
+				"timestamp": "2025-02-25 16:27:55.472 -0500",
+				"message": "NewTower:(null)",
+				"scriptName": "OurGroceries.script",
+				"handlerLine": 25,
+				"identifier": "Connect"
+			},
+		{
+				"handlerName": "on_ourgroceries",
+				"timestamp": "2025-02-25 16:27:55.589 -0500",
+				"message": "[windowsKey]r",
+				"scriptName": "OurGroceries.script",
+				"handlerLine": 26,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_ourgroceries",
+				"timestamp": "2025-02-25 16:27:56.446 -0500",
+				"message": "https://ourgroceries.com[return]",
+				"scriptName": "OurGroceries.script",
+				"handlerLine": 27,
+				"identifier": "typetext"
+			},
+		{
+				"handlerName": "on_ourgroceries",
+				"timestamp": "2025-02-25 16:27:56.466 -0500",
+				"scriptName": "OurGroceries.script",
+				"message": "found at (175, 159)",
+				"image": "OurGroceries_icon",
+				"handlerLine": 28,
+				"identifier": "waitfor"
+			},
+		{
+				"handlerName": "on_ourgroceries",
+				"timestamp": "2025-02-25 16:27:57.991 -0500",
+				"scriptName": "OurGroceries.script",
+				"message": "at (158, 19)",
+				"image": "(TEXT:\"BJ\")",
+				"handlerLine": 29,
+				"identifier": "click"
+			},
+		{
+				"message": "(Duration:\"14.078\", Errors:\"0\", Exceptions:\"0\", StartTime:\"2025-02-25 16:27:43 -0500\", Successes:\"1\", TestCase:\"OurGroceries.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-02-25 16:27:58.012 -0500"
+			},
+		{
+				"message": "Execution Time 0:00:14 OurGroceries.script",
+				"identifier": "SUCCESS",
+				"timestamp": "2025-02-25 16:27:58.083 -0500"
+			}
+	],
+	"createdTimestamp": "2025-02-25 16:27:43.934 -0500"
+}

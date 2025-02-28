@@ -1,0 +1,55 @@
+{
+	"entries": [
+		{
+				"message": "Running WVU_OCR_Issues.script",
+				"identifier": "START",
+				"timestamp": "2025-02-06 15:56:59.052 -0500"
+			},
+		{
+				"handlerName": "on_wvu_ocr_issues",
+				"timestamp": "2025-02-06 15:57:06.800 -0500",
+				"scriptName": "WVU_OCR_Issues.script",
+				"message": "No Text Found On Screen: \"(TEXT:\"E2\")\". Text not found.",
+				"image": "(TEXT:\"E2\")",
+				"handlerLine": 1,
+				"identifier": "Exception"
+			},
+		{
+				"handlerName": "on_wvu_ocr_issues",
+				"timestamp": "2025-02-06 15:57:07.144 -0500",
+				"message": "(1158,856,1574,928)",
+				"scriptName": "WVU_OCR_Issues.script",
+				"handlerLine": 2,
+				"identifier": "readtext"
+			},
+		{
+				"handlerName": "on_wvu_ocr_issues",
+				"timestamp": "2025-02-06 15:57:07.160 -0500",
+				"message": "at current mouse point (1364, 915)",
+				"scriptName": "WVU_OCR_Issues.script",
+				"handlerLine": 3,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_wvu_ocr_issues",
+				"timestamp": "2025-02-06 15:57:07.245 -0500",
+				"scriptName": "WVU_OCR_Issues.script",
+				"message": "Could Not Open Image: 1155",
+				"image": "1155",
+				"handlerLine": 6,
+				"identifier": "Exception"
+			},
+		{
+				"message": "(Duration:\"8.216\", Errors:\"1\", Exceptions:\"2\", StartTime:\"2025-02-06 15:56:59 -0500\", Successes:\"0\", TestCase:\"WVU_OCR_Issues.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-02-06 15:57:07.271 -0500"
+			},
+		{
+				"image": "Screen_Error.png",
+				"message": "File Not Found: readtext Error - Could Not Open Image: 1155 -- Execution Time 0:00:08 WVU_OCR_Issues.script",
+				"identifier": "FAILURE",
+				"timestamp": "2025-02-06 15:57:07.441 -0500"
+			}
+	],
+	"createdTimestamp": "2025-02-06 15:56:59.055 -0500"
+}

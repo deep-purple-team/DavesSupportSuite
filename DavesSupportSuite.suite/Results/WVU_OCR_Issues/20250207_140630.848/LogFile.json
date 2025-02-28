@@ -1,0 +1,29 @@
+{
+	"entries": [
+		{
+				"message": "Running WVU_OCR_Issues.script",
+				"identifier": "START",
+				"timestamp": "2025-02-07 14:06:30.855 -0500"
+			},
+		{
+				"handlerName": "on_wvu_ocr_issues",
+				"timestamp": "2025-02-07 14:08:40.340 -0500",
+				"scriptName": "WVU_OCR_Issues.script",
+				"message": "No Text Found On Screen: \"(TEXT:\"E2\")\". Text not found.",
+				"image": "(TEXT:\"E2\")",
+				"handlerLine": 1,
+				"identifier": "Exception"
+			},
+		{
+				"message": "(Duration:\"129.575\", Errors:\"1\", Exceptions:\"1\", StartTime:\"2025-02-07 14:06:30 -0500\", Successes:\"0\", TestCase:\"WVU_OCR_Issues.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-02-07 14:08:40.434 -0500"
+			},
+		{
+				"message": "Execution Time 0:02:09 WVU_OCR_Issues.script",
+				"identifier": "ABORTED",
+				"timestamp": "2025-02-07 14:08:40.444 -0500"
+			}
+	],
+	"createdTimestamp": "2025-02-07 14:06:30.858 -0500"
+}

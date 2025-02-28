@@ -1,0 +1,5 @@
+﻿2025-02-25 15:44:48.423 -0500	START		Running OurGroceries.script
+2025-02-25 15:44:48.580 -0500	Connect		MotorolaG7:(null)	1	on_ourgroceries	OurGroceries.script
+2025-02-25 15:44:48.806 -0500	click	OurGroceries_mobile	at (553, 2173)	2	on_ourgroceries	OurGroceries.script
+2025-02-25 15:45:23.634 -0500	EndTestCase		(Duration:"35.205", Errors:"1", Exceptions:"0", StartTime:"2025-02-25 15:44:48 -0500", Successes:"0", TestCase:"OurGroceries.script", Warnings:"0")
+2025-02-25 15:45:23.651 -0500	ABORTED		Execution Time 0:00:35 OurGroceries.script

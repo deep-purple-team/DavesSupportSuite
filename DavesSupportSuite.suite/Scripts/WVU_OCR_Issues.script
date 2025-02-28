@@ -1,0 +1,9 @@
+﻿try click text:"E2", SearchRectangle:((1158,856),(1574,928)),dpi:96
+put readtext(((1158,856),(1574,928)),dpi:96)
+
+try click text:"E2", SearchRectangle:(1156,874,1574,903),dpi:96
+put readtext((1156,874,1574,903))
+
+try click text:"E2", SearchRectangle:(1103,850,1786,948),dpi:96
+put readtext((1103,850,1786,948))
+

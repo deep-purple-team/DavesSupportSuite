@@ -1,0 +1,15 @@
+﻿2025-02-25 16:11:29.275 -0500	START		Running OurGroceries.script
+2025-02-25 16:11:29.347 -0500	Connect		MotorolaG7:(null)	1	on_ourgroceries	OurGroceries.script
+2025-02-25 16:11:29.353 -0500	presshomebutton			2	on_ourgroceries	OurGroceries.script
+2025-02-25 16:11:29.661 -0500	click	OurGroceries_mobile	at (553, 2173)	4	on_ourgroceries	OurGroceries.script
+2025-02-25 16:12:13.989 -0500	waitfor	OurGroceries_add	found at (960, 2194)	5	on_ourgroceries	OurGroceries.script
+2025-02-25 16:12:22.753 -0500	imagefound	OurGroceries_backbutton	Unable to Find Image OurGroceries_backbutton	6	on_ourgroceries	OurGroceries.script
+2025-02-25 16:12:24.905 -0500	click	(TEXT:"BJ")	at (57, 1014)	10	on_ourgroceries	OurGroceries.script
+2025-02-25 16:12:28.642 -0500	click	OurGroceries_add	at (960, 2194)	11	on_ourgroceries	OurGroceries.script
+2025-02-25 16:12:31.237 -0500	typetext		milk[return]	12	on_ourgroceries	OurGroceries.script
+2025-02-25 16:12:35.518 -0500	presshomebutton			14	on_ourgroceries	OurGroceries.script
+2025-02-25 16:12:37.874 -0500	Connect		NewTower:(null)	17	on_ourgroceries	OurGroceries.script
+2025-02-25 16:12:39.942 -0500	typetext		[windowsKey]r	18	on_ourgroceries	OurGroceries.script
+2025-02-25 16:12:41.903 -0500	typetext		https://ourgroceries.com[return]	19	on_ourgroceries	OurGroceries.script
+2025-02-25 16:12:51.276 -0500	EndTestCase		(Duration:"81.998", Errors:"1", Exceptions:"0", StartTime:"2025-02-25 16:11:29 -0500", Successes:"0", TestCase:"OurGroceries.script", Warnings:"0")
+2025-02-25 16:12:51.285 -0500	ABORTED		Execution Time 0:01:22 OurGroceries.script

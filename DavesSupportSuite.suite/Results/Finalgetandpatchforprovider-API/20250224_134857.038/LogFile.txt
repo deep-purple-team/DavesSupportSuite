@@ -1,0 +1,3 @@
+﻿2025-02-24 13:48:57.044 -0500	START		Running Finalgetandpatchforprovider.apitest
+2025-02-24 13:49:52.452 -0500	EndTestCase		(Duration:"55.404", Errors:"0", Exceptions:"0", StartTime:"2025-02-24 13:48:57 -0500", Successes:"1", TestCase:"Finalgetandpatchforprovider.apitest", Warnings:"0")
+2025-02-24 13:49:52.461 -0500	ABORTED		Execution Time 0:00:55 Finalgetandpatchforprovider.apitest

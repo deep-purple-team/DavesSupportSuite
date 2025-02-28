@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Salesforce Development_DMH_script" package="DavesSupportSuite.suite" timestamp="2025-02-28 14:40:29.128 -0500"
+ tests="1"  failures="2" errors="0" time="0.187000">
+  <properties>
+   <property name="RunDate" value="2025-02-28 14:40:29.128 -0500"/>
+   <property name="Status" value="Failure"/>
+  </properties>
+  <testcase name="Salesforce Development_DMH.script" assertions="2" status="failure"  time="0.177">
+    <failure type="LogError" message="Validation Error: Failed to parse JSON request body. {&quot;grant_type&quot; = password; password = &quot;&gt;3Zej[V=S&gt;PixeSSg&gt;)C&gt;&lt;1q9&quot;; username = &quot;RAVW3460-001&quot;; }" />
+    <failure type="FAILURE" message="Validation Error:: The Api Test could not be executed due to validation errors. -- Execution Time 0:00:00 Salesforce Development_DMH.script" />
+  </testcase>
+ </testsuite>
+</testsuites>

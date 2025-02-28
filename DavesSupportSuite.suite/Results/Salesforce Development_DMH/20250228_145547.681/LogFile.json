@@ -1,0 +1,92 @@
+{
+	"entries": [
+		{
+				"message": "Running Salesforce Development_DMH.script",
+				"identifier": "START",
+				"timestamp": "2025-02-28 14:55:47.688 -0500"
+			},
+		{
+				"handlerName": "on_getdelineacreds",
+				"timestamp": "2025-02-28 14:55:47.816 -0500",
+				"message": "15388",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 9,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_getdelineacreds",
+				"timestamp": "2025-02-28 14:55:48.486 -0500",
+				"message": "AgKpwoWaMwHrQ11MZuJlXfbM0e-25GT4DeqFVVW9lwuZZozLNw6NklW418Yhv5cehSNpyoqA9hTJn_qKwsFzPTOMonC-TeP-k3SzKLG2yYQ4lYiOIiW82zaY45gUnPuTo90dcGd6reNWGmmliZ9WAPzaergsKTtCEOJt_b2fxWjc_eOchbvvPbK4xY11vScP4t3PjcEs4hh2Zjh0nBzvLVLjEDzq-Zj32i9uIDURZqK4jbtdCXG8y0HuGfw7z4AfvVbPO354k4c252CQXf5P-nhEKpDx3lozBUpqX5_FCWLXPL3cyOJmHAlL17CFMtnwuJV8fv8DHMmObRTgPc8gJo3hdMHjJyr18EMaEbm8t2TGw5Jr4EJLvT3fWtL_EKxeq9EUklaRfcoNE8bZzJwTMWCjJ6VQHkQIwkEhxCcTub4GoPJPbaQbaXD0Rwd6TsVBfZtlgvm_TErJ_sYF0Sold65O-nxlhNbDvo6SLNSI0ZtwgbcZkX3zD7sVd7XFM5cQE3cOpXq3RR11R6ac9mHFc8uR-LkJ9fJ74prVmS1vOQGwzEs-4YXgaqVmmPO8z244JDOAnLYLL57Rukg2b0snpC2293_4JF9YHJerBmxTG_abiA",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 23,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_getdelineacreds",
+				"timestamp": "2025-02-28 14:55:49.048 -0500",
+				"message": "The query of Salesforce will use a Client ID of: 3MVG9wy_WnyGrHdMk_EZ4aCLW9dphEgZYbJfp61Fn5WURlECDMd2.90U_s3eda4UprSo4jjj6eV6Vm4Qw3ITh and a Client Secret of F154CE3D085A50615C4DA1420DF26D8F57F8CDA47EF596E3B187B081D1F9B7EA",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 35,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_getdelineacreds",
+				"timestamp": "2025-02-28 14:55:49.887 -0500",
+				"message": "Status Code is=200",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 45,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_getdelineacreds",
+				"timestamp": "2025-02-28 14:55:49.891 -0500",
+				"message": "Validated that the Status code is 200. Able to access Salesforce, and grab an access token",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 46,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_getdelineacreds",
+				"timestamp": "2025-02-28 14:55:49.893 -0500",
+				"message": "00D8J0000004fWS!AQEAQCP_OUqAeqVDk.ceuzlgFLVQ7I7wg7Lia3.gMZ1WUNsGGx6HT8byPwwv4Dp1h2jZn3udimPHvTPtOqXhIdNeyvjB9r.P",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 55,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_salesforce_development_dmh",
+				"timestamp": "2025-02-28 14:55:49.905 -0500",
+				"message": "02/28/25",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 43,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_salesforce_development_dmh",
+				"timestamp": "2025-02-28 14:55:49.908 -0500",
+				"message": "022825",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 46,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_salesforce_development_dmh",
+				"timestamp": "2025-02-28 14:55:49.912 -0500",
+				"message": "baseFileName022825",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 50,
+				"identifier": "Log"
+			},
+		{
+				"message": "(Duration:\"24.89\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2025-02-28 14:55:47 -0500\", Successes:\"1\", TestCase:\"Salesforce Development_DMH.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-02-28 14:56:12.582 -0500"
+			},
+		{
+				"message": "Execution Time 0:00:24 Salesforce Development_DMH.script",
+				"identifier": "ABORTED",
+				"timestamp": "2025-02-28 14:56:12.601 -0500"
+			}
+	],
+	"createdTimestamp": "2025-02-28 14:55:47.691 -0500"
+}

@@ -1,0 +1,21 @@
+{
+	"entries": [
+		{
+				"message": "Running Finalgetandpatchforprovider.apitest",
+				"identifier": "START",
+				"timestamp": "2025-02-24 13:52:47.976 -0500"
+			},
+		{
+				"message": "(Duration:\"0.304\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2025-02-24 13:52:47 -0500\", Successes:\"0\", TestCase:\"Finalgetandpatchforprovider.apitest\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-02-24 13:52:48.283 -0500"
+			},
+		{
+				"image": "Screen_Error.png",
+				"message": "Invalid JSON: Can't get value of JSON expression -- Execution Time 0:00:00 Finalgetandpatchforprovider.apitest",
+				"identifier": "FAILURE",
+				"timestamp": "2025-02-24 13:52:48.339 -0500"
+			}
+	],
+	"createdTimestamp": "2025-02-24 13:52:47.979 -0500"
+}

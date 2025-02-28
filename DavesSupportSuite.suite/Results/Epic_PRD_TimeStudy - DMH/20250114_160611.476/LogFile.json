@@ -1,0 +1,28 @@
+{
+	"entries": [
+		{
+				"message": "Running Epic_PRD_TimeStudy - DMH.script",
+				"identifier": "START",
+				"timestamp": "2025-01-14 16:06:11.482 -0500"
+			},
+		{
+				"handlerName": "on_epic_prd_timestudy___dmh",
+				"timestamp": "2025-01-14 16:06:11.550 -0500",
+				"message": "[{_pk_:1001, password:@\"m8zrRWv\\\\i4XH&GT|dJ?%\", username:\"svc_eggplt10\"},{_pk_:1002, password:\"`cCFd~Sd\", username:\"ESDESK\"},{_pk_:1003, password:\"@cCFy[%d@WBslv\", username:\"64838\"}]",
+				"scriptName": "Epic_PRD_TimeStudy - DMH.script",
+				"handlerLine": 7,
+				"identifier": "Log"
+			},
+		{
+				"message": "(Duration:\"24.838\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2025-01-14 16:06:11 -0500\", Successes:\"0\", TestCase:\"Epic_PRD_TimeStudy - DMH.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-01-14 16:06:36.324 -0500"
+			},
+		{
+				"message": "Execution Time 0:00:24 Epic_PRD_TimeStudy - DMH.script",
+				"identifier": "ABORTED",
+				"timestamp": "2025-01-14 16:06:36.344 -0500"
+			}
+	],
+	"createdTimestamp": "2025-01-14 16:06:11.484 -0500"
+}

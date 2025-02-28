@@ -1,0 +1,14 @@
+﻿2025-02-25 15:45:25.784 -0500	START		Running OurGroceries.script
+2025-02-25 15:45:25.881 -0500	Connect		MotorolaG7:(null)	1	on_ourgroceries	OurGroceries.script
+2025-02-25 15:45:42.028 -0500	click	OurGroceries_mobile	at (553, 2173)	2	on_ourgroceries	OurGroceries.script
+2025-02-25 15:45:43.104 -0500	waitfor	OurGroceries_search	found at (894, 180)	3	on_ourgroceries	OurGroceries.script
+2025-02-25 15:45:43.974 -0500	click	(TEXT:"BJ")	at (57, 1014)	4	on_ourgroceries	OurGroceries.script
+2025-02-25 15:45:44.287 -0500	click	OurGroceries_add	at (960, 2194)	5	on_ourgroceries	OurGroceries.script
+2025-02-25 15:45:44.517 -0500	typetext		milk[return]	6	on_ourgroceries	OurGroceries.script
+2025-02-25 15:45:44.533 -0500	Connect		NewTower:(null)	8	on_ourgroceries	OurGroceries.script
+2025-02-25 15:45:44.657 -0500	typetext		[windowsKey]r	9	on_ourgroceries	OurGroceries.script
+2025-02-25 15:45:45.521 -0500	typetext		https://ourgroceries.com[return]	10	on_ourgroceries	OurGroceries.script
+2025-02-25 15:45:46.602 -0500	waitfor	OurGroceries_icon	found at (175, 159)	11	on_ourgroceries	OurGroceries.script
+2025-02-25 15:45:48.460 -0500	click	(TEXT:"BJ")	at (733, 471)	12	on_ourgroceries	OurGroceries.script
+2025-02-25 15:45:48.487 -0500	EndTestCase		(Duration:"22.697", Errors:"0", Exceptions:"0", StartTime:"2025-02-25 15:45:25 -0500", Successes:"1", TestCase:"OurGroceries.script", Warnings:"0")
+2025-02-25 15:45:48.553 -0500	SUCCESS		Execution Time 0:00:22 OurGroceries.script

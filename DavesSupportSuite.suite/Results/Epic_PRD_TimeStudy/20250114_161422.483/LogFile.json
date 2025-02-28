@@ -1,0 +1,60 @@
+{
+	"entries": [
+		{
+				"message": "Running Epic_PRD_TimeStudy.script",
+				"identifier": "START",
+				"timestamp": "2025-01-14 16:14:22.488 -0500"
+			},
+		{
+				"handlerName": "on_epic_prd_timestudy",
+				"timestamp": "2025-01-14 16:14:22.558 -0500",
+				"message": "Workbook(\"C:/ScriptRepositories/DavesSupportSuite.suite/Resources/DataFile.xlsx\")",
+				"scriptName": "Epic_PRD_TimeStudy.script",
+				"handlerLine": 24,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_epic_prd_timestudy",
+				"timestamp": "2025-01-14 16:14:22.562 -0500",
+				"message": "Worksheet(\"Users\") of Workbook(\"C:/ScriptRepositories/DavesSupportSuite.suite/Resources/DataFile.xlsx\")",
+				"scriptName": "Epic_PRD_TimeStudy.script",
+				"handlerLine": 27,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_epic_prd_timestudy",
+				"timestamp": "2025-01-14 16:14:22.565 -0500",
+				"message": "Worksheet(\"Locations\") of Workbook(\"C:/ScriptRepositories/DavesSupportSuite.suite/Resources/DataFile.xlsx\")",
+				"scriptName": "Epic_PRD_TimeStudy.script",
+				"handlerLine": 30,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_epic_prd_timestudy",
+				"timestamp": "2025-01-14 16:14:33.595 -0500",
+				"message": "SCOUTBEES107",
+				"scriptName": "Epic_PRD_TimeStudy.script",
+				"handlerLine": 55,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_epic_prd_timestudy",
+				"timestamp": "2025-01-14 16:14:33.598 -0500",
+				"message": "104343007",
+				"scriptName": "Epic_PRD_TimeStudy.script",
+				"handlerLine": 55,
+				"identifier": "Log"
+			},
+		{
+				"message": "(Duration:\"18.552\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2025-01-14 16:14:22 -0500\", Successes:\"0\", TestCase:\"Epic_PRD_TimeStudy.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-01-14 16:14:41.044 -0500"
+			},
+		{
+				"message": "Execution Time 0:00:18 Epic_PRD_TimeStudy.script",
+				"identifier": "ABORTED",
+				"timestamp": "2025-01-14 16:14:41.065 -0500"
+			}
+	],
+	"createdTimestamp": "2025-01-14 16:14:22.490 -0500"
+}

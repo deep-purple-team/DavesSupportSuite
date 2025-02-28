@@ -1,0 +1,10 @@
+put 0 into x1
+put (the top of ImageRectangle(text:"FORGET", waitFor:1)) - 2 into y1
+put the right of RemoteScreenRectangle() into x2
+put (the top of ImageRectangle(text:"CROSSED", waitFor:1)) - 2 into y2
+put ReadText(x1,y1,x2,y2) into myShoppingList
+if myShoppingList contains "milk" then
+	LogSuccess "Milk was successfully added"
+else
+	LogWarning "Milk was NOT successfully added"
+end if

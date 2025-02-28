@@ -1,0 +1,43 @@
+﻿(**
+@ScriptName: Salesforce/Master
+@Version 1.0-12/07/2024
+@Author:Keysight
+@CreatedOn: 12/04/2024
+@Change Reason: Updated the Delinea Code to retrieve the access token and also added validations for existing providers
+**)
+
+(**
+"This software is copyright Keysight Technologies, Inc. and licensed under the terms of Keysight's End User License Agreement. Terms of Keysight's EULA may be found here: www.keysight.com/find/sweula By using this Software, you agree to the terms of the Keysight EULA."
+**)
+
+
+//Preconditions
+-----------------------------------------------------------------------------------
+# 1. Access Token and Service Account credentials is retrieved using Delinea secret server.
+# 2. Provider's information is placed in the Resource file-NonStaffProvider_MMDDYY 
+# 3. BHSF_GenericFramework.Suite is set up as a helper suite
+# 4. Resource file needs to be provided in the right formats based on the application's accepted values
+# 5. FindgetandpatchforProvider, AUTH, EmptyAPI and ValidaterProviderInfo API Tests must be present under APi Tests
+# 6. Resource file needs to be provided in the right formats based on the application's accepted values 
+# 7. PassocodeAPI.json file must be present under Resources
+
+
+
+try
+	Run Logging.Steplog [
+		"Step 1",
+		"Action: Call handler to validate existing physician or add new physician", 
+	]
+	//Call handler to update existing provider or add new provider
+	Log "Starting the Process to add or update the Provider with"&& provider.Provider_id&&"to Salesforce"
+	Run "Salesforce/Salesforce Development"
+	
+	
+catch theException
+	if the exceptionName is "Error" then
+		LogError "Unable to complete adding new provider in Salesforce"
+		
+		
+	end if
+	
+end try

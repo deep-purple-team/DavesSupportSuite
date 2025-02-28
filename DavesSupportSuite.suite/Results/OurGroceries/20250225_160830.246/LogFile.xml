@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="OurGroceries_script" package="DavesSupportSuite.suite" timestamp="2025-02-25 16:08:30.246 -0500"
+ tests="1"  failures="2" errors="1" time="4.712000">
+  <properties>
+   <property name="RunDate" value="2025-02-25 16:08:30.246 -0500"/>
+   <property name="Status" value="Failure"/>
+  </properties>
+  <testcase name="OurGroceries.script" assertions="1" status="error"  time="4.706">
+    <failure type="FAILURE" message="File Not Found: click Error - Could Not Open Image:  -- Execution Time 0:00:04 OurGroceries.script" />
+    <failure type="FAILURE" message="File Not Found: click Error - Could Not Open Image:  -- Execution Time 0:00:04 OurGroceries.script" />
+    <error type="Exception" message="Could Not Open Image: " />
+  </testcase>
+ </testsuite>
+</testsuites>

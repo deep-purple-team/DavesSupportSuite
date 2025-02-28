@@ -1,0 +1,48 @@
+{
+	"originalcapturelocation": [
+		86,
+		54,
+		18,
+		18
+	],
+	"lastmodifieddate": 1740520424.2649999,
+	"createddate": 1740520424.2649999,
+	"name": "Chrome_refresh",
+	"lastfounddate": 1740520998.03,
+	"ocrcapturestring": "3",
+	"lastfoundlocation": [
+		86,
+		54,
+		18,
+		18
+	],
+	"testlocationdata": [
+		{
+				"connectionportnum": 3389,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[9,6]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"type": "Unknown RDP"
+				},
+				"name": "Chrome_refresh.png",
+				"connectionname": "NewTower",
+				"type": 1,
+				"connectionserverid": "192.168.4.62",
+				"capturerect": [
+					86,
+					54,
+					18,
+					18
+				],
+				"connectiontype": "RDP",
+				"capturedocrtext": "3"
+			}
+	]
+}

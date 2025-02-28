@@ -1,0 +1,48 @@
+{
+	"originalcapturelocation": [
+		28,
+		140,
+		215,
+		31
+	],
+	"lastmodifieddate": 1740516106.5840001,
+	"createddate": 1740516106.5840001,
+	"name": "OurGroceries_icon",
+	"lastfounddate": 1740520996.381,
+	"ocrcapturestring": "OurGroceries",
+	"lastfoundlocation": [
+		28,
+		140,
+		215,
+		31
+	],
+	"testlocationdata": [
+		{
+				"connectionportnum": 3389,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[147,19]",
+					"Tolerance": "_64",
+					"Discrepancy": "_0",
+					"SearchType": "Smoothed for Text"
+				},
+				"sutinfo": {
+					"type": "Unknown RDP"
+				},
+				"name": "OurGroceries_icon.png",
+				"connectionname": "NewTower",
+				"type": 1,
+				"connectionserverid": "192.168.4.62",
+				"capturerect": [
+					28,
+					140,
+					215,
+					31
+				],
+				"connectiontype": "RDP",
+				"capturedocrtext": "OurGroceries"
+			}
+	]
+}

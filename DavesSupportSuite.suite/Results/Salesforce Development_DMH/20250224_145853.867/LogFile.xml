@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Salesforce Development_DMH_script" package="DavesSupportSuite.suite" timestamp="2025-02-24 14:58:53.867 -0500"
+ tests="1"  failures="1" errors="0" time="159.954000">
+  <properties>
+   <property name="RunDate" value="2025-02-24 14:58:53.867 -0500"/>
+   <property name="Status" value="Aborted"/>
+  </properties>
+  <testcase name="Salesforce Development_DMH.script" assertions="3" status="failure"  time="159.944">
+    <failure type="LogError" message="{authenticationtype:&quot;None&quot;, httpmethod:&quot;PATCH&quot;, mimeType:&quot;application/json&quot;, oauthToken:&quot;&quot;, password:&quot;*********&quot;, requestbody:{Auth_Services__c:&quot;&quot;, BHMG_MCI__c:&quot;&quot;, BillingCity:&quot;&quot;, BillingCountry:&quot;&quot;, BillingPostalCode:&quot;&quot;, BillingState:&quot;&quot;, BillingStreet:&quot;&quot;, Fax:&quot;&quot;, FirstName:&quot;&quot;, LastName:&quot;&quot;, NPI__c:&quot;&quot;, On_Staff__c:&quot;&quot;, Specialty__c:&quot;&quot;, Title__c:&quot;&quot;}, requestbodyformat:&quot;Form Url Encoded&quot;, requestheaders:{Authorization:&quot;Bearer 00D8J0000004fWS!AQEAQJ7A00EgIUYwLIfhwqvYU.uPqJdjmmhTiSrW7P8v7MG8_TF4iJfbpEbneQV9khH5o270HVi4knbLvVMEQ_CbSispFolZ&quot;, @&quot;Content-Type&quot;:&quot;application/json;charset=UFT-8&quot;}, responseBody:@&quot;[{\&quot;message\&quot;:\&quot;Unexpected character (&apos;A&apos; (code 65)): expected a valid value (number, String, array, object, &apos;true&apos;, &apos;false&apos; or &apos;null&apos;) at [line:1, column:2]\&quot;,\&quot;errorCode\&quot;:\&quot;JSON_PARSER_ERROR\&quot;}]&quot;, responseCookies:{:}, responseHeaders:{@&quot;Cache-Control&quot;:&quot;no-cache,must-revalidate,max-age=0,no-store,private&quot;, Connection:&quot;keep-alive&quot;, @&quot;Content-Type&quot;:&quot;application/json; charset=UTF-8&quot;, Date:&quot;Mon, 24 Feb 2025 19:59:10 GMT&quot;, Server:&quot;sfdcedge&quot;, @&quot;Sforce-Limit-Info&quot;:&quot;api-usage=67/5000000&quot;, @&quot;Strict-Transport-Security&quot;:&quot;max-age=63072000; includeSubDomains&quot;, @&quot;Transfer-Encoding&quot;:&quot;chunked&quot;, @&quot;X-Content-Type-Options&quot;:&quot;nosniff&quot;, @&quot;X-Request-Id&quot;:&quot;5b209dde67b432fad28ef2c0357f44e6&quot;, @&quot;X-Robots-Tag&quot;:&quot;none&quot;, @&quot;X-SFDC-Request-Id&quot;:&quot;5b209dde67b432fad28ef2c0357f44e6&quot;}, responseTime:0.344, statusCode:400, url:&quot;https://d80000000cqmweau--pbdqa.sandbox.my.salesforce.com/services/data/v58.0/sobjects/Account/Provider_ID__c/562999&quot;, username:&quot;&quot;}" />
+  </testcase>
+ </testsuite>
+</testsuites>

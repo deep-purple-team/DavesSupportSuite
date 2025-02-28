@@ -1,0 +1,212 @@
+{
+	"entries": [
+		{
+				"message": "Running Salesforce Development_DMH.script",
+				"identifier": "START",
+				"timestamp": "2025-02-28 14:33:48.206 -0500"
+			},
+		{
+				"handlerName": "on_getdelineacreds",
+				"timestamp": "2025-02-28 14:33:48.324 -0500",
+				"message": "15388",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 9,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_getdelineacreds",
+				"timestamp": "2025-02-28 14:33:48.998 -0500",
+				"message": "AgJruleT7DnOpP3LRhzXjroK8k3EGrL3LwHdQcFpqFbG7srarF6jDcsYNM50NSYalzzfrHCJqn1eJUHsYmFkuTUCC5gAP2cQwZb_xHLB7v02mNjN4mUmn-VFDkGCrFjBNk41OeXBxX4unYaBK4bAWsZtq0OWAfoVcv-92ycafRwHjEccErxcx4TazoEQd48HR2XmzfoP9Vl6rmDxxJqUfkEuuPN7X-u9ReFD8G2Yry_EVglZYaFd3fytiNi0mDBewIPz54yzEgGJITNPX6P9YTnDEDME7HnTn87L9sa5R_s_yubN1pX8mcQiuntpbTHbehHFnODmcB8laiWTkMjQkZm6mj27bhUaliP9aZBDzhuF-ccdPR9pOgJVCRwaQLwXFIr78xRB_r5-qqsChYsHbEtJhKS-L-PrwPaf-G2qHon0TNdHMk5QhmlBEjH-8I_gdPzB7VkOIy7IIcDqHPZ0LzJH1juTvWCewCoz42zm8z5AU4ARXvS9IvikHpect_98abLiWPSGvtBPNVnmDiTdWWofKEyRpANTERzReBhNxM1FA4CuEmwasvwsTrFALc9riySnQku9vXpARG3r6AiO1cbc2-_KS7Qnowq3UMLC_dWPpA",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 23,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_getdelineacreds",
+				"timestamp": "2025-02-28 14:33:49.750 -0500",
+				"message": "The query of Salesforce will use a Client ID of: 3MVG9wy_WnyGrHdMk_EZ4aCLW9dphEgZYbJfp61Fn5WURlECDMd2.90U_s3eda4UprSo4jjj6eV6Vm4Qw3ITh and a Client Secret of F154CE3D085A50615C4DA1420DF26D8F57F8CDA47EF596E3B187B081D1F9B7EA",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 35,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_getdelineacreds",
+				"timestamp": "2025-02-28 14:33:50.703 -0500",
+				"message": "Status Code is=200",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 45,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_getdelineacreds",
+				"timestamp": "2025-02-28 14:33:50.707 -0500",
+				"message": "Validated that the Status code is 200. Able to access Salesforce, and grab an access token",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 46,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_getdelineacreds",
+				"timestamp": "2025-02-28 14:33:50.710 -0500",
+				"message": "00D8J0000004fWS!AQEAQCP_OUqAeqVDk.ceuzlgFLVQ7I7wg7Lia3.gMZ1WUNsGGx6HT8byPwwv4Dp1h2jZn3udimPHvTPtOqXhIdNeyvjB9r.P",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 55,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_salesforce_development_dmh",
+				"timestamp": "2025-02-28 14:33:50.720 -0500",
+				"message": "02/28/25",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 43,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_salesforce_development_dmh",
+				"timestamp": "2025-02-28 14:33:50.723 -0500",
+				"message": "022825",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 46,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_salesforce_development_dmh",
+				"timestamp": "2025-02-28 14:33:50.726 -0500",
+				"message": "baseFileName022825",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 50,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_getresponseandupdate",
+				"timestamp": "2025-02-28 14:33:51.210 -0500",
+				"message": "Field already matches. No update needed.",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 16,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_getresponseandupdate",
+				"timestamp": "2025-02-28 14:33:51.225 -0500",
+				"message": "Field already matches. No update needed.",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 16,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_getresponseandupdate",
+				"timestamp": "2025-02-28 14:33:51.239 -0500",
+				"message": "Field already matches. No update needed.",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 16,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_getresponseandupdate",
+				"timestamp": "2025-02-28 14:33:51.253 -0500",
+				"message": "Field already matches. No update needed.",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 16,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_getresponseandupdate",
+				"timestamp": "2025-02-28 14:33:51.271 -0500",
+				"message": "Field already matches. No update needed.",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 16,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_getresponseandupdate",
+				"timestamp": "2025-02-28 14:33:51.287 -0500",
+				"message": "Field already matches. No update needed.",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 16,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_getresponseandupdate",
+				"timestamp": "2025-02-28 14:33:51.303 -0500",
+				"message": "Field already matches. No update needed.",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 16,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_getresponseandupdate",
+				"timestamp": "2025-02-28 14:33:51.320 -0500",
+				"message": "Field already matches. No update needed.",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 16,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_getresponseandupdate",
+				"timestamp": "2025-02-28 14:33:51.337 -0500",
+				"message": "Field already matches. No update needed.",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 16,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_getresponseandupdate",
+				"timestamp": "2025-02-28 14:33:51.354 -0500",
+				"message": "Field already matches. No update needed.",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 16,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_getresponseandupdate",
+				"timestamp": "2025-02-28 14:33:51.372 -0500",
+				"message": "Field already matches. No update needed.",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 16,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_getresponseandupdate",
+				"timestamp": "2025-02-28 14:33:51.388 -0500",
+				"message": "Field already matches. No update needed.",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 16,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_getresponseandupdate",
+				"timestamp": "2025-02-28 14:33:51.403 -0500",
+				"message": "Field already matches. No update needed.",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 16,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_getresponseandupdate",
+				"timestamp": "2025-02-28 14:33:51.419 -0500",
+				"message": "Field already matches. No update needed.",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 16,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_getresponseandupdate",
+				"timestamp": "2025-02-28 14:33:51.435 -0500",
+				"message": "Field already matches. No update needed.",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 16,
+				"identifier": "Log"
+			},
+		{
+				"message": "(Duration:\"22.574\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2025-02-28 14:33:48 -0500\", Successes:\"1\", TestCase:\"Salesforce Development_DMH.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-02-28 14:34:10.784 -0500"
+			},
+		{
+				"message": "Execution Time 0:00:22 Salesforce Development_DMH.script",
+				"identifier": "ABORTED",
+				"timestamp": "2025-02-28 14:34:10.792 -0500"
+			}
+	],
+	"createdTimestamp": "2025-02-28 14:33:48.208 -0500"
+}

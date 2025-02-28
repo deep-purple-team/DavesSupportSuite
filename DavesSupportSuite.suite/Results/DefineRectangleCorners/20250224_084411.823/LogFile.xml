@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="DefineRectangleCorners_script" package="DavesSupportSuite.suite" timestamp="2025-02-24 08:44:11.823 -0500"
+ tests="1"  failures="1" errors="1" time="0.345000">
+  <properties>
+   <property name="RunDate" value="2025-02-24 08:44:11.823 -0500"/>
+   <property name="Status" value="Failure"/>
+  </properties>
+  <testcase name="DefineRectangleCorners.script" assertions="1" status="error"  time="0.334">
+    <failure type="FAILURE" message="Parameter error:  is not a recognized screen portion. -- Execution Time 0:00:00 DefineRectangleCorners.script" />
+    <error type="Throw" message="Parameter error -  is not a recognized screen portion." />
+  </testcase>
+ </testsuite>
+</testsuites>

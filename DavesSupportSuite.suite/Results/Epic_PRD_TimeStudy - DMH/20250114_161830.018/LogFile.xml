@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Epic_PRD_TimeStudy - DMH_script" package="DavesSupportSuite.suite" timestamp="2025-01-14 16:18:30.018 -0500"
+ tests="1"  failures="1" errors="0" time="0.013000">
+  <properties>
+   <property name="RunDate" value="2025-01-14 16:18:30.018 -0500"/>
+   <property name="Status" value="Failure"/>
+  </properties>
+  <testcase name="Epic_PRD_TimeStudy - DMH.script" assertions="1" status="failure"  time="0.004">
+    <failure type="FAILURE" message="SenseTalk Compiler Exception: in epic_prd_timestudy___dmh:\nSyntax Error at line 165: can&apos;t understand &quot;End&quot; at character 1 -- Execution Time 0:00:00 Epic_PRD_TimeStudy - DMH.script" />
+  </testcase>
+ </testsuite>
+</testsuites>

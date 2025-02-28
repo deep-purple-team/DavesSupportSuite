@@ -1,0 +1,16 @@
+﻿put ReadText((0,0), (1920,1080))
+put ReadText((444,344,1044,599))
+MoveTo text:"By post"
+MoveTo (0,0)
+Put ImageRectangle(text:"By post", waitFor:1)
+
+put file(ResourcePath("eggplant.plist")) into currentPlist
+put file(ResourcePath("eggplant2.plist")) into oldPlist
+
+put 1 into foo
+repeat while line foo of currentPlist is not empty
+	log foo
+	put line foo of currentPlist equals line foo of oldPlist into answer
+	if answer = false then PauseScript
+	set foo = foo + 1
+end repeat

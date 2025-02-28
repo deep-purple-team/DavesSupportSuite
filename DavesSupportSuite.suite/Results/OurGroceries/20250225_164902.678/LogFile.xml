@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="OurGroceries_script" package="DavesSupportSuite.suite" timestamp="2025-02-25 16:49:02.678 -0500"
+ tests="1"  failures="0" errors="0" time="27.082000">
+  <properties>
+   <property name="RunDate" value="2025-02-25 16:49:02.678 -0500"/>
+   <property name="Status" value="Success"/>
+  </properties>
+  <testcase name="OurGroceries.script" assertions="1" status="success"  time="27.072">
+  </testcase>
+ </testsuite>
+</testsuites>

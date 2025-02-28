@@ -1,0 +1,302 @@
+﻿(**
+@ScriptName: Salesforce/Development
+@Version 1.0-12/04/2024
+@Author: Keysight
+@CreatedOn: 11/25/2024
+@Change Reason: Updated the Delinea Code to retrieve the access token and also aded validations for existing providers
+**)
+
+(**
+"This software is copyright Keysight Technologies, Inc. and licensed under the terms of Keysight's End User License Agreement. Terms of Keysight's EULA may be found here: www.keysight.com/find/sweula By using this Software, you agree to the terms of the Keysight EULA."
+**)
+
+//Preconditions
+-----------------------------------------------------------------------------------
+# 1. Access Token and Service Account credentials is retrieved using Delinea secret server.
+# 2. Provider's information is placed in the Resource file-NonStaffProvider_MMDDYY 
+# 3. BHSF_GenericFramework.Suite is set up as a helper suite
+# 4. Resource file needs to be provided in the right formats based on the application's accepted values 
+
+
+//Assumptions
+-----------------------------------------------------------------------------------
+# 1. The ValidateProviderInfo and Findgetandpatchforprovider scripts are present under API
+# 2. The PasscodeAPI.json file is under Resources.
+# 2. Spell checks are not performed for the Resource file data
+# 3. Shared drive is mapped to N -\\AD.BHSSF.ORG\DFS\Shared Data\RPA Robotic NPI Process Test
+
+
+
+//To get the access token and Secret ID
+global accesstoken
+
+getDelineacreds[]
+put the result into accesstoken
+--set the suitevariables.accesstoken to accesstoken
+
+
+//Reading from the Data File in the below location 
+--put "N:/NonStaffProvider_" into basefileName
+
+//Log the dateput today's Date into filedate
+put today's Date into filedate
+log filedate
+//Remove the / from the date
+Delete every occurrence of "/" in filedate
+log filedate
+//Change the name of the sheet based on the final file from Non Staff Provider to what is is actually called
+set tableName to "Non Staff Provider"
+put baseFileName&filedate into global filename
+log global Filename
+set global myExcelDB to {type:"excel", file:global filename&".xlsx", writable: Yes}
+set global myExcelDB to {type:"excel", file:ResourcePath("NonStaffProvider_022425.xlsx"), writable: Yes}
+
+set NonStaff to (the records of table(tableName) of global myExcelDB)
+if NonStaff is empty then Throw "No data", "No script data is present, please check to make sure the data file is set up correctly"
+//global provider
+
+//Read from Resource File to get the data from Salesforce for the Provider
+
+repeat with each item line in the records of global myExcelDB by reference
+	
+	Try
+		
+		set querybody to  <<
+
+{
+    "FirstName": ">> <<",
+     "LastName": ">> <<",
+     "Phone": ">> <<",
+     "Title__c": ">> <<",
+     "On_Staff__c": ">> <<",
+     "BHMG_MCI__c": ">> <<",
+     "Auth_Services__c": ">> <<",
+     "NPI__c": ">> <<",
+     "Specialty__c": ">> <<",
+     "Fax": ">>  <<",
+     "BillingCity": ">> <<",
+     "BillingCountry": ">> <<",
+     "BillingPostalCode": ">> <<",
+     "BillingState": ">> <<",
+     "BillingStreet": ">> <<",
+},>>
+		
+		//Use the GET Request to read the data
+		put "https://d80000000cqmweau--pbdqa.sandbox.my.salesforce.com/services/data/v58.0/sobjects/Account/Provider_ID__c/"&line.Provider_ID into URL
+		put "application/json;charset=UFT-8" into RH."Content-Type"
+		put "Bearer "&global accesstoken into RH."Authorization"
+		put (EmptyAPI(httpMethod:"GET",url:URL,requestheaders:RH(*,requestBody:querybody*))) into getresponse
+		//put api() into response	
+		//get the Responsebody
+		//put api() into getresponse
+		put JSONVALUE(getresponse.responsebody) into global getresponsebody
+		//Match the Info frrom getresponse and update the field in case there is a mismatch
+		getresponseandupdate "FirstName",line.Provider_First_Name
+		getresponseandupdate "LastName",line.Provider_Last_Name
+		getresponseandupdate "Phone",line.Phone
+		getresponseandupdate "NPI__c",line.NPI
+		getresponseandupdate "Title__c",line.Title_Degree
+		getresponseandupdate "On_Staff__c","No"
+		getresponseandupdate "BHMG_MCI__c","No"
+		getresponseandupdate "Auth_Services__c","No"
+		getresponseandupdate "Specialty__c",line.Specialty_Code
+		getresponseandupdate "Fax",line.Fax
+		getresponseandupdate "BillingCity",line.City
+		getresponseandupdate "BillingCountry","US"
+		getresponseandupdate "BillingPostalCode",line.Zip
+		getresponseandupdate "BillingState",line.State
+		getresponseandupdate "BillingStreet",line.Address
+		
+		
+		//Assertions to Validate the Updates
+		
+		set patchbody to <<	
+{
+"FirstName": ">> & (line.Provider_First_Name) & <<",
+"LastName": ">> & (line.Provider_Last_Name) & <<",
+"Phone": ">> & (line.Phone) & <<",
+"Title__c": ">> & (line.Title_Degree) & <<",
+"On_Staff__c": ">> & ("No") & <<",
+"BHMG_MCI__c": ">> & ("No") & <<",
+"Auth_Services__c": ">> & ("No") & <<",
+"NPI__c": ">> & (line.NPI) & <<",
+"Specialty__c": ">> & (line.Specialty_Code) & <<",
+"Fax": ">> & (line.Fax) & <<",
+"BillingCity": ">> & (line.City) & <<",
+"BillingCountry": ">> & ("US") & <<",
+"BillingPostalCode": ">> & (line.Zip) & <<",
+"BillingState": ">> & (line.State) & <<",
+"BillingStreet": ">> & (line.Address) & <<",
+},>>
+		
+		//Populate/update the fields for the Provider using PATCH
+		put "https://d80000000cqmweau--pbdqa.sandbox.my.salesforce.com/services/data/v58.0/sobjects/Account/Provider_ID__c/"&line.Provider_ID into URL
+		put "application/json;charset=UFT-8" into RH."Content-Type"
+		put "Bearer "&global accesstoken into RH."Authorization"
+		put (EmptyAPI(httpMethod:"PATCH",url:URL,requestheaders:RH,requestBody:patchbody,requestBodyFormat:"JSON (application/json)")) into responseInfo
+		
+		put api() into response
+		//Validate that the Status Code is between 200 and 201-Note-201 is success code for POST/PATCH -creation of an item
+		If response.statusCode is between 200 and 201
+			Log "Status Code is ="&getresponse.statusCode
+			LogSuccess "Provider updated successfully"
+			set line.Salesforce_Status to "TRUE"
+		else
+			LogError response
+			throw "Error", "Unable to get response"
+		End If
+		
+		//Validate that the resonse body is TRUE
+		put JSONVALUE(response.responsebody) into responsebody
+		assert responsebody.success=true
+		
+		//Validate the fields using GET
+		put "https://d80000000cqmweau--pbdqa.sandbox.my.salesforce.com/services/data/v58.0/sobjects/Account/Provider_ID__c/"&line.Provider_ID into URL
+		put "application/json;charset=UFT-8" into RH."Content-Type"
+		put "Bearer "&global accesstoken into RH."Authorization"
+		put (EmptyAPI(httpMethod:"GET",url:URL,requestheaders:RH,requestBody:RB)) into responseInfo
+		
+		--ValidateProviderInfo{url:"https://d80000000cqmweau--pbdqa.sandbox.my.salesforce.com/services/data/v58.0/sobjects/Account/Provider_ID__c/"&line.Provider_ID}
+		
+		put api() into getresponse
+		//Validate the status code is betweewn 200-201-Note-201 is success code for POST/PATCH -creation of an item
+		If getresponse.statusCode is between 200 and 201
+			Log "Status Code is ="&getresponse.statusCode
+			LogSuccess "Provider updated successfully"
+			set line."Salesforce_Status" to "TRUE"
+		else
+			LogError getresponse
+			throw "Error", "Unable to get response"
+		End If
+		//Assert that the fields match the resource file
+		put JSONVALUE(getresponse.responsebody) into getresponsebody
+		//log getresponsebody
+		//Assert the fields after update
+		assert getresponsebody.FirstName=line.Provider_First_Name
+		assert getresponsebody.LastName=line.Provider_Last_Name
+		assert getresponsebody.Phone=line.Phone
+		assert getresponsebody.Title__c=line.Title_Degree
+		assert getresponsebody.On_Staff__c="No"
+		assert getresponsebody.BHMG_MCI__c="No"
+		assert getresponsebody.Auth_Services__c="No"
+		assert getresponsebody.NPI__c=line.NPI
+		assert getresponsebody.Specialty__c=line.Specialty_Code
+		assert getresponsebody.Fax=line.Fax
+		assert getresponsebody.BillingCity=line.City
+		assert getresponsebody.BillingCountry="US"
+		assert getresponsebody.BillingPostalCode=line.Zip
+		assert getresponsebody.BillingState=line.State
+		assert getresponsebody.BillingStreet=line.Address
+		
+		
+	catch theException
+		
+		if the exceptionName...
+			...is "Error" then
+				set line.Salesforce_Status to "FALSE"&&the exceptionReason
+				
+				next repeat
+				
+		end if
+		
+	End Try
+	
+end repeat
+
+
+
+(**
+@Name: getDelineacredentials
+@Description: to get credentials from Delinea 
+@Prerequisites-PasscodeAPI.json file must be selected as Service User for fetch creds from Delinea, else Personal user for using AD Credentials
+
+**)
+
+to getDelineaCreds
+	
+	params UIDAPI
+	
+	put ResourcePath("PasscodeAPI.json")
+	put JSONValue(file ResourcePath("PasscodeAPI.json")) into fileContents
+	//get the UIDAPI Id from the Json File
+	put UIDAPI of filecontents.ServiceUser into UIDAPI
+	log UIDAPI
+	if UIDAPI is empty then throw "no UID provided in passcode.json, unable to continue"
+	
+	//Get Bearer Token
+	
+	put "https://BHSF.secretservercloud.com/oauth2/token" into URL
+	put "application/x-www-form-urlencoded" into RH."Content-Type"
+	
+	put "RAVW3460-001" into myUserName
+	put (grant_type:"password",username:myUserName, password:decodetext(fileContents.encryptedDelineaPass, filecontents.passcode)) into RB
+	
+	put (EmptyAPI(httpMethod:"POST",url:URL,requestheaders:RH,requestBody:RB)) into responseInfo
+	//Retrieve the Access Token
+	put jsonvalue(api().responsebody) into APIResponse
+	log APIResponse.access_token
+	
+	//Use token to get secret
+	
+	put "https://BHSF.secretservercloud.com/api/v1/secrets/" into URL
+	put "Bearer "&APIResponse.access_token into RH."Authorization"
+	put (EmptyAPI(httpMethod:"GET",url:URL&UIDAPI,requestheaders:RH,requestBody:RB)) into SecretResponse
+	put jsonvalue(secretResponse.responsebody) into formattedjson
+	
+	set ClientID to (item 2 of (formattedjson.items)).itemvalue
+	set ClientSecret to (item 3 of (formattedjson.items)).itemvalue
+	
+	Log "The query of Salesforce will use a Client ID of:" && ClientID && "and a Client Secret of" && ClientSecret
+	
+	//Add the Usewrname and Password in the Server URL to access Salesforce
+	put "https://d80000000cqmweau--pbdqa.sandbox.lightning.force.com" into Server
+	set endpoint to Server&"/services/oauth2/token?client_id="&ClientID&"&client_secret="&ClientSecret&"&grant_type=client_credentials"
+	//log endpoint
+	put AUTH(url:endpoint) into ResponseInformation
+	//log ResponseInformation
+	//Validate the Response code is equal to 200 for success
+	if ResponseInformation.statusCode = "200" then
+		log "Status Code is="& ResponseInformation.statusCode
+		Logsuccess "Validated that the Status code is 200. Able to access Salesforce, and grab an access token"
+	else
+		logerror "Unable to Access Server (Bad Username, Password, or Server O IP Whitelist issue)"
+		logwarning ResponseInformation
+		exit all
+	end if
+	
+	put ResponseInformation.responsebody into RB
+	
+	log JSONVALUE(RB).access_token
+	
+	//	put JSONVALUE(RB).access_token into accesstoken
+	
+	return JSONVALUE(RB).access_token
+end getDelineaCreds
+
+
+(**
+Name:getresponseandupdate
+Description: to update the fields based on Header and Resource file value 
+Param: Header - The Header name in Salesforce
+Param: ResourceField - The field based on the Header read from the Resource file
+**)
+to getresponseandupdate Header,ResourceField
+	global getresponsebody
+	
+	//Validate that the First Name is Matching the data file else update it
+	if not (getresponsebody.(Header) is equal to ResourceField) then
+		log Header &" mismatch found. Updating the specific field"
+		set apibody to <<
+         {
+      ">> & (Header) & <<": ">> & (ResourceField) & <<"
+          },>>
+		//Use the Patch Request to update the specific field
+		Finalgetandpatchforprovider{url:"https://d80000000cqmweau--pbdqa.sandbox.my.salesforce.com/services/data/v58.0/sobjects/Account/Provider_ID__c/"&line.Provider_ID,Requestbody:apibody}
+
+		log "Update successful"
+	else
+		log "Field already matches. No update needed."
+	end if
+	
+	
+end getresponseandupdate

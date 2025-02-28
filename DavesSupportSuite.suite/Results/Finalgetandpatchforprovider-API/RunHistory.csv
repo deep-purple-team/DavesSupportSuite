@@ -1,0 +1,12 @@
+﻿Date Run,Status,Time,# of Errors,# of Warnings,# of Exceptions,Log File,Return Value,Error Message,# of Successes
+2025-02-24 13:48:57.038 -0500,"Aborted",0:00:55,0,0,0,"20250224_134857.038/LogFile.txt","","",1
+2025-02-24 13:50:30.007 -0500,"Aborted",0:00:56,0,0,0,"20250224_135030.007/LogFile.txt","","",1
+2025-02-24 13:51:37.248 -0500,"Aborted",0:00:13,0,0,0,"20250224_135137.248/LogFile.txt","","",1
+2025-02-24 13:51:58.808 -0500,"Aborted",0:00:28,0,0,0,"20250224_135158.808/LogFile.txt","","",1
+2025-02-24 13:52:47.971 -0500,"Failure",0:00:00,1,0,0,"20250224_135247.971/LogFile.txt","","Invalid JSON -- Can't get value of JSON expression",0
+2025-02-24 13:53:06.289 -0500,"Failure",0:00:00,2,0,0,"20250224_135306.289/LogFile.txt","","Invalid JSON -- Can't get value of JSON expression",0
+2025-02-24 13:53:56.790 -0500,"Failure",0:00:00,2,0,0,"20250224_135356.790/LogFile.txt","","Invalid JSON -- Can't get value of JSON expression",0
+2025-02-24 13:54:35.663 -0500,"Failure",0:00:00,2,0,0,"20250224_135435.663/LogFile.txt","","Invalid JSON -- Can't get value of JSON expression",0
+2025-02-24 15:01:51.709 -0500,"Failure",0:00:00,2,0,0,"20250224_150151.709/LogFile.txt","","Invalid JSON -- Can't get value of JSON expression",0
+2025-02-24 15:02:15.992 -0500,"Failure",0:00:00,2,0,0,"20250224_150215.992/LogFile.txt","","Invalid JSON -- Can't get value of JSON expression",0
+2025-02-24 15:02:32.409 -0500,"Success",0:00:00,0,0,0,"20250224_150232.409/LogFile.txt","[{errorCode:""REQUIRED_FIELD_MISSING"", fields:[""LastName"",""BHMG_MCI__c""], message:""Required fields are missing: [LastName, BHMG_MCI__c]""}]","",1

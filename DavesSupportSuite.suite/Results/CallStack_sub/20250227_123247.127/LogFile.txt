@@ -1,0 +1,5 @@
+﻿2025-02-27 12:32:47.133 -0500	START		Running CallStack_sub.script
+2025-02-27 12:32:47.224 -0500	Log		CallStack_sub.script	1	on_callstack_sub	CallStack_sub.script
+2025-02-27 12:32:47.229 -0500	Log		[{Handler:"callstack_sub", HandlerOffset:0, Line:3, MeObjectID:"C:/ScriptRepositories/DavesSupportSuite.suite/Scripts/CallStack_sub.script", MessageName:"on_callstack_sub", MessageType:"Command", objectType:"SenseTalkFrame", RepeatIndex:0, ScriptLine:3, ScriptObjectID:"C:/ScriptRepositories/DavesSupportSuite.suite/Scripts/CallStack_sub.script", TargetObjectID:"C:/ScriptRepositories/DavesSupportSuite.suite/Scripts/CallStack_sub.script", TryDepth:0}]	3	on_callstack_sub	CallStack_sub.script
+2025-02-27 12:32:49.397 -0500	EndTestCase		(Duration:"2.259", Errors:"1", Exceptions:"0", StartTime:"2025-02-27 12:32:47 -0500", Successes:"0", TestCase:"CallStack_sub.script", Warnings:"0")
+2025-02-27 12:32:49.408 -0500	ABORTED		Execution Time 0:00:02 CallStack_sub.script

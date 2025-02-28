@@ -1,0 +1,186 @@
+﻿
+-- Declare the variables for this time study.
+params ExcelDataFile, UsersExcelWorksheet, LocationsExcelWorksheet, SUTName, SUTUserName, SUTUserPwd, EpicUserName, EpicUserPwd, EpicDepartment, PatientMRN
+
+-- Set up the Excel file from where we will pull the user, password, location, and department. Log as a sanity check.
+Set myConnectionString_Users to (type:"excel", file:ResourcePath("DataFile.xlsx"), writable:no, name:"Users")
+Log the records of myConnectionString_Users
+
+Set myConnectionString_Locations to (type:"excel", file:ResourcePath("DataFile.xlsx"), writable:no, name:"Locations")
+Log the records of myConnectionString_Locations
+
+Set myConnectionString_Results to (type:"excel", file:ResourcePath("DataFile.xlsx"), writable:yes, name:"Results")
+Log the records of myConnectionString_Results
+
+Put the records of myConnectionString_Locations into myLocationsList
+
+set myResultsTable to table "Results" of myConnectionString_Results -- Reads the table Results into a variable in the script, called myResultsTable
+
+-- Connect to the system under test (SUT).
+-- Please note that Epic requires a minimum screen resolution of 1920x1080 and a minimum color depth of 32-bit (or millions of colors). Also note that UH only supports RDP at this time.
+Repeat with each item of myLocationsList
+	Try
+		Connect (serverID: SUTName, portNum: 3389, password: DecodeText (SUTUserPwd), username: SUTUserName, type: "RDP", ColorDepth: 32, width: 1920, height: 1080)
+		WaitFor 600, (Image: "StartButton")
+	Catch theException
+		Next Repeat
+	End try
+	
+	
+	-- Log the current time.
+	Log the time
+	
+	-- Launch the UH Apps portal from the taskbar.
+	-- TODO: Update this script as needed to include Imprivata SSO and to include alternate ways of launching UH Apps.
+	If ImageFound (Image: "UHApps", SearchRectangle: HandlerGarage.ScreenPart("BottomHalf")) = "true" then
+		Put the time into StartTime
+		Click FoundImageLocation()
+	End If
+	
+	-- Capture the time it takes UH Apps to launch, then maximize the window.
+	WaitFor 600, (Image: "UHApps_SignIn_Active")
+	Put the time - StartTime into UHAppsLaunch_Duration
+	Log UHAppsLaunch_Duration
+	TypeText windowsKey, upArrow
+	WaitFor 600, {Image: "Logo_vmware", SearchRectangle: HandlerGarage.ScreenPart("BottomHalf")}
+	Click FoundImageLocation()
+	
+	-- Log in to UH Apps, capturing the time it takes to do so.
+	Click  {Image: "Textbox_UHApps_username", caseSensitive: yes, SearchRectangle: HandlerGarage.ScreenPart("Lynde")}
+	TypeText SUTUserName, tabKey
+	TypeEncodedText SUTUserPwd
+	
+	If ImageFound (Image: "UHApps_SignIn_Active") = "true" then
+	Put the time into StartTime
+		Click FoundImageLocation()
+	End If
+	
+	WaitFor 600, (Text: "Search Apps", SearchRectangle: HandlerGarage.ScreenPart("TopLeftQuadrant")), (Image: "UHApps_AddApps_Active")
+	Put the time - StartTime into UHAppsLogin_Duration
+	Log UHAppsLogin_Duration
+	
+	-- These steps are specific to EPIC PRD and assume the "Apps" tab is active.
+	If ImageFound("Epic_HyperspacePRD") = "true" then
+		Log "The EPIC PRD shortcut is already visible!"
+	Else
+		DoubleClick (Text: "Search Apps", SearchRectangle: HandlerGarage.ScreenPart("TopLeftQuadrant"))
+		TypeText "Epic"
+		WaitFor 600, (Image: "Epic_HyperspacePRD")
+	End If
+	
+	-- Launch Epic, capturing the time it takes to do so.
+	Put the time into StartTime
+	Click FoundImageLocation()
+	WaitFor 600, (Image: "Button_Hyperspace_SunAndMoon")
+	Put the time - StartTime into EpicLaunch_Duration
+	Log EpicLaunch_Duration
+	TypeText windowsKey, upArrow
+	WaitFor 600, (Text: "User ID", SearchRectangle: HandlerGarage.ScreenPart("Lynde"))
+	
+	-- Log into Epic, then enter the desired department, capturing the time it takes to do so.
+	DoubleClick FoundImageLocation()
+	Wait 1
+	TypeText EpicUserName, tabKey -- The user ID field is already selected, so just start typing.
+	TypeEncodedText EpicUserPwd
+	WaitFor 600, (Image: "Hyperspace_LogIn_Active", SearchRectangle: HandlerGarage.ScreenPart("Lynde"))
+	
+	Put the time into StartTime
+	Click FoundImageLocation()
+	
+	WaitFor 600, (Image: "Hyperspace_Continue_Active")
+	Put the time - StartTime into EpicLogin_Duration
+	Log EpicLogin_Duration
+	
+	-- Enter the department ID and continue the logon process. The department ID field is already selected, so just start typing.
+	TypeText EpicDepartment, returnKey
+	Put the time into StartTime
+	Click FoundImageLocation()
+	
+	-- Continue through any messages if necessary.
+	If ImageFound (Image: "Hyperspace_Continue_Active") = "true" then
+		Click FoundImageLocation()
+	Else
+		Log "No message visible!"
+	End If
+	
+	WaitFor 600, (Image: "Button_LogOut_ReadOnly", SearchRectangle: HandlerGarage.ScreenPart("TopRightQuadrant"))
+	Put the time - StartTime into EpicInitialScreen_Duration
+	Log EpicInitialScreen_Duration
+	Wait 3
+	
+	-- Open the Epic menu, expand the "Patient Care" menu, then open the patient lookup dialog.
+	Click (Image: "Button_PatientLookup_ReadOnly")
+	WaitFor 600, (Image: "Button_FindPatient_Active")
+	
+	-- Set the patient's MRN. We are hard-coding the patient MRN since there are a limited number of test patients in PRD. Parameterize this as needed.
+	Put "02672585" into PatientMRN
+	
+	-- Enter the patient's MRN and search, capturing the time it takes to return the search results.
+	TypeText PatientMRN
+	Put the time into StartTime
+	Click FoundImageLocation()
+	WaitFor 600, (Text: PatientMRN, SearchRectangle: HandlerGarage.ScreenPart("HorizontalMiddle"))
+	Put the time - StartTime into EpicPatientLookup_Duration
+	Log EpicPatientLookup_Duration
+	
+	-- Open the patient's chart, capturing the time it takes to load the "Break-the-Glass" window.
+	Put the time into StartTime
+	TypeText altKey, "A"
+	WaitFor 600, (Image: "Textbox_Reason_ReadOnly")
+	Put the time - StartTime into EpicBTG_Duration
+	Log EpicBTG_Duration
+	
+	-- Document the reason for accessing this patient, then enter the user's password.
+	Click FoundImageLocation()
+	TypeText 6, returnKey
+	Click (Image: "Textbox_Password_ReadOnly")
+	TypeEncodedText EpicUserPwd
+	
+	-- Capture the time it takes to open the patient's chart after breaking the glass.
+	Put the time into StartTime
+	TypeText returnKey
+	WaitFor 600, (Text: "SnapShot", caseSensitive: no, SearchRectangle: HandlerGarage.ScreenPart("TopRightQuadrant"))
+	Put the time - StartTime into EpicChartReview_Duration
+	Log EpicChartReview_Duration
+	
+	-- Log out of Epic, capturing the time it takes to do so.
+	Put the time into StartTime
+	Click (Image: "Button_LogOut_ReadOnly")
+	WaitFor 600, (Image: "Button_Hyperspace_SunAndMoon")
+	Put the time - StartTime into EpicLogout_Duration
+	Log EpicLogout_Duration
+	
+	-- Close the Epic application.
+	Wait 1
+	TypeText altKey, f4
+	WaitFor 600, (Image: "Logo_UHapps")
+	
+	-- Close UH Apps.
+	Click FoundImageLocation()
+	TypeText altKey, f4
+	
+	-- Log out of and disconnect from the SUT.
+	TypeText windowsKey, "r"
+	WaitFor 600, (Image: "Icon_WindowsRun")
+	TypeText "logoff", returnKey
+	Disconnect (serverID: SUTName, portNum: 3389, password: DecodeText (SUTUserPwd), username: SUTUserName, type: "RDP", ColorDepth: 32, width: 1920, height: 1080)
+	
+	set newResults to {
+		"PCID":myLocationsList.PCID,
+		"Department":myLocationsList.Department,
+		"TestStartTime":TestStartTime,
+		"UHAppsLaunch_Duration":UHAppsLaunch_Duration,
+		"UHAppsLogin_Duration":UHAppsLogin_Duration,
+		"EpicLaunch_Duration":EpicLaunch_Duration,
+		"EpicLogin_Duration":EpicLogin_Duration,
+		"EpicInitialScreen_Duration":EpicInitialScreen_Duration,
+		"EpicPatientLookup_Duration":EpicPatientLookup_Duration,
+		"EpicBTG_Duration":EpicBTG_Duration,
+		"EpicChartReview_Duration":EpicChartReview_Duration,
+		"EpicLogout_Duration":EpicLogout_Duration
+	}
+	add record newResults to myResultsTable -- newResults must have all required values. myResultsTable refers to the table Results of the myConnectionString_Results database.
+	
+End Repeat
+
+#################################### SCRIPT COMPLETE ####################################

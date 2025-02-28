@@ -1,0 +1,36 @@
+{
+	"entries": [
+		{
+				"message": "Running Salesforce Development_DMH.script",
+				"identifier": "START",
+				"timestamp": "2025-02-28 14:40:29.136 -0500"
+			},
+		{
+				"handlerName": "on_getdelineacreds",
+				"timestamp": "2025-02-28 14:40:29.262 -0500",
+				"message": "15388",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 9,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_getdelineacreds",
+				"timestamp": "2025-02-28 14:40:29.272 -0500",
+				"message": "Validation Error: Failed to parse JSON request body. {\"grant_type\" = password; password = \">3Zej[V=S>PixeSSg>)C><1q9\"; username = \"RAVW3460-001\"; }",
+				"scriptName": "Salesforce Development_DMH.script",
+				"handlerLine": 20,
+				"identifier": "LogError"
+			},
+		{
+				"message": "(Duration:\"0.177\", Errors:\"2\", Exceptions:\"0\", StartTime:\"2025-02-28 14:40:29 -0500\", Successes:\"0\", TestCase:\"Salesforce Development_DMH.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-02-28 14:40:29.317 -0500"
+			},
+		{
+				"message": "Validation Error:: The Api Test could not be executed due to validation errors. -- Execution Time 0:00:00 Salesforce Development_DMH.script",
+				"identifier": "FAILURE",
+				"timestamp": "2025-02-28 14:40:29.375 -0500"
+			}
+	],
+	"createdTimestamp": "2025-02-28 14:40:29.139 -0500"
+}

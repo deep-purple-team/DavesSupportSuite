@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<runHistory script="Epic_PRD_TimeStudy - DMH">
+ <run>
+  <RunDate>2025-01-14 15:59:59.219 -0500</RunDate>
+  <Status>Aborted</Status>
+  <Duration>5.786000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20250114_155959.219/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-01-14 16:04:45.638 -0500</RunDate>
+  <Status>Failure</Status>
+  <Duration>0.107000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20250114_160445.638/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Workbook Error -- Worksheet users doesn&#x27;t exist</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-01-14 16:05:04.509 -0500</RunDate>
+  <Status>Failure</Status>
+  <Duration>0.092000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20250114_160504.509/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Workbook Error -- Worksheet users doesn&#x27;t exist</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-01-14 16:05:47.627 -0500</RunDate>
+  <Status>Failure</Status>
+  <Duration>0.104000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20250114_160547.627/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Workbook Error -- Worksheet users doesn&#x27;t exist</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-01-14 16:06:11.476 -0500</RunDate>
+  <Status>Aborted</Status>
+  <Duration>24.847000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20250114_160611.476/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-01-14 16:07:12.116 -0500</RunDate>
+  <Status>Aborted</Status>
+  <Duration>4.006000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20250114_160712.116/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-01-14 16:07:25.218 -0500</RunDate>
+  <Status>Aborted</Status>
+  <Duration>2.939000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20250114_160725.218/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-01-14 16:18:30.018 -0500</RunDate>
+  <Status>Failure</Status>
+  <Duration>0.013000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20250114_161830.018/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>SenseTalk Compiler Exception -- in epic_prd_timestudy___dmh:
+Syntax Error at line 165: can&#x27;t understand &quot;End&quot; at character 1</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-01-14 16:20:35.775 -0500</RunDate>
+  <Status>Aborted</Status>
+  <Duration>11.891000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20250114_162035.775/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-01-14 16:36:34.342 -0500</RunDate>
+  <Status>Aborted</Status>
+  <Duration>8.794000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20250114_163634.342/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-01-14 16:39:02.628 -0500</RunDate>
+  <Status>Failure</Status>
+  <Duration>0.104000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20250114_163902.628/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>STDatabaseException -- Can&#x27;t Add records a non-Writable database connection</ErrorMessage>
+ </run>
+ <run>
+  <RunDate>2025-01-14 16:39:17.164 -0500</RunDate>
+  <Status>Aborted</Status>
+  <Duration>4.987000</Duration>
+  <Errors>1</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20250114_163917.164/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage></ErrorMessage>
+ </run>
+</runHistory>

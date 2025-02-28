@@ -1,0 +1,44 @@
+{
+	"entries": [
+		{
+				"message": "Running OurGroceries.script",
+				"identifier": "START",
+				"timestamp": "2025-02-25 16:08:30.249 -0500"
+			},
+		{
+				"handlerName": "on_ourgroceries",
+				"timestamp": "2025-02-25 16:08:30.292 -0500",
+				"message": "MotorolaG7:(null)",
+				"scriptName": "OurGroceries.script",
+				"handlerLine": 1,
+				"identifier": "Connect"
+			},
+		{
+				"handlerName": "on_ourgroceries",
+				"timestamp": "2025-02-25 16:08:30.299 -0500",
+				"scriptName": "OurGroceries.script",
+				"message": "Could Not Open Image: ",
+				"image": "",
+				"handlerLine": 2,
+				"identifier": "Exception"
+			},
+		{
+				"message": "(Duration:\"4.706\", Errors:\"1\", Exceptions:\"1\", StartTime:\"2025-02-25 16:08:30 -0500\", Successes:\"0\", TestCase:\"OurGroceries.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-02-25 16:08:34.960 -0500"
+			},
+		{
+				"image": "Screen_Error.png",
+				"message": "File Not Found: click Error - Could Not Open Image:  -- Execution Time 0:00:04 OurGroceries.script",
+				"identifier": "FAILURE",
+				"timestamp": "2025-02-25 16:08:35.250 -0500"
+			},
+		{
+				"image": "Screen_Error_Web.png",
+				"message": "File Not Found: click Error - Could Not Open Image:  -- Execution Time 0:00:04 OurGroceries.script",
+				"identifier": "FAILURE",
+				"timestamp": "2025-02-25 16:08:36.080 -0500"
+			}
+	],
+	"createdTimestamp": "2025-02-25 16:08:30.252 -0500"
+}

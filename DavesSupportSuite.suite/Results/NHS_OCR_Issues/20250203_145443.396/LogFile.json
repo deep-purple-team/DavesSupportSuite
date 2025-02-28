@@ -1,0 +1,28 @@
+{
+	"entries": [
+		{
+				"message": "Running NHS_OCR_Issues.script",
+				"identifier": "START",
+				"timestamp": "2025-02-03 14:54:43.400 -0500"
+			},
+		{
+				"handlerName": "on_nhs_ocr_issues",
+				"timestamp": "2025-02-03 14:54:44.522 -0500",
+				"message": "(0,0,1920,1080)",
+				"scriptName": "NHS_OCR_Issues.script",
+				"handlerLine": 1,
+				"identifier": "readtext"
+			},
+		{
+				"message": "(Duration:\"1.141\", Errors:\"0\", Exceptions:\"0\", StartTime:\"2025-02-03 14:54:43 -0500\", Successes:\"1\", TestCase:\"NHS_OCR_Issues.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-02-03 14:54:44.545 -0500"
+			},
+		{
+				"message": "Execution Time 0:00:01 NHS_OCR_Issues.script",
+				"identifier": "SUCCESS",
+				"timestamp": "2025-02-03 14:54:44.576 -0500"
+			}
+	],
+	"createdTimestamp": "2025-02-03 14:54:43.403 -0500"
+}

@@ -1,0 +1,28 @@
+{
+	"entries": [
+		{
+				"message": "Running Epic_PRD_TimeStudy - DMH.script",
+				"identifier": "START",
+				"timestamp": "2025-01-14 15:59:59.225 -0500"
+			},
+		{
+				"handlerName": "on_epic_prd_timestudy___dmh",
+				"timestamp": "2025-01-14 15:59:59.330 -0500",
+				"message": "Workbook(\"C:/ScriptRepositories/DavesSupportSuite.suite/Resources/DataFile.xlsx\")",
+				"scriptName": "Epic_PRD_TimeStudy - DMH.script",
+				"handlerLine": 7,
+				"identifier": "Log"
+			},
+		{
+				"message": "(Duration:\"5.777\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2025-01-14 15:59:59 -0500\", Successes:\"0\", TestCase:\"Epic_PRD_TimeStudy - DMH.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-01-14 16:00:05.006 -0500"
+			},
+		{
+				"message": "Execution Time 0:00:05 Epic_PRD_TimeStudy - DMH.script",
+				"identifier": "ABORTED",
+				"timestamp": "2025-01-14 16:00:05.018 -0500"
+			}
+	],
+	"createdTimestamp": "2025-01-14 15:59:59.228 -0500"
+}

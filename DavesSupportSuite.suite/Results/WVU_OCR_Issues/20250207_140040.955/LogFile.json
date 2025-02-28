@@ -1,0 +1,70 @@
+{
+	"entries": [
+		{
+				"message": "Running WVU_OCR_Issues.script",
+				"identifier": "START",
+				"timestamp": "2025-02-07 14:00:40.964 -0500"
+			},
+		{
+				"handlerName": "on_wvu_ocr_issues",
+				"timestamp": "2025-02-07 14:01:00.764 -0500",
+				"scriptName": "WVU_OCR_Issues.script",
+				"message": "No Text Found On Screen: \"(TEXT:\"E2\")\". Text not found.",
+				"image": "(TEXT:\"E2\")",
+				"handlerLine": 2,
+				"identifier": "Exception"
+			},
+		{
+				"handlerName": "on_wvu_ocr_issues",
+				"timestamp": "2025-02-07 14:01:01.067 -0500",
+				"message": "(1158,856,1574,928)",
+				"scriptName": "WVU_OCR_Issues.script",
+				"handlerLine": 3,
+				"identifier": "readtext"
+			},
+		{
+				"handlerName": "on_wvu_ocr_issues",
+				"timestamp": "2025-02-07 14:01:01.083 -0500",
+				"message": "at current mouse point (1901, 1044)",
+				"scriptName": "WVU_OCR_Issues.script",
+				"handlerLine": 4,
+				"identifier": "moveto"
+			},
+		{
+				"handlerName": "on_wvu_ocr_issues",
+				"timestamp": "2025-02-07 14:01:22.983 -0500",
+				"scriptName": "WVU_OCR_Issues.script",
+				"message": "No Text Found On Screen: \"(TEXT:\"N2\")\". Text not found.",
+				"image": "(TEXT:\"N2\")",
+				"handlerLine": 6,
+				"identifier": "Exception"
+			},
+		{
+				"handlerName": "on_wvu_ocr_issues",
+				"timestamp": "2025-02-07 14:01:23.223 -0500",
+				"message": "(1156,874,1574,903)",
+				"scriptName": "WVU_OCR_Issues.script",
+				"handlerLine": 7,
+				"identifier": "readtext"
+			},
+		{
+				"handlerName": "on_wvu_ocr_issues",
+				"timestamp": "2025-02-07 14:01:23.244 -0500",
+				"message": "at current mouse point (1901, 1044)",
+				"scriptName": "WVU_OCR_Issues.script",
+				"handlerLine": 8,
+				"identifier": "moveto"
+			},
+		{
+				"message": "(Duration:\"42.301\", Errors:\"0\", Exceptions:\"2\", StartTime:\"2025-02-07 14:00:40 -0500\", Successes:\"1\", TestCase:\"WVU_OCR_Issues.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-02-07 14:01:23.268 -0500"
+			},
+		{
+				"message": "Execution Time 0:00:42 WVU_OCR_Issues.script",
+				"identifier": "SUCCESS",
+				"timestamp": "2025-02-07 14:01:23.333 -0500"
+			}
+	],
+	"createdTimestamp": "2025-02-07 14:00:40.966 -0500"
+}

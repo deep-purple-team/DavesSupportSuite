@@ -1,0 +1,59 @@
+{
+	"originalcapturelocation": [
+		53,
+		166,
+		55,
+		54
+	],
+	"lastmodifieddate": 1740517618.8410001,
+	"createddate": 1740517618.8410001,
+	"name": "OurGroceries_backbutton",
+	"lastfounddate": 1740520951.96,
+	"ocrcapturestring": "<r",
+	"lastfoundlocation": [
+		53,
+		166,
+		55,
+		54
+	],
+	"testlocationdata": [
+		{
+				"connectionportnum": 63619,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[30,27]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"webdriver_port": "63620",
+					"manufacturer": "motorola",
+					"os_build": "33",
+					"remote_ip_addr": "localhost",
+					"architecture": "arm64-v8a",
+					"CacheDir": "/data/local/tmp",
+					"vnc_port": "63619",
+					"device_os": "Android",
+					"remote_adb_port": "0",
+					"os_version": "13",
+					"model": "motorola edge (2021)",
+					"serial": "ZY22D3LG4W"
+				},
+				"name": "OurGroceries_backbutton.png",
+				"connectionname": "MotorolaG7",
+				"type": 1,
+				"connectionserverid": "localhost",
+				"capturerect": [
+					53,
+					166,
+					55,
+					54
+				],
+				"connectiontype": "Mobile Device",
+				"capturedocrtext": "<r"
+			}
+	]
+}

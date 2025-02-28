@@ -1,0 +1,5 @@
+﻿2025-02-28 14:40:29.136 -0500	START		Running Salesforce Development_DMH.script
+2025-02-28 14:40:29.262 -0500	Log		15388	9	on_getdelineacreds	Salesforce Development_DMH.script
+2025-02-28 14:40:29.272 -0500	LogError		Validation Error: Failed to parse JSON request body. {"grant_type" = password; password = ">3Zej[V=S>PixeSSg>)C><1q9"; username = "RAVW3460-001"; }	20	on_getdelineacreds	Salesforce Development_DMH.script
+2025-02-28 14:40:29.317 -0500	EndTestCase		(Duration:"0.177", Errors:"2", Exceptions:"0", StartTime:"2025-02-28 14:40:29 -0500", Successes:"0", TestCase:"Salesforce Development_DMH.script", Warnings:"0")
+2025-02-28 14:40:29.375 -0500	FAILURE		Validation Error:: The Api Test could not be executed due to validation errors. -- Execution Time 0:00:00 Salesforce Development_DMH.script

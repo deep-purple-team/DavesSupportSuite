@@ -1,0 +1,101 @@
+{
+	"entries": [
+		{
+				"message": "Running Salesforce Development.script",
+				"identifier": "START",
+				"timestamp": "2025-02-24 14:03:00.485 -0500"
+			},
+		{
+				"handlerName": "on_getdelineacreds",
+				"timestamp": "2025-02-24 14:03:00.653 -0500",
+				"message": "15388",
+				"scriptName": "Salesforce Development.script",
+				"handlerLine": 9,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_getdelineacreds",
+				"timestamp": "2025-02-24 14:03:01.417 -0500",
+				"message": "AgI1jg4ftKbXhbX9wDVgQwEIG_mT0O0KmRoUb7Ah3zv2eNMsmm_n9Pht8Q8JQUhiCl5CjDh5xdJbqOYTE0wy3F5GGlw4yf_esCNr6TzYtxCMEzSjemoVfSslbFRIlKQLuj46GCtmHtOGDPTSh-m6WsiGZhYzptJBZKK7AXfGs0sNaz1yTyytiCRKFELnLAjyLq3Fsc3gqzAGIlqyrQqh22jBqx-ZU-5BUbejg70Et9FfYzLwGA_BwUHGeR8NVEAIrUtispHm6oWDaJ33G-nJ-NJvc4-KB3pg4dGHx9zLO4A-o0CBbFzAF_8Ch76wfNzIi2ciJ3jjRSRNHzcgRPVOfqDPM8vZhVOjKGI3LA7OEBqohw9ntxbf3sUjXFiEMiVdGZwSOiauWeBQk8Z2Gbdepzm_5GLp4jcp3KaDnrsW1rKfV8dBSiV3a6WvVoIWMUaI6naMp2JQqf2SYDL7XR7af96miZac4LhWIfJevDvd7PpATRLSX8WgLc2I3KFSE9Qm9XrU0Eq0UPQ8odTDsfpUQrX5m1zfV8fOQclHqNd7BSZP-Pb1AiQsaQW9R5Mgel6X80UxdyiRPamccsN2SM22oLAN7UzIF0AHC4y8Ev4MW1lKOA",
+				"scriptName": "Salesforce Development.script",
+				"handlerLine": 23,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_getdelineacreds",
+				"timestamp": "2025-02-24 14:03:02.178 -0500",
+				"message": "3MVG9wy_WnyGrHdMk_EZ4aCLW9dphEgZYbJfp61Fn5WURlECDMd2.90U_s3eda4UprSo4jjj6eV6Vm4Qw3ITh",
+				"scriptName": "Salesforce Development.script",
+				"handlerLine": 33,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_getdelineacreds",
+				"timestamp": "2025-02-24 14:03:02.183 -0500",
+				"message": "F154CE3D085A50615C4DA1420DF26D8F57F8CDA47EF596E3B187B081D1F9B7EA",
+				"scriptName": "Salesforce Development.script",
+				"handlerLine": 34,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_getdelineacreds",
+				"timestamp": "2025-02-24 14:03:03.120 -0500",
+				"message": "Status Code is=200",
+				"scriptName": "Salesforce Development.script",
+				"handlerLine": 51,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_getdelineacreds",
+				"timestamp": "2025-02-24 14:03:03.124 -0500",
+				"message": "Validated that the Status code is 200.Able to Access  Server, and grab a access token",
+				"scriptName": "Salesforce Development.script",
+				"handlerLine": 52,
+				"identifier": "LogSuccess"
+			},
+		{
+				"handlerName": "on_getdelineacreds",
+				"timestamp": "2025-02-24 14:03:03.127 -0500",
+				"message": "00D8J0000004fWS!AQEAQJ7A00EgIUYwLIfhwqvYU.uPqJdjmmhTiSrW7P8v7MG8_TF4iJfbpEbneQV9khH5o270HVi4knbLvVMEQ_CbSispFolZ",
+				"scriptName": "Salesforce Development.script",
+				"handlerLine": 61,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_salesforce_development",
+				"timestamp": "2025-02-24 14:03:03.138 -0500",
+				"message": "02/24/25",
+				"scriptName": "Salesforce Development.script",
+				"handlerLine": 42,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_salesforce_development",
+				"timestamp": "2025-02-24 14:03:03.141 -0500",
+				"message": "022425",
+				"scriptName": "Salesforce Development.script",
+				"handlerLine": 45,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_salesforce_development",
+				"timestamp": "2025-02-24 14:03:03.145 -0500",
+				"message": "N:/NonStaffProvider_022425",
+				"scriptName": "Salesforce Development.script",
+				"handlerLine": 49,
+				"identifier": "Log"
+			},
+		{
+				"message": "(Duration:\"2.715\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2025-02-24 14:03:00 -0500\", Successes:\"1\", TestCase:\"Salesforce Development.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-02-24 14:03:03.205 -0500"
+			},
+		{
+				"image": "Screen_Error.png",
+				"message": "Workbook Error: Error loading workbook N:/NonStaffProvider_022425.xlsx: No such file or directory. -- Execution Time 0:00:02 Salesforce Development.script",
+				"identifier": "FAILURE",
+				"timestamp": "2025-02-24 14:03:03.296 -0500"
+			}
+	],
+	"createdTimestamp": "2025-02-24 14:03:00.488 -0500"
+}

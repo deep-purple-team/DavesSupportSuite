@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<statistics>
+ <script name="Salesforce Development">
+  <LastStatus>Failure</LastStatus>
+  <NumberOfRuns>3</NumberOfRuns>
+  <NumberOfFails>3</NumberOfFails>
+  <FirstRun>2025-02-24 13:58:01 -0500</FirstRun>
+  <LastRun>2025-02-24 14:03:00 -0500</LastRun>
+  <TotalTimeOnSuccess>0.000000</TotalTimeOnSuccess>
+ </script>
+ <script name="Epic_PRD_TimeStudy - DMH">
+  <LastStatus>Failure</LastStatus>
+  <NumberOfRuns>5</NumberOfRuns>
+  <NumberOfFails>5</NumberOfFails>
+  <FirstRun>2025-01-14 16:04:45 -0500</FirstRun>
+  <LastRun>2025-01-14 16:39:02 -0500</LastRun>
+  <TotalTimeOnSuccess>0.000000</TotalTimeOnSuccess>
+ </script>
+ <script name="CallStack_primary">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>9</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2025-02-27 12:31:04 -0500</FirstRun>
+  <LastRun>2025-02-27 12:46:55 -0500</LastRun>
+  <TotalTimeOnSuccess>33.667000</TotalTimeOnSuccess>
+ </script>
+ <script name="NHS_OCR_Issues">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>7</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2025-02-03 14:54:43 -0500</FirstRun>
+  <LastRun>2025-02-03 17:03:59 -0500</LastRun>
+  <TotalTimeOnSuccess>25.787000</TotalTimeOnSuccess>
+ </script>
+ <script name="DefineRectangleCorners">
+  <LastStatus>Failure</LastStatus>
+  <NumberOfRuns>1</NumberOfRuns>
+  <NumberOfFails>1</NumberOfFails>
+  <FirstRun>2025-02-24 08:44:11 -0500</FirstRun>
+  <LastRun>2025-02-24 08:44:11 -0500</LastRun>
+  <TotalTimeOnSuccess>0.000000</TotalTimeOnSuccess>
+ </script>
+ <script name="OurGroceries">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>15</NumberOfRuns>
+  <NumberOfFails>1</NumberOfFails>
+  <FirstRun>2025-02-25 15:45:25 -0500</FirstRun>
+  <LastRun>2025-02-25 17:02:24 -0500</LastRun>
+  <TotalTimeOnSuccess>320.736000</TotalTimeOnSuccess>
+ </script>
+ <script name="WVU_OCR_Issues">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>7</NumberOfRuns>
+  <NumberOfFails>2</NumberOfFails>
+  <FirstRun>2025-02-06 15:55:03 -0500</FirstRun>
+  <LastRun>2025-02-07 14:09:14 -0500</LastRun>
+  <TotalTimeOnSuccess>170.759000</TotalTimeOnSuccess>
+ </script>
+ <script name="Finalgetandpatchforprovider-API">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>7</NumberOfRuns>
+  <NumberOfFails>6</NumberOfFails>
+  <FirstRun>2025-02-24 13:52:47 -0500</FirstRun>
+  <LastRun>2025-02-24 15:02:32 -0500</LastRun>
+  <TotalTimeOnSuccess>0.690000</TotalTimeOnSuccess>
+ </script>
+ <script name="Salesforce Development_DMH">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>10</NumberOfRuns>
+  <NumberOfFails>5</NumberOfFails>
+  <FirstRun>2025-02-24 14:45:41 -0500</FirstRun>
+  <LastRun>2025-02-28 15:03:08 -0500</LastRun>
+  <TotalTimeOnSuccess>64.973000</TotalTimeOnSuccess>
+ </script>
+</statistics>

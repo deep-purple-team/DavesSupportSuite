@@ -1,0 +1,135 @@
+{
+	"originalcapturelocation": [
+		472,
+		2115,
+		137,
+		138
+	],
+	"lastmodifieddate": 1740518621.211,
+	"createddate": 1740515615.092,
+	"name": "OurGroceries_mobile",
+	"lastfounddate": 1740520944.3629999,
+	"ocrcapturestring": "<g",
+	"lastfoundlocation": [
+		472,
+		2115,
+		137,
+		138
+	],
+	"testlocationdata": [
+		{
+				"connectionportnum": 63619,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[81,58]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"webdriver_port": "63620",
+					"manufacturer": "motorola",
+					"os_build": "33",
+					"remote_ip_addr": "localhost",
+					"architecture": "arm64-v8a",
+					"CacheDir": "/data/local/tmp",
+					"vnc_port": "63619",
+					"device_os": "Android",
+					"remote_adb_port": "0",
+					"os_version": "13",
+					"model": "motorola edge (2021)",
+					"serial": "ZY22D3LG4W"
+				},
+				"name": "OurGroceries_mobile.png",
+				"connectionname": "MotorolaG7",
+				"type": 1,
+				"connectionserverid": "localhost",
+				"capturerect": [
+					472,
+					2115,
+					137,
+					138
+				],
+				"connectiontype": "Mobile Device",
+				"capturedocrtext": "<g"
+			},
+		{
+				"connectionportnum": 63619,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[81,58]",
+					"Tolerance": 50,
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"webdriver_port": "63620",
+					"manufacturer": "motorola",
+					"os_build": "33",
+					"remote_ip_addr": "localhost",
+					"architecture": "arm64-v8a",
+					"CacheDir": "/data/local/tmp",
+					"vnc_port": "63619",
+					"device_os": "Android",
+					"remote_adb_port": "0",
+					"os_version": "13",
+					"serial": "ZY22D3LG4W",
+					"model": "motorola edge (2021)"
+				},
+				"name": "OurGroceries_mobile.png",
+				"connectionname": "MotorolaG7",
+				"type": 1,
+				"connectionserverid": "localhost",
+				"capturerect": [
+					472,
+					2115,
+					137,
+					138
+				],
+				"connectiontype": "Mobile Device",
+				"capturedocrtext": "<g"
+			},
+		{
+				"connectionportnum": 63619,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[81,58]",
+					"Tolerance": 55,
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"webdriver_port": "63620",
+					"manufacturer": "motorola",
+					"os_build": "33",
+					"remote_ip_addr": "localhost",
+					"architecture": "arm64-v8a",
+					"CacheDir": "/data/local/tmp",
+					"vnc_port": "63619",
+					"device_os": "Android",
+					"remote_adb_port": "0",
+					"os_version": "13",
+					"serial": "ZY22D3LG4W",
+					"model": "motorola edge (2021)"
+				},
+				"name": "OurGroceries_mobile.png",
+				"connectionname": "MotorolaG7",
+				"type": 1,
+				"connectionserverid": "localhost",
+				"capturerect": [
+					472,
+					2115,
+					137,
+					138
+				],
+				"connectiontype": "Mobile Device",
+				"capturedocrtext": "<g"
+			}
+	]
+}

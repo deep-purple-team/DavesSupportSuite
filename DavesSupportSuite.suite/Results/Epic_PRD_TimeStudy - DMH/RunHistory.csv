@@ -1,0 +1,13 @@
+﻿Date Run,Status,Time,# of Errors,# of Warnings,# of Exceptions,Log File,Return Value,Error Message,# of Successes
+2025-01-14 15:59:59.219 -0500,"Aborted",0:00:05,1,0,0,"20250114_155959.219/LogFile.txt","","",0
+2025-01-14 16:04:45.638 -0500,"Failure",0:00:00,1,0,0,"20250114_160445.638/LogFile.txt","","Workbook Error -- Worksheet users doesn't exist",0
+2025-01-14 16:05:04.509 -0500,"Failure",0:00:00,1,0,0,"20250114_160504.509/LogFile.txt","","Workbook Error -- Worksheet users doesn't exist",0
+2025-01-14 16:05:47.627 -0500,"Failure",0:00:00,1,0,0,"20250114_160547.627/LogFile.txt","","Workbook Error -- Worksheet users doesn't exist",0
+2025-01-14 16:06:11.476 -0500,"Aborted",0:00:24,1,0,0,"20250114_160611.476/LogFile.txt","","",0
+2025-01-14 16:07:12.116 -0500,"Aborted",0:00:04,1,0,0,"20250114_160712.116/LogFile.txt","","",0
+2025-01-14 16:07:25.218 -0500,"Aborted",0:00:02,1,0,0,"20250114_160725.218/LogFile.txt","","",0
+2025-01-14 16:18:30.018 -0500,"Failure",0:00:00,1,0,0,"20250114_161830.018/LogFile.txt","","SenseTalk Compiler Exception -- in epic_prd_timestudy___dmh:\nSyntax Error at line 165: can't understand ""End"" at character 1",0
+2025-01-14 16:20:35.775 -0500,"Aborted",0:00:11,1,0,0,"20250114_162035.775/LogFile.txt","","",0
+2025-01-14 16:36:34.342 -0500,"Aborted",0:00:08,1,0,0,"20250114_163634.342/LogFile.txt","","",0
+2025-01-14 16:39:02.628 -0500,"Failure",0:00:00,1,0,0,"20250114_163902.628/LogFile.txt","","STDatabaseException -- Can't Add records a non-Writable database connection",0
+2025-01-14 16:39:17.164 -0500,"Aborted",0:00:04,1,0,0,"20250114_163917.164/LogFile.txt","","",0

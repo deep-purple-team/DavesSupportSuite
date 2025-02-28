@@ -1,0 +1,3 @@
+﻿2025-01-14 16:05:47.632 -0500	START		Running Epic_PRD_TimeStudy - DMH.script
+2025-01-14 16:05:47.732 -0500	EndTestCase		(Duration:"0.095", Errors:"1", Exceptions:"0", StartTime:"2025-01-14 16:05:47 -0500", Successes:"0", TestCase:"Epic_PRD_TimeStudy - DMH.script", Warnings:"0")
+2025-01-14 16:05:47.756 -0500	FAILURE		Workbook Error: Worksheet users doesn't exist -- Execution Time 0:00:00 Epic_PRD_TimeStudy - DMH.script

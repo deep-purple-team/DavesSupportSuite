@@ -1,0 +1,4 @@
+﻿2025-02-03 14:54:43.400 -0500	START		Running NHS_OCR_Issues.script
+2025-02-03 14:54:44.522 -0500	readtext		(0,0,1920,1080)	1	on_nhs_ocr_issues	NHS_OCR_Issues.script
+2025-02-03 14:54:44.545 -0500	EndTestCase		(Duration:"1.141", Errors:"0", Exceptions:"0", StartTime:"2025-02-03 14:54:43 -0500", Successes:"1", TestCase:"NHS_OCR_Issues.script", Warnings:"0")
+2025-02-03 14:54:44.576 -0500	SUCCESS		Execution Time 0:00:01 NHS_OCR_Issues.script

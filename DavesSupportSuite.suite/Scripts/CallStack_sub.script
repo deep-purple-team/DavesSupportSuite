@@ -1,0 +1,14 @@
+﻿log me.name && "has started."
+
+log callstack()
+
+// The first item in the stack references the handler sending the message
+// The last item in the stack references the handler receiving the message
+
+put property "ScriptObjectID" of the first item of callstack() into mySendingMessageHandlerPath
+
+put the last item of (mySendingMessageHandlerPath split by slash) into mySendingMessageHandlerName
+
+put property "TargetObjectID" of the last item of callstack() into myReturnMessageHandlerPath
+
+put the last item of (myReturnMessageHandlerPath split by slash) into myReturnMessageHandlerName

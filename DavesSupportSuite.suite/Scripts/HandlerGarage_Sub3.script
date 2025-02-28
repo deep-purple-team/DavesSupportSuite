@@ -1,0 +1,30 @@
+﻿set screenPortions to {
+	HyperspaceToolbar:((0,.022),(1,.048)), -- Epic specific
+	HyperspaceToolbarRightEdge:((0.836,.022),(1,.044)), -- Epic specific
+	HyperspaceToolbarLeftEdge:((0,.021),(0.284,.044)), -- Epic specific
+	HyperspaceHorizontalTabbar:((0,.056),(1,.086)), -- Epic specific
+	HyperspaceTabbar:((0,0),(.065,1)), -- Epic specific
+	SectionTabs:((0.12,0.090),(.811,0.119)), -- Epic specific
+	LeftMenu:((.118,.177),(.196,.8)), -- Epic specific
+	HyperspaceTopSubMenu:((0.12,.145),(0.810,.223)), -- Epic specific
+	TopHalf: ((0,0),(1,.5)),
+	BottomHalf: ((0,.5),(1,1)),
+	LeftHalf: ((0,0),(.5,1)),
+	RightHalf: ((.5,0),(1,1)),
+	RightTwoThird: ((.33,0),(1,.9)),
+	TopRightTwoThird: ((.33,0.093),(1,.5)),
+	LeftTwoThird: ((0,0),(.66,.9)),
+	HorizontalMiddle: ((0,.25),(1,.75)),
+	TopMostLeft: ((0,0),(.2,.31)),
+	VerticalMiddle:((.25,0),(.75,1)),
+	VerticalMiddleBottom:((.25,.5),(.75,1)),
+	TopLeftQuadrant:((0,0),(.5,.5)),
+	TopRightQuadrant:((.5,0),(1,.5)),
+	BottomLeftQuadrant:((0,.5),(.5,1)),
+	BottomRightQuadrant:((.5,.5),(1,1)),
+	Center:((.25,.25),(.75,.75)),
+	VeryCenter:((.35,.35),(.6,.6)),
+	WindowsTitleBar:((0,0),(1,.025)),
+	WindowsTaskBar:((0,.95),(1,1)),
+	Lynde:((.3,.3),(.7,.7)),
+}

@@ -1,0 +1,20 @@
+{
+	"entries": [
+		{
+				"message": "Running Epic_PRD_TimeStudy - DMH.script",
+				"identifier": "START",
+				"timestamp": "2025-01-14 16:05:04.513 -0500"
+			},
+		{
+				"message": "(Duration:\"0.086\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2025-01-14 16:05:04 -0500\", Successes:\"0\", TestCase:\"Epic_PRD_TimeStudy - DMH.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-01-14 16:05:04.602 -0500"
+			},
+		{
+				"message": "Workbook Error: Worksheet users doesn't exist -- Execution Time 0:00:00 Epic_PRD_TimeStudy - DMH.script",
+				"identifier": "FAILURE",
+				"timestamp": "2025-01-14 16:05:04.628 -0500"
+			}
+	],
+	"createdTimestamp": "2025-01-14 16:05:04.515 -0500"
+}

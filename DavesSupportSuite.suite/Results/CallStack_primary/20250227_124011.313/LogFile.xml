@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="CallStack_primary_script" package="DavesSupportSuite.suite" timestamp="2025-02-27 12:40:11.313 -0500"
+ tests="1"  failures="0" errors="0" time="0.159000">
+  <properties>
+   <property name="RunDate" value="2025-02-27 12:40:11.313 -0500"/>
+   <property name="Status" value="Success"/>
+  </properties>
+  <testcase name="CallStack_primary.script" assertions="1" status="success"  time="0.151">
+  </testcase>
+ </testsuite>
+</testsuites>

@@ -1,0 +1,10 @@
+﻿Script,Last Status,Runs,Fails,First Run,Last Run,Avg Time(Success)
+Salesforce Development,Failure,3,3,2025-02-24 13:58:01 -0500,2025-02-24 14:03:00 -0500,0:00:00
+Epic_PRD_TimeStudy - DMH,Failure,5,5,2025-01-14 16:04:45 -0500,2025-01-14 16:39:02 -0500,0:00:00
+CallStack_primary,Success,9,0,2025-02-27 12:31:04 -0500,2025-02-27 12:46:55 -0500,0:00:03
+NHS_OCR_Issues,Success,7,0,2025-02-03 14:54:43 -0500,2025-02-03 17:03:59 -0500,0:00:03
+DefineRectangleCorners,Failure,1,1,2025-02-24 08:44:11 -0500,2025-02-24 08:44:11 -0500,0:00:00
+OurGroceries,Success,15,1,2025-02-25 15:45:25 -0500,2025-02-25 17:02:24 -0500,0:00:22
+WVU_OCR_Issues,Success,7,2,2025-02-06 15:55:03 -0500,2025-02-07 14:09:14 -0500,0:00:34
+Finalgetandpatchforprovider-API,Success,7,6,2025-02-24 13:52:47 -0500,2025-02-24 15:02:32 -0500,0:00:00
+Salesforce Development_DMH,Success,10,5,2025-02-24 14:45:41 -0500,2025-02-28 15:03:08 -0500,0:00:12

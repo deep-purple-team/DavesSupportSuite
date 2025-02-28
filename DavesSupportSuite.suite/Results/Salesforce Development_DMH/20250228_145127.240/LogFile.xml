@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Salesforce Development_DMH_script" package="DavesSupportSuite.suite" timestamp="2025-02-28 14:51:27.240 -0500"
+ tests="1"  failures="2" errors="1" time="6.638000">
+  <properties>
+   <property name="RunDate" value="2025-02-28 14:51:27.240 -0500"/>
+   <property name="Status" value="Failure"/>
+  </properties>
+  <testcase name="Salesforce Development_DMH.script" assertions="4" status="error"  time="6.628">
+    <failure type="LogError" message="{authenticationtype:&quot;None&quot;, httpmethod:&quot;POST&quot;, mimeType:&quot;application/json&quot;, oauthToken:&quot;&quot;, password:&quot;*********&quot;, requestbody:&quot;RB&quot;, requestbodyformat:&quot;Form Url Encoded&quot;, requestheaders:{Authorization:&quot;Bearer 00D8J0000004fWS!AQEAQCP_OUqAeqVDk.ceuzlgFLVQ7I7wg7Lia3.gMZ1WUNsGGx6HT8byPwwv4Dp1h2jZn3udimPHvTPtOqXhIdNeyvjB9r.P&quot;, @&quot;Content-Type&quot;:&quot;application/json;charset=UFT-8&quot;}, responseBody:@&quot;[{\&quot;errorCode\&quot;:\&quot;METHOD_NOT_ALLOWED\&quot;,\&quot;message\&quot;:\&quot;HTTP Method &apos;POST&apos; not allowed. Allowed are GET,HEAD,PATCH,DELETE\&quot;}]&quot;, responseCookies:{:}, responseHeaders:{Allow:&quot;GET,HEAD,PATCH,DELETE&quot;, @&quot;Cache-Control&quot;:&quot;no-cache,must-revalidate,max-age=0,no-store,private&quot;, Connection:&quot;keep-alive&quot;, @&quot;Content-Type&quot;:&quot;application/json; charset=UTF-8&quot;, Date:&quot;Fri, 28 Feb 2025 19:51:33 GMT&quot;, Server:&quot;sfdcedge&quot;, @&quot;Sforce-Limit-Info&quot;:&quot;api-usage=33/5000000&quot;, @&quot;Strict-Transport-Security&quot;:&quot;max-age=63072000; includeSubDomains&quot;, @&quot;Transfer-Encoding&quot;:&quot;chunked&quot;, @&quot;X-Content-Type-Options&quot;:&quot;nosniff&quot;, @&quot;X-Request-Id&quot;:&quot;fbb0f26c45912797d3e2b73ca370c345&quot;, @&quot;X-Robots-Tag&quot;:&quot;none&quot;, @&quot;X-SFDC-Request-Id&quot;:&quot;fbb0f26c45912797d3e2b73ca370c345&quot;}, responseTime:0.375, statusCode:405, url:&quot;https://d80000000cqmweau--pbdqa.sandbox.my.salesforce.com/services/data/v58.0/sobjects/Account/Provider_ID__c/562999&quot;, username:&quot;&quot;}" />
+    <failure type="FAILURE" message="Script Error: Number of Errors logged: 1 -- Execution Time 0:00:06 Salesforce Development_DMH.script" />
+    <error type="Throw" message="Error - Unable to get response" />
+  </testcase>
+ </testsuite>
+</testsuites>

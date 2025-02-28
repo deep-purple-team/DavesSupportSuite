@@ -1,0 +1,13 @@
+{
+    "CurrentUser": "ServiceUser",
+    "Passcode":"OnePass",
+    "encryptedDelineaPass": "j~@6LOJiB$}KlY#BMkg72h|Wf",
+    "Personal": {
+       "EncryptedPassword": "",
+        "Full Name": "",
+        "UserName": ""
+    },
+    "ServiceUser": {
+        "UIDAPI": "15388"
+     }
+}

@@ -1,0 +1,30 @@
+﻿2025-02-24 14:52:16.012 -0500	START		Running Salesforce Development_DMH.script
+2025-02-24 14:52:16.222 -0500	Log		15388	9	on_getdelineacreds	Salesforce Development_DMH.script
+2025-02-24 14:52:16.980 -0500	Log		AgJsLGyvvZ7nH5plNNA4pQf4UxrYVLNpWA0c_Z9DIlWpEPiiZvGGvSqY6w2KNcVaohnfe_g_eLFI47KoMTHyxKbPNjVYr1AUvujhA-G4Jr_bimrmA61v3PaJS6KSybOIuGT3bgi3MYyeztJEeyvTk99-x9SZ32Th3t0tx4hvJM6wcydOtHkJ-tNoKhzfeIWM-HNPKRdZ5RnuwIA9dkyW6a3LLZ7YJtLU-HSq0j0rWjoXDye8S_mUTJ5-hzggXnppzWsSfCtkKKEjIS4e96qdJeJt1zYaImmW05S9sL5sk08-73zcz9bC9Tvtefffq-4d0MEJl-LsSIZMN9KjgYjyPwil2Ymo2zGnldCjD4FXtfXfIzrAHe98bCg-Sahe0egmw5wVT_UUX5Ex5LohyM7g_VGJ_1X5rYKuSTI68rEbcXCosSPslfsSW3MG_RvbnQYj3E4Q5bSJ1I1DOsj18U_GKvFpBAL0QoOIH9kfKgyxItCeXx-_A4j5k60eujtMzzvzngR8dXUNxv1gbOHa9oXT5ZYOxxgUSOrxkVYpy4iX22xib6ph95AFUny1yu8UCOA1wXRkZYS0TuTk3OgsEYnodggk3g2KwuyApB7-lo1-8YZwuw	23	on_getdelineacreds	Salesforce Development_DMH.script
+2025-02-24 14:52:17.463 -0500	Log		3MVG9wy_WnyGrHdMk_EZ4aCLW9dphEgZYbJfp61Fn5WURlECDMd2.90U_s3eda4UprSo4jjj6eV6Vm4Qw3ITh	33	on_getdelineacreds	Salesforce Development_DMH.script
+2025-02-24 14:52:17.467 -0500	Log		F154CE3D085A50615C4DA1420DF26D8F57F8CDA47EF596E3B187B081D1F9B7EA	34	on_getdelineacreds	Salesforce Development_DMH.script
+2025-02-24 14:52:18.419 -0500	Log		Status Code is=200	51	on_getdelineacreds	Salesforce Development_DMH.script
+2025-02-24 14:52:18.423 -0500	LogSuccess		Validated that the Status code is 200.Able to Access  Server, and grab a access token	52	on_getdelineacreds	Salesforce Development_DMH.script
+2025-02-24 14:52:18.426 -0500	Log		00D8J0000004fWS!AQEAQJ7A00EgIUYwLIfhwqvYU.uPqJdjmmhTiSrW7P8v7MG8_TF4iJfbpEbneQV9khH5o270HVi4knbLvVMEQ_CbSispFolZ	61	on_getdelineacreds	Salesforce Development_DMH.script
+2025-02-24 14:52:18.452 -0500	Log		02/24/25	43	on_salesforce_development_dmh	Salesforce Development_DMH.script
+2025-02-24 14:52:18.455 -0500	Log		022425	46	on_salesforce_development_dmh	Salesforce Development_DMH.script
+2025-02-24 14:52:18.458 -0500	Log		baseFileName022425	50	on_salesforce_development_dmh	Salesforce Development_DMH.script
+2025-02-24 14:52:19.049 -0500	Log		Field already matches. No update needed.	16	on_getresponseandupdate	Salesforce Development_DMH.script
+2025-02-24 14:52:19.079 -0500	Log		Field already matches. No update needed.	16	on_getresponseandupdate	Salesforce Development_DMH.script
+2025-02-24 14:52:19.110 -0500	Log		Field already matches. No update needed.	16	on_getresponseandupdate	Salesforce Development_DMH.script
+2025-02-24 14:52:19.140 -0500	Log		Field already matches. No update needed.	16	on_getresponseandupdate	Salesforce Development_DMH.script
+2025-02-24 14:52:19.170 -0500	Log		Field already matches. No update needed.	16	on_getresponseandupdate	Salesforce Development_DMH.script
+2025-02-24 14:52:19.201 -0500	Log		Field already matches. No update needed.	16	on_getresponseandupdate	Salesforce Development_DMH.script
+2025-02-24 14:52:19.226 -0500	Log		Field already matches. No update needed.	16	on_getresponseandupdate	Salesforce Development_DMH.script
+2025-02-24 14:52:19.256 -0500	Log		Field already matches. No update needed.	16	on_getresponseandupdate	Salesforce Development_DMH.script
+2025-02-24 14:52:19.288 -0500	Log		Field already matches. No update needed.	16	on_getresponseandupdate	Salesforce Development_DMH.script
+2025-02-24 14:52:19.321 -0500	Log		Field already matches. No update needed.	16	on_getresponseandupdate	Salesforce Development_DMH.script
+2025-02-24 14:52:19.354 -0500	Log		Field already matches. No update needed.	16	on_getresponseandupdate	Salesforce Development_DMH.script
+2025-02-24 14:52:19.386 -0500	Log		Field already matches. No update needed.	16	on_getresponseandupdate	Salesforce Development_DMH.script
+2025-02-24 14:52:19.418 -0500	Log		Field already matches. No update needed.	16	on_getresponseandupdate	Salesforce Development_DMH.script
+2025-02-24 14:52:19.441 -0500	Log		Field already matches. No update needed.	16	on_getresponseandupdate	Salesforce Development_DMH.script
+2025-02-24 14:52:19.472 -0500	Log		Field already matches. No update needed.	16	on_getresponseandupdate	Salesforce Development_DMH.script
+2025-02-24 14:52:25.334 -0500	LogWarning		Validation Warning: Empty request body.	137	on_salesforce_development_dmh	Salesforce Development_DMH.script
+2025-02-24 14:52:49.655 -0500	LogError		{authenticationtype:"None", httpmethod:"PATCH", mimeType:"application/json", oauthToken:"", password:"*********", requestbody:"RB", requestbodyformat:"Form Url Encoded", requestheaders:{Authorization:"Bearer 00D8J0000004fWS!AQEAQJ7A00EgIUYwLIfhwqvYU.uPqJdjmmhTiSrW7P8v7MG8_TF4iJfbpEbneQV9khH5o270HVi4knbLvVMEQ_CbSispFolZ", @"Content-Type":"application/json;charset=UFT-8"}, responseBody:@"[{\"message\":\"The HTTP entity body is required, but this request has no entity body.\",\"errorCode\":\"JSON_PARSER_ERROR\"}]", responseCookies:{:}, responseHeaders:{@"Cache-Control":"no-cache,must-revalidate,max-age=0,no-store,private", Connection:"keep-alive", @"Content-Type":"application/json; charset=UTF-8", Date:"Mon, 24 Feb 2025 19:52:25 GMT", Server:"sfdcedge", @"Sforce-Limit-Info":"api-usage=62/5000000", @"Strict-Transport-Security":"max-age=63072000; includeSubDomains", @"Transfer-Encoding":"chunked", @"X-Content-Type-Options":"nosniff", @"X-Request-Id":"b1ea27a8a13f2cd1f34d8c79e0309ef5", @"X-Robots-Tag":"none", @"X-SFDC-Request-Id":"b1ea27a8a13f2cd1f34d8c79e0309ef5"}, responseTime:0.384, statusCode:400, url:"https://d80000000cqmweau--pbdqa.sandbox.my.salesforce.com/services/data/v58.0/sobjects/Account/Provider_ID__c/562999", username:""}	145	on_salesforce_development_dmh	Salesforce Development_DMH.script
+2025-02-24 14:54:13.575 -0500	EndTestCase		(Duration:"117.56", Errors:"2", Exceptions:"0", StartTime:"2025-02-24 14:52:16 -0500", Successes:"1", TestCase:"Salesforce Development_DMH.script", Warnings:"1")
+2025-02-24 14:54:13.594 -0500	ABORTED		Execution Time 0:01:57 Salesforce Development_DMH.script

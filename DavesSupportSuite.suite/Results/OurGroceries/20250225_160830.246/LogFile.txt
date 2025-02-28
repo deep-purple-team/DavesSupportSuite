@@ -1,0 +1,6 @@
+﻿2025-02-25 16:08:30.249 -0500	START		Running OurGroceries.script
+2025-02-25 16:08:30.292 -0500	Connect		MotorolaG7:(null)	1	on_ourgroceries	OurGroceries.script
+2025-02-25 16:08:30.299 -0500	Exception		Could Not Open Image: 	2	on_ourgroceries	OurGroceries.script
+2025-02-25 16:08:34.960 -0500	EndTestCase		(Duration:"4.706", Errors:"1", Exceptions:"1", StartTime:"2025-02-25 16:08:30 -0500", Successes:"0", TestCase:"OurGroceries.script", Warnings:"0")
+2025-02-25 16:08:35.250 -0500	FAILURE	Screen_Error.png	File Not Found: click Error - Could Not Open Image:  -- Execution Time 0:00:04 OurGroceries.script
+2025-02-25 16:08:36.080 -0500	FAILURE	Screen_Error_Web.png	File Not Found: click Error - Could Not Open Image:  -- Execution Time 0:00:04 OurGroceries.script

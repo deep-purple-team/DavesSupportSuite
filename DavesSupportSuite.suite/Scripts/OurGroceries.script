@@ -1,0 +1,50 @@
+﻿set myGroceryItem to "milk"
+
+Connect "MotorolaG7"
+PressHomeButton
+
+Click (Image:"OurGroceries_mobile", WaitFor:5)
+WaitFor 5.0, "OurGroceries_add"
+If ImageFound(Image:"OurGroceries_backbutton", WaitFor:5) then
+	Click FoundImageLocation()
+	Wait until ImageFound(Image:"OurGroceries_backbutton", WaitFor:1) is false
+End If
+
+Click text:"BJ", waitFor:5
+WaitFor 5.0, "OurGroceries_add"
+WaitFor 5, text:"Remember Shopping Bags"
+Wait 1
+Click (Image:"OurGroceries_add", WaitFor:5)
+TypeText myGroceryItem
+TypeText Return
+Click imageName:"OurGroceries_backbutton", waitFor:2
+WaitFor 5.0, "OurGroceries_barcodeReader"
+
+VerifyShoppingList myGroceryItem
+
+PressHomeButton
+
+
+Connect "NewTower"
+TypeText WindowsKey,"r"
+TypeText "https://ourgroceries.com",Return
+WaitFor 8.0, "OurGroceries_icon"
+Click text:"BJ", waitFor:5
+WaitFor 5.0, "Chrome_refresh"
+Wait 1
+
+
+VerifyShoppingList myGroceryItem
+
+to handle VerifyShoppingList myGroceryItem
+	put 0 into x1
+	put (the top of ImageRectangle(text:"FORGET", waitFor:1)) - 2 into y1
+	put the right of RemoteScreenRectangle() into x2
+	put (the top of ImageRectangle(text:"CROSSED", waitFor:1)) - 2 into y2
+	put ReadText(x1,y1,x2,y2) into myShoppingList
+	if myShoppingList contains myGroceryItem then
+		LogSuccess "The item" && myGroceryItem && "was successfully added"
+	else
+		LogWarning "The item" && myGroceryItem && "was NOT successfully added"
+	end if
+end VerifyShoppingList

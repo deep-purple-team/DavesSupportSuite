@@ -1,0 +1,40 @@
+{
+    URLparameters = (
+	{
+	    checkedNumber = <*BY>;
+	    param = "";
+	    showCheckedNumber = <*BY>;
+	    value = "";
+	}
+    );
+    authenticationType = None;
+    httpVerb = PATCH;
+    oauth1Token = "Bearer \"00D8J0000004fWS!AQEAQJ7A00EgIUYwLIfhwqvYU.uPqJdjmmhTiSrW7P8v7MG8_TF4iJfbpEbneQV9khH5o270HVi4knbLvVMEQ_CbSispFolZ\"";
+    password = "$gfJbfI;)]As'}uPoyeZ`RJ))iRd(5weomwNbeW+0jRg+'(R|giMaQN(=VRk4((`";
+    requestBody = "
+{
+    \"FirstName\": \"\",
+	\"LastName\": \"\",
+	\"Title__c\": \"\",
+	\"On_Staff__c\": \"\",
+	\"BHMG_MCI__c\": \"\",
+	\"Auth_Services__c\": \"\",
+	\"NPI__c\": \"\",     
+	\"Specialty__c\": \"\",     
+	\"Fax\": \"\",
+	\"BillingCity\":\"\",
+	\"BillingCountry\":\"\",
+	\"BillingPostalCode\":\"\",
+	\"BillingState\":\"\",
+	\"BillingStreet\":\"\"
+},";
+    requestBodyFormat = "JSON (application/json)";
+    requestHeaders = "<![CDATA[Authorization:Bearer 00D8J0000004fWS!AQEAQJ7A00EgIUYwLIfhwqvYU.uPqJdjmmhTiSrW7P8v7MG8_TF4iJfbpEbneQV9khH5o270HVi4knbLvVMEQ_CbSispFolZ
+Content-Type:application/json;charset=UFT-8
+]]>";
+    requests = "";
+    testResults = "";
+    testScript = "return jsonvalue(api().responseBody)";
+    url = "https://d80000000cqmweau--pbdqa.sandbox.my.salesforce.com/services/data/v58.0/sobjects/Account/Provider_ID__c/101";
+    userName = "3MVG9wy_WnyGrHdMk_EZ4aCLW9dphEgZYbJfp61Fn5WURlECDMd2.90U_s3eda4UprSo4jjj6eV6Vm4Qw3ITh";
+}

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Salesforce Development_script" package="DavesSupportSuite.suite" timestamp="2025-02-24 15:09:16.850 -0500"
+ tests="1"  failures="0" errors="0" time="295.238000">
+  <properties>
+   <property name="RunDate" value="2025-02-24 15:09:16.850 -0500"/>
+   <property name="Status" value="Aborted"/>
+  </properties>
+  <testcase name="Salesforce Development.script" assertions="2" status="failure"  time="295.229">
+    <failure type="FAILURE" message="See main script" />
+  </testcase>
+ </testsuite>
+</testsuites>

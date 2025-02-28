@@ -1,0 +1,44 @@
+{
+	"entries": [
+		{
+				"message": "Running CallStack_primary.script",
+				"identifier": "START",
+				"timestamp": "2025-02-27 12:39:51.302 -0500"
+			},
+		{
+				"handlerName": "on_callstack_primary",
+				"timestamp": "2025-02-27 12:39:51.406 -0500",
+				"message": "CallStack_primary.script has begun.",
+				"scriptName": "CallStack_primary.script",
+				"handlerLine": 1,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_callstack_sub",
+				"timestamp": "2025-02-27 12:39:51.411 -0500",
+				"message": "CallStack_sub.script has started.",
+				"scriptName": "CallStack_sub.script",
+				"handlerLine": 1,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_callstack_sub",
+				"timestamp": "2025-02-27 12:39:51.416 -0500",
+				"message": "[{Handler:\"callstack_primary\", HandlerOffset:0, Line:3, MeObjectID:\"C:/ScriptRepositories/DavesSupportSuite.suite/Scripts/CallStack_primary.script\", MessageName:\"on_callstack_primary\", MessageType:\"Command\", objectType:\"SenseTalkFrame\", RepeatIndex:0, ScriptLine:3, ScriptObjectID:\"C:/ScriptRepositories/DavesSupportSuite.suite/Scripts/CallStack_primary.script\", TargetObjectID:\"C:/ScriptRepositories/DavesSupportSuite.suite/Scripts/CallStack_primary.script\", TryDepth:0},{Handler:\"callstack_sub\", HandlerOffset:0, Line:3, MeObjectID:\"C:/ScriptRepositories/DavesSupportSuite.suite/Scripts/CallStack_sub.script\", MessageName:\"on_callstack_sub\", MessageType:\"Command\", objectType:\"SenseTalkFrame\", RepeatIndex:0, ScriptLine:3, ScriptObjectID:\"C:/ScriptRepositories/DavesSupportSuite.suite/Scripts/CallStack_sub.script\", TargetObjectID:\"C:/ScriptRepositories/DavesSupportSuite.suite/Scripts/CallStack_primary.script\", TryDepth:0}]",
+				"scriptName": "CallStack_sub.script",
+				"handlerLine": 3,
+				"identifier": "Log"
+			},
+		{
+				"message": "(Duration:\"0.138\", Errors:\"0\", Exceptions:\"0\", StartTime:\"2025-02-27 12:39:51 -0500\", Successes:\"1\", TestCase:\"CallStack_primary.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-02-27 12:39:51.444 -0500"
+			},
+		{
+				"message": "Execution Time 0:00:00 CallStack_primary.script",
+				"identifier": "SUCCESS",
+				"timestamp": "2025-02-27 12:39:51.577 -0500"
+			}
+	],
+	"createdTimestamp": "2025-02-27 12:39:51.305 -0500"
+}

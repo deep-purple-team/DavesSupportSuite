@@ -1,0 +1,8 @@
+﻿put HandlerGarage.ScreenPart("center") into myRect
+put (the top of myRect,the left of myRect) into myTopLeftCorner
+put (the top of myRect,the right of myRect) into myTopRightCorner
+put (the bottom of myRect,the left of myRect) into myBottomLeftCorner
+put (the bottom of myRect,the right of myRect) into myBottomRightCorner
+
+PauseScript
+

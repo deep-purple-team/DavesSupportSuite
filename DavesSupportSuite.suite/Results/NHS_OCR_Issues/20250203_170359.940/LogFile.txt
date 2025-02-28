@@ -1,0 +1,8 @@
+﻿2025-02-03 17:03:59.945 -0500	START		Running NHS_OCR_Issues.script
+2025-02-03 17:04:02.265 -0500	readtext		(0,0,1920,1080)	1	on_nhs_ocr_issues	NHS_OCR_Issues.script
+2025-02-03 17:04:02.343 -0500	readtext		(444,344,1044,599)	2	on_nhs_ocr_issues	NHS_OCR_Issues.script
+2025-02-03 17:04:04.019 -0500	moveto	(TEXT:"By post")	at (555, 570)	3	on_nhs_ocr_issues	NHS_OCR_Issues.script
+2025-02-03 17:04:04.114 -0500	moveto		at (0, 0)	4	on_nhs_ocr_issues	NHS_OCR_Issues.script
+2025-02-03 17:04:05.852 -0500	imagerectangle	(TEXT:"By post")	at [524,561,587,579]	5	on_nhs_ocr_issues	NHS_OCR_Issues.script
+2025-02-03 17:04:05.925 -0500	EndTestCase		(Duration:"5.976", Errors:"0", Exceptions:"0", StartTime:"2025-02-03 17:03:59 -0500", Successes:"1", TestCase:"NHS_OCR_Issues.script", Warnings:"0")
+2025-02-03 17:04:05.962 -0500	SUCCESS		Execution Time 0:00:05 NHS_OCR_Issues.script

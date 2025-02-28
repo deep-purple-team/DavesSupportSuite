@@ -1,0 +1,20 @@
+{
+	"entries": [
+		{
+				"message": "Running Finalgetandpatchforprovider.apitest",
+				"identifier": "START",
+				"timestamp": "2025-02-24 15:02:32.411 -0500"
+			},
+		{
+				"message": "(Duration:\"0.686\", Errors:\"0\", Exceptions:\"0\", StartTime:\"2025-02-24 15:02:32 -0500\", Successes:\"1\", TestCase:\"Finalgetandpatchforprovider.apitest\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-02-24 15:02:33.100 -0500"
+			},
+		{
+				"message": "Execution Time 0:00:00 Finalgetandpatchforprovider.apitest",
+				"identifier": "SUCCESS",
+				"timestamp": "2025-02-24 15:02:33.144 -0500"
+			}
+	],
+	"createdTimestamp": "2025-02-24 15:02:32.413 -0500"
+}

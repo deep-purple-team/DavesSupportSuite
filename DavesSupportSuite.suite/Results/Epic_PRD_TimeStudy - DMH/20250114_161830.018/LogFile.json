@@ -1,0 +1,20 @@
+{
+	"entries": [
+		{
+				"message": "Running Epic_PRD_TimeStudy - DMH.script",
+				"identifier": "START",
+				"timestamp": "2025-01-14 16:18:30.024 -0500"
+			},
+		{
+				"message": "(Duration:\"0.004\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2025-01-14 16:18:30 -0500\", Successes:\"0\", TestCase:\"Epic_PRD_TimeStudy - DMH.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-01-14 16:18:30.032 -0500"
+			},
+		{
+				"message": "SenseTalk Compiler Exception: in epic_prd_timestudy___dmh:\\nSyntax Error at line 165: can't understand \"End\" at character 1 -- Execution Time 0:00:00 Epic_PRD_TimeStudy - DMH.script",
+				"identifier": "FAILURE",
+				"timestamp": "2025-01-14 16:18:30.060 -0500"
+			}
+	],
+	"createdTimestamp": "2025-01-14 16:18:30.027 -0500"
+}

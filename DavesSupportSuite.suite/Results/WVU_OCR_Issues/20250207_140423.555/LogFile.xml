@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="WVU_OCR_Issues_script" package="DavesSupportSuite.suite" timestamp="2025-02-07 14:04:23.555 -0500"
+ tests="1"  failures="0" errors="0" time="29.336000">
+  <properties>
+   <property name="RunDate" value="2025-02-07 14:04:23.555 -0500"/>
+   <property name="Status" value="Aborted"/>
+  </properties>
+  <testcase name="WVU_OCR_Issues.script" assertions="1" status="error"  time="29.326">
+    <error type="Exception" message="No Text Found On Screen: &quot;(TEXT:&quot;E2&quot;)&quot;. Text not found." />
+  </testcase>
+ </testsuite>
+</testsuites>

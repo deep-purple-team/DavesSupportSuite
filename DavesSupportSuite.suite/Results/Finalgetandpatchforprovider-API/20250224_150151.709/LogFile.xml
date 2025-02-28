@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Finalgetandpatchforprovider_apitest" package="DavesSupportSuite.suite" timestamp="2025-02-24 15:01:51.709 -0500"
+ tests="1"  failures="2" errors="0" time="0.503000">
+  <properties>
+   <property name="RunDate" value="2025-02-24 15:01:51.709 -0500"/>
+   <property name="Status" value="Failure"/>
+  </properties>
+  <testcase name="Finalgetandpatchforprovider.apitest" assertions="2" status="failure"  time="0.497">
+    <failure type="LogError" message="Authentication challenge received, but no credentials have been provided." />
+    <failure type="FAILURE" message="Invalid JSON: Can&apos;t get value of JSON expression -- Execution Time 0:00:00 Finalgetandpatchforprovider.apitest" />
+  </testcase>
+ </testsuite>
+</testsuites>

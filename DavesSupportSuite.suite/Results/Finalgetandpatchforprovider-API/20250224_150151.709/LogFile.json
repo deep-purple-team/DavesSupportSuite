@@ -1,0 +1,26 @@
+{
+	"entries": [
+		{
+				"message": "Running Finalgetandpatchforprovider.apitest",
+				"identifier": "START",
+				"timestamp": "2025-02-24 15:01:51.713 -0500"
+			},
+		{
+				"message": "Authentication challenge received, but no credentials have been provided.",
+				"identifier": "LogError",
+				"timestamp": "2025-02-24 15:01:52.118 -0500"
+			},
+		{
+				"message": "(Duration:\"0.497\", Errors:\"2\", Exceptions:\"0\", StartTime:\"2025-02-24 15:01:51 -0500\", Successes:\"0\", TestCase:\"Finalgetandpatchforprovider.apitest\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-02-24 15:01:52.213 -0500"
+			},
+		{
+				"image": "Screen_Error.png",
+				"message": "Invalid JSON: Can't get value of JSON expression -- Execution Time 0:00:00 Finalgetandpatchforprovider.apitest",
+				"identifier": "FAILURE",
+				"timestamp": "2025-02-24 15:01:52.273 -0500"
+			}
+	],
+	"createdTimestamp": "2025-02-24 15:01:51.715 -0500"
+}

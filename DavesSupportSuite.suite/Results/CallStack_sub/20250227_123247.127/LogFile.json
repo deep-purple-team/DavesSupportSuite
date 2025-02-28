@@ -1,0 +1,36 @@
+{
+	"entries": [
+		{
+				"message": "Running CallStack_sub.script",
+				"identifier": "START",
+				"timestamp": "2025-02-27 12:32:47.133 -0500"
+			},
+		{
+				"handlerName": "on_callstack_sub",
+				"timestamp": "2025-02-27 12:32:47.224 -0500",
+				"message": "CallStack_sub.script",
+				"scriptName": "CallStack_sub.script",
+				"handlerLine": 1,
+				"identifier": "Log"
+			},
+		{
+				"handlerName": "on_callstack_sub",
+				"timestamp": "2025-02-27 12:32:47.229 -0500",
+				"message": "[{Handler:\"callstack_sub\", HandlerOffset:0, Line:3, MeObjectID:\"C:/ScriptRepositories/DavesSupportSuite.suite/Scripts/CallStack_sub.script\", MessageName:\"on_callstack_sub\", MessageType:\"Command\", objectType:\"SenseTalkFrame\", RepeatIndex:0, ScriptLine:3, ScriptObjectID:\"C:/ScriptRepositories/DavesSupportSuite.suite/Scripts/CallStack_sub.script\", TargetObjectID:\"C:/ScriptRepositories/DavesSupportSuite.suite/Scripts/CallStack_sub.script\", TryDepth:0}]",
+				"scriptName": "CallStack_sub.script",
+				"handlerLine": 3,
+				"identifier": "Log"
+			},
+		{
+				"message": "(Duration:\"2.259\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2025-02-27 12:32:47 -0500\", Successes:\"0\", TestCase:\"CallStack_sub.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-02-27 12:32:49.397 -0500"
+			},
+		{
+				"message": "Execution Time 0:00:02 CallStack_sub.script",
+				"identifier": "ABORTED",
+				"timestamp": "2025-02-27 12:32:49.408 -0500"
+			}
+	],
+	"createdTimestamp": "2025-02-27 12:32:47.137 -0500"
+}

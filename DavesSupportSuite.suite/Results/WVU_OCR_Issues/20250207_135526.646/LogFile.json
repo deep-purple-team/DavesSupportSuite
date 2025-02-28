@@ -1,0 +1,21 @@
+{
+	"entries": [
+		{
+				"message": "Running WVU_OCR_Issues.script",
+				"identifier": "START",
+				"timestamp": "2025-02-07 13:55:26.654 -0500"
+			},
+		{
+				"message": "(Duration:\"0.127\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2025-02-07 13:55:26 -0500\", Successes:\"0\", TestCase:\"WVU_OCR_Issues.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-02-07 13:55:26.786 -0500"
+			},
+		{
+				"image": "Screen_Error.png",
+				"message": "BadValue: Bad value for (null).  Looking for a rectangle, got '[[1158,856,1574,928],{duration:10 seconds}]'. -- Execution Time 0:00:00 WVU_OCR_Issues.script",
+				"identifier": "FAILURE",
+				"timestamp": "2025-02-07 13:55:26.943 -0500"
+			}
+	],
+	"createdTimestamp": "2025-02-07 13:55:26.658 -0500"
+}

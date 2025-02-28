@@ -1,0 +1,68 @@
+﻿(**
+@ScriptName: EndToEnd_Master
+@Version 2.0-02/13/2025
+@Author: Veena Iyer
+@CreatedOn: -01/08/2025
+@Change Reason: Added config control to the script
+@Description: This test case focuses on the end to end journey of adding the provider to various applications 
+@Params - NA
+**)
+
+(**
+"This software is copyright Keysight Technologies, Inc. and licensed under the terms of Keysight's End User License Agreement. Terms of Keysight'ss EULA may be found here: www.keysight.com/find/sweula By using this Software, you agree to the terms of the Keysight EULA."
+**)
+
+log me.name&&"has started"
+
+put "N:/NPI_ConfigControl" into basefileName
+log basefileName
+set tableName to "Sheet1"
+put baseFileName into global filename
+log global Filename
+set global myExcelDB to {type:"excel", file:global filename&".xlsx", writable: Yes}
+
+set global Config to (the records of table(tableName) of global myExcelDB)
+if global Config is empty then Throw "No data", "No script data is present, please check to make sure the data file is set up correctly"
+log global Config
+put the number of records of global myExcelDB into global recordcount
+log global recordcount
+
+-- *** Key Change: Loop through the records and log individually ***
+repeat with each item Config in global Config by reference
+	//The Excel columns are named "ScriptName" and "RunValue" (Do not change the Headers)
+	// Get the script name
+	put Config."ScriptName" into scriptName
+	// Get the "yes/no" value
+	put Config.RunValue into runValue      
+	// Log the script name and value
+	log "Script: " & scriptName & ", Run: " & runValue
+	//If Run Value for the script is Yes, then run the script
+	if runValue is "YES" then
+		Log "Executing script: " & scriptName
+		Run scriptName -- Run the script if the value is "YES" (or similar)
+		wait 180
+	else
+		
+		Log "Skipping script: " & scriptName & " because Run value is: " & runValue
+	end if
+end repeat
+log me.name&&"has ended"
+
+
+
+
+
+(*
+Run "HNAUser/Master"
+wait 120
+Run "RRDConfigTool/Master"
+wait 360
+Run "Bedrock/Master"
+wait 120
+Run "AddPhysicianNonStaff/Master"
+wait 120
+Run "Soarian/Master"
+wait 120
+Run "Salesforce/Master"
+wait 120
+Run "ChartLinks/Master"*)

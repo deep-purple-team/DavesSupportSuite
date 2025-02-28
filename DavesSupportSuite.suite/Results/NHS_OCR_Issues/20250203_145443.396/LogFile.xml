@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="NHS_OCR_Issues_script" package="DavesSupportSuite.suite" timestamp="2025-02-03 14:54:43.396 -0500"
+ tests="1"  failures="0" errors="0" time="1.148000">
+  <properties>
+   <property name="RunDate" value="2025-02-03 14:54:43.396 -0500"/>
+   <property name="Status" value="Success"/>
+  </properties>
+  <testcase name="NHS_OCR_Issues.script" assertions="1" status="success"  time="1.141">
+  </testcase>
+ </testsuite>
+</testsuites>

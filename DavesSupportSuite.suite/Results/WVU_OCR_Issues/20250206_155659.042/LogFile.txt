@@ -1,0 +1,7 @@
+﻿2025-02-06 15:56:59.052 -0500	START		Running WVU_OCR_Issues.script
+2025-02-06 15:57:06.800 -0500	Exception	(TEXT:"E2")	No Text Found On Screen: "(TEXT:"E2")". Text not found.	1	on_wvu_ocr_issues	WVU_OCR_Issues.script
+2025-02-06 15:57:07.144 -0500	readtext		(1158,856,1574,928)	2	on_wvu_ocr_issues	WVU_OCR_Issues.script
+2025-02-06 15:57:07.160 -0500	moveto		at current mouse point (1364, 915)	3	on_wvu_ocr_issues	WVU_OCR_Issues.script
+2025-02-06 15:57:07.245 -0500	Exception	1155	Could Not Open Image: 1155	6	on_wvu_ocr_issues	WVU_OCR_Issues.script
+2025-02-06 15:57:07.271 -0500	EndTestCase		(Duration:"8.216", Errors:"1", Exceptions:"2", StartTime:"2025-02-06 15:56:59 -0500", Successes:"0", TestCase:"WVU_OCR_Issues.script", Warnings:"0")
+2025-02-06 15:57:07.441 -0500	FAILURE	Screen_Error.png	File Not Found: readtext Error - Could Not Open Image: 1155 -- Execution Time 0:00:08 WVU_OCR_Issues.script

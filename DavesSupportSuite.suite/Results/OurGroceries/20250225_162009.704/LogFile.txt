@@ -1,0 +1,19 @@
+﻿2025-02-25 16:20:09.708 -0500	START		Running OurGroceries.script
+2025-02-25 16:20:09.823 -0500	Connect		MotorolaG7:(null)	1	on_ourgroceries	OurGroceries.script
+2025-02-25 16:20:09.838 -0500	presshomebutton			2	on_ourgroceries	OurGroceries.script
+2025-02-25 16:20:10.145 -0500	click	OurGroceries_mobile	at (553, 2173)	4	on_ourgroceries	OurGroceries.script
+2025-02-25 16:20:10.710 -0500	waitfor	OurGroceries_add	found at (960, 2194)	5	on_ourgroceries	OurGroceries.script
+2025-02-25 16:20:15.817 -0500	imagefound	OurGroceries_backbutton	Unable to Find Image OurGroceries_backbutton	6	on_ourgroceries	OurGroceries.script
+2025-02-25 16:20:16.602 -0500	click	(TEXT:"BJ")	at (57, 1014)	10	on_ourgroceries	OurGroceries.script
+2025-02-25 16:20:16.697 -0500	waitfor	OurGroceries_add	found at (960, 2194)	11	on_ourgroceries	OurGroceries.script
+2025-02-25 16:20:17.173 -0500	waitfor	(TEXT:"FORGET")	found at (314, 1461)	12	on_ourgroceries	OurGroceries.script
+2025-02-25 16:20:18.412 -0500	click	OurGroceries_add	at (960, 2194)	14	on_ourgroceries	OurGroceries.script
+2025-02-25 16:20:18.646 -0500	typetext		milk[return]	15	on_ourgroceries	OurGroceries.script
+2025-02-25 16:20:33.812 -0500	presshomebutton			17	on_ourgroceries	OurGroceries.script
+2025-02-25 16:20:33.815 -0500	Connect		NewTower:(null)	20	on_ourgroceries	OurGroceries.script
+2025-02-25 16:20:33.939 -0500	typetext		[windowsKey]r	21	on_ourgroceries	OurGroceries.script
+2025-02-25 16:20:34.796 -0500	typetext		https://ourgroceries.com[return]	22	on_ourgroceries	OurGroceries.script
+2025-02-25 16:20:35.809 -0500	waitfor	OurGroceries_icon	found at (175, 159)	23	on_ourgroceries	OurGroceries.script
+2025-02-25 16:20:37.218 -0500	click	(TEXT:"BJ")	at (733, 471)	24	on_ourgroceries	OurGroceries.script
+2025-02-25 16:20:37.241 -0500	EndTestCase		(Duration:"27.531", Errors:"0", Exceptions:"0", StartTime:"2025-02-25 16:20:09 -0500", Successes:"1", TestCase:"OurGroceries.script", Warnings:"0")
+2025-02-25 16:20:37.309 -0500	SUCCESS		Execution Time 0:00:27 OurGroceries.script

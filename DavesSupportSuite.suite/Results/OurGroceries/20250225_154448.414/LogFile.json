@@ -1,0 +1,37 @@
+{
+	"entries": [
+		{
+				"message": "Running OurGroceries.script",
+				"identifier": "START",
+				"timestamp": "2025-02-25 15:44:48.423 -0500"
+			},
+		{
+				"handlerName": "on_ourgroceries",
+				"timestamp": "2025-02-25 15:44:48.580 -0500",
+				"message": "MotorolaG7:(null)",
+				"scriptName": "OurGroceries.script",
+				"handlerLine": 1,
+				"identifier": "Connect"
+			},
+		{
+				"handlerName": "on_ourgroceries",
+				"timestamp": "2025-02-25 15:44:48.806 -0500",
+				"scriptName": "OurGroceries.script",
+				"message": "at (553, 2173)",
+				"image": "OurGroceries_mobile",
+				"handlerLine": 2,
+				"identifier": "click"
+			},
+		{
+				"message": "(Duration:\"35.205\", Errors:\"1\", Exceptions:\"0\", StartTime:\"2025-02-25 15:44:48 -0500\", Successes:\"0\", TestCase:\"OurGroceries.script\", Warnings:\"0\")",
+				"identifier": "EndTestCase",
+				"timestamp": "2025-02-25 15:45:23.634 -0500"
+			},
+		{
+				"message": "Execution Time 0:00:35 OurGroceries.script",
+				"identifier": "ABORTED",
+				"timestamp": "2025-02-25 15:45:23.651 -0500"
+			}
+	],
+	"createdTimestamp": "2025-02-25 15:44:48.427 -0500"
+}

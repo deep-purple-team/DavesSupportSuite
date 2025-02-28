@@ -1,0 +1,3 @@
+﻿Date Run,Status,Time,# of Errors,# of Warnings,# of Exceptions,Log File,Return Value,Error Message,# of Successes
+2025-01-14 13:45:03.612 -0500,"Aborted",0:01:16,1,0,0,"20250114_134503.612/LogFile.txt","","",0
+2025-01-14 16:14:22.483 -0500,"Aborted",0:00:18,1,0,0,"20250114_161422.483/LogFile.txt","","",0

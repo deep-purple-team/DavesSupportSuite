@@ -1,0 +1,208 @@
+﻿(*
+          ************************************ SCRIPT INFORMATION ************************************
+          * 
+          * Script Version: 2.0.0
+          * __________________
+          * 
+          * Script Author: James Skala
+          * Creation Date: 17 December 2024
+          * Description or Purpose: Perform a set of time studies for Epic PRD.
+          * __________________
+          *
+          * Modification Date: 23 December 2024
+          * Contributor: James Skala
+          * Edit(s) Made: Partial rewrite of script to account for UI differences with read-only account and added "Break-the-Glass" logic.
+*)
+
+//////////////////////////////////// PREP ////////////////////////////////////
+
+-- Declare the variables for this time study.
+params ExcelDataFile, UsersExcelWorksheet, LocationsExcelWorksheet, SUTName, SUTUserName, SUTUserPwd, EpicUserName, EpicUserPwd, EpicDepartment, PatientMRN
+
+-- Set up the Excel file from where we will pull the user, password, location, and department. Log as a sanity check.
+Set ExcelDataFile to workbook (ResourcePath("DataFile.xlsx"))
+Log ExcelDataFile
+
+Set UsersExcelWorksheet to worksheet (ExcelDataFile, 1)
+Log UsersExcelWorksheet
+
+Set LocationsExcelWorksheet to worksheet (ExcelDataFile, 2)
+Log LocationsExcelWorksheet
+
+-- Set up the user that logs into the SUT and UH Apps.
+Put Cell (UsersExcelWorksheet, "A" & 2) into SUTUserName
+Put Cell (UsersExcelWorksheet, "B" & 2) into SUTUserPwd
+
+-- Set up the list of locations and departments for the time study.
+Put cellRange (LocationsExcelWorksheet, "A") into SUTNameList
+Delete the first item of SUTNameList
+
+Put cellRange (LocationsExcelWorksheet, "B") into EpicDepartmentList
+Delete the first item of EpicDepartmentList
+
+-- Set up the user that logs into Epic PRD.
+Put Cell (UsersExcelWorksheet, "A" & 4) into EpicUserName
+Put Cell (UsersExcelWorksheet, "B" & 4) into EpicUserPwd
+
+Repeat until SUTNameList is empty
+	-- Set the machine ID and Epic Department ID, then log as a sanity check.
+	Put the first item of SUTNameList into SUTName
+	Put the first item of EpicDepartmentList into EpicDepartment
+	Delete the first two characters of SUTName
+	Delete the last two characters of SUTName
+	Delete the first two characters of EpicDepartment
+	Delete the last two characters of EpicDepartment
+	Log SUTName, EpicDepartment
+	
+	-- Connect to the system under test (SUT).
+	-- Please note that Epic requires a minimum screen resolution of 1920x1080 and a minimum color depth of 32-bit (or millions of colors). Also note that UH only supports RDP at this time.
+	Connect (serverID: SUTName, portNum: 3389, password: DecodeText (SUTUserPwd), username: SUTUserName, type: "RDP", ColorDepth: 32, width: 1920, height: 1080)
+	WaitFor 600, (Image: "StartButton")
+	
+	-- Log the current time.
+	Log the time
+	
+	-- Launch the UH Apps portal from the taskbar.
+	-- TODO: Update this script as needed to include Imprivata SSO and to include alternate ways of launching UH Apps.
+	If ImageFound (Image: "UHApps", SearchRectangle: HandlerGarage.ScreenPart("BottomHalf")) = "true" then
+		Put the time into StartTime
+		Click FoundImageLocation()
+	End If
+	
+	-- Capture the time it takes UH Apps to launch, then maximize the window.
+	WaitFor 600, (Image: "UHApps_SignIn_Active")
+	Put the time - StartTime into SecondsElapsed
+	Log SecondsElapsed
+	TypeText windowsKey, upArrow
+	WaitFor 600, {Image: "Logo_vmware", SearchRectangle: HandlerGarage.ScreenPart("BottomHalf")}
+	Click FoundImageLocation()
+	
+	-- Log in to UH Apps, capturing the time it takes to do so.
+	Click  {Image: "Textbox_UHApps_username", caseSensitive: yes, SearchRectangle: HandlerGarage.ScreenPart("Lynde")}
+	TypeText SUTUserName, tabKey
+	TypeEncodedText SUTUserPwd
+	
+	If ImageFound (Image: "UHApps_SignIn_Active") = "true" then
+		Put the time into StartTime
+		Click FoundImageLocation()
+	End If
+	
+	WaitFor 600, (Text: "Search Apps", SearchRectangle: HandlerGarage.ScreenPart("TopLeftQuadrant")), (Image: "UHApps_AddApps_Active")
+	Put the time - StartTime into SecondsElapsed
+	Log SecondsElapsed
+	
+	-- These steps are specific to EPIC PRD and assume the "Apps" tab is active.
+	If ImageFound("Epic_HyperspacePRD") = "true" then
+		Log "The EPIC PRD shortcut is already visible!"
+	Else
+		DoubleClick (Text: "Search Apps", SearchRectangle: HandlerGarage.ScreenPart("TopLeftQuadrant"))
+		TypeText "Epic"
+		WaitFor 600, (Image: "Epic_HyperspacePRD")
+	End If
+	
+	-- Launch Epic, capturing the time it takes to do so.
+	Put the time into StartTime
+	Click FoundImageLocation()
+	WaitFor 600, (Image: "Button_Hyperspace_SunAndMoon")
+	Put the time - StartTime into SecondsElapsed
+	Log SecondsElapsed
+	TypeText windowsKey, upArrow
+	WaitFor 600, (Text: "User ID", SearchRectangle: HandlerGarage.ScreenPart("Lynde"))
+	
+	-- Log into Epic, then enter the desired department, capturing the time it takes to do so.
+	DoubleClick FoundImageLocation()
+	Wait 1
+	TypeText EpicUserName, tabKey -- The user ID field is already selected, so just start typing.
+	TypeEncodedText EpicUserPwd
+	WaitFor 600, (Image: "Hyperspace_LogIn_Active", SearchRectangle: HandlerGarage.ScreenPart("Lynde"))
+	
+	Put the time into StartTime
+	Click FoundImageLocation()
+	
+	WaitFor 600, (Image: "Hyperspace_Continue_Active")
+	Put the time - StartTime into SecondsElapsed
+	Log SecondsElapsed
+	
+	-- Enter the department ID and continue the logon process. The department ID field is already selected, so just start typing.
+	TypeText EpicDepartment, returnKey
+	Put the time into StartTime
+	Click FoundImageLocation()
+	
+	-- Continue through any messages if necessary.
+	If ImageFound (Image: "Hyperspace_Continue_Active") = "true" then
+		Click FoundImageLocation()
+	Else
+		Log "No message visible!"
+	End If
+	
+	WaitFor 600, (Image: "Button_LogOut_ReadOnly", SearchRectangle: HandlerGarage.ScreenPart("TopRightQuadrant"))
+	Put the time - StartTime into SecondsElapsed
+	Log SecondsElapsed
+	Wait 3
+	
+	-- Open the Epic menu, expand the "Patient Care" menu, then open the patient lookup dialog.
+	Click (Image: "Button_PatientLookup_ReadOnly")
+	WaitFor 600, (Image: "Button_FindPatient_Active")
+	
+	-- Set the patient's MRN. We are hard-coding the patient MRN since there are a limited number of test patients in PRD. Parameterize this as needed.
+	Put "02672585" into PatientMRN
+	
+	-- Enter the patient's MRN and search, capturing the time it takes to return the search results.
+	TypeText PatientMRN
+	Put the time into StartTime
+	Click FoundImageLocation()
+	WaitFor 600, (Text: PatientMRN, SearchRectangle: HandlerGarage.ScreenPart("HorizontalMiddle"))
+	Put the time - StartTime into SecondsElapsed
+	Log SecondsElapsed
+	
+	-- Open the patient's chart, capturing the time it takes to load the "Break-the-Glass" window.
+	Put the time into StartTime
+	TypeText altKey, "A"
+	WaitFor 600, (Image: "Textbox_Reason_ReadOnly")
+	Put the time - StartTime into SecondsElapsed
+	Log SecondsElapsed
+	
+	-- Document the reason for accessing this patient, then enter the user's password.
+	Click FoundImageLocation()
+	TypeText 6, returnKey
+	Click (Image: "Textbox_Password_ReadOnly")
+	TypeEncodedText EpicUserPwd
+	
+	-- Capture the time it takes to open the patient's chart after breaking the glass.
+	Put the time into StartTime
+	TypeText returnKey
+	WaitFor 600, (Text: "SnapShot", caseSensitive: no, SearchRectangle: HandlerGarage.ScreenPart("TopRightQuadrant"))
+	Put the time - StartTime into SecondsElapsed
+	Log SecondsElapsed
+	
+	-- Log out of Epic, capturing the time it takes to do so.
+	Put the time into StartTime
+	Click (Image: "Button_LogOut_ReadOnly")
+	WaitFor 600, (Image: "Button_Hyperspace_SunAndMoon")
+	Put the time - StartTime into SecondsElapsed
+	Log SecondsElapsed
+	
+	-- Close the Epic application.
+	Wait 1
+	TypeText altKey, f4
+	WaitFor 600, (Image: "Logo_UHapps")
+	
+	-- Close UH Apps.
+	Click FoundImageLocation()
+	TypeText altKey, f4
+	
+	-- Log out of and disconnect from the SUT.
+	TypeText windowsKey, "r"
+	WaitFor 600, (Image: "Icon_WindowsRun")
+	TypeText "logoff", returnKey
+	Disconnect (serverID: SUTName, portNum: 3389, password: DecodeText (SUTUserPwd), username: SUTUserName, type: "RDP", ColorDepth: 32, width: 1920, height: 1080)
+	
+	-- Clear the machine ID and Epic department ID variables and remove them from the list.
+	Put "" into SUTName
+	Put "" into EpicDepartment
+	
+	Delete the first item of SUTNameList
+	Delete the first item of EpicDepartmentList
+End Repeat
+
+#################################### SCRIPT COMPLETE ####################################

@@ -1,0 +1,4 @@
+﻿2025-02-24 13:54:35.666 -0500	START		Running Finalgetandpatchforprovider.apitest
+2025-02-24 13:54:36.087 -0500	LogError		Authentication challenge received, but no credentials have been provided.
+2025-02-24 13:54:36.158 -0500	EndTestCase		(Duration:"0.489", Errors:"2", Exceptions:"0", StartTime:"2025-02-24 13:54:35 -0500", Successes:"0", TestCase:"Finalgetandpatchforprovider.apitest", Warnings:"0")
+2025-02-24 13:54:36.275 -0500	FAILURE	Screen_Error.png	Invalid JSON: Can't get value of JSON expression -- Execution Time 0:00:00 Finalgetandpatchforprovider.apitest

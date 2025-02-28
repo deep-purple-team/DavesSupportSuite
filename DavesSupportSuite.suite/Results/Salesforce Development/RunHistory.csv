@@ -1,0 +1,7 @@
+﻿Date Run,Status,Time,# of Errors,# of Warnings,# of Exceptions,Log File,Return Value,Error Message,# of Successes
+2025-02-24 13:58:01.637 -0500,"Failure",0:00:00,1,0,0,"20250224_135801.637/LogFile.txt","","Invalid JSON -- Can't get value of JSON expression",0
+2025-02-24 13:58:38.376 -0500,"Failure",0:00:14,1,0,0,"20250224_135838.376/LogFile.txt","","Invalid JSON -- Can't get value of JSON expression",0
+2025-02-24 14:03:00.478 -0500,"Failure",0:00:02,1,0,0,"20250224_140300.478/LogFile.txt","","Workbook Error -- Error loading workbook N:/NonStaffProvider_022425.xlsx: No such file or directory.",1
+2025-02-24 14:31:00.967 -0500,"Aborted",0:05:39,2,0,0,"20250224_143100.967/LogFile.txt","","",1
+2025-02-24 15:09:16.850 -0500,"Aborted",0:04:55,1,0,0,"20250224_150916.850/LogFile.txt","","",1
+2025-02-28 13:45:08.219 -0500,"Aborted",0:01:46,2,0,0,"20250228_134508.219/LogFile.txt","","",1

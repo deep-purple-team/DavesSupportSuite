@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Epic_PRD_TimeStudy - DMH_script" package="DavesSupportSuite.suite" timestamp="2025-01-14 16:36:34.342 -0500"
+ tests="1"  failures="0" errors="0" time="8.794000">
+  <properties>
+   <property name="RunDate" value="2025-01-14 16:36:34.342 -0500"/>
+   <property name="Status" value="Aborted"/>
+  </properties>
+  <testcase name="Epic_PRD_TimeStudy - DMH.script" assertions="1" status="failure"  time="8.785">
+    <failure type="FAILURE" message="See main script" />
+  </testcase>
+ </testsuite>
+</testsuites>
