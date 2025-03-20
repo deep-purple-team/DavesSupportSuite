@@ -1,0 +1,46 @@
+{
+	"originalcapturelocation": [
+		837,
+		474,
+		64,
+		64
+	],
+	"lastmodifieddate": 1742488238.2649999,
+	"createddate": 1742488064.987,
+	"name": "ModalPopup_UL",
+	"lastfounddate": 1742488940.444,
+	"ocrcapturestring": "1:57 PI' 1:37 A 1:37 A 1:37 A 1:41 Al 3/19.",
+	"lastfoundlocation": [
+		865,
+		478,
+		11,
+		26
+	],
+	"testlocationdata": [
+		{
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[32,32]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"Type": "Testplant Screen Image"
+				},
+				"name": "ModalPopup_UL.png",
+				"connectionname": "ITT PC read PASS.png",
+				"type": 1,
+				"capturerect": [
+					837,
+					474,
+					64,
+					64
+				],
+				"connectiontype": "Screenshot",
+				"connectionserverid": "C:/Users/davihest/Documents/CustomerFiles/ITT PC read PASS.png"
+			}
+	]
+}

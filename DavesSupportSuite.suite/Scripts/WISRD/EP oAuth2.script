@@ -1,0 +1,52 @@
+///--Grab all the Logs about your Model Based on the UID
+put "http://172.16.111.135:8000" into DAIServer
+//put "myClientID" into DAIClientID
+//put "mySecret" into DAIClientSecret
+
+put "client:dai:api:integration:12345" into DAIClientID
+put "442ca939-12345" into DAIClientSecret
+
+//get oAuth2 Bearer Token
+put SetAccessToken (DAIServer, DAIClientID ,DAIClientSecret) into token
+put "bearer" && token.access_token into RH."Authorization"
+
+//API Get Endpoint
+put DAIServer & "/ai/models" into URL
+
+DAI_API(httpMethod:"GET",url:URL,requestheaders:RH)
+put JSONValue(api().responseBody) into ListofModels
+log ListofModels
+
+put "8e749fb4-b857-4dd0-987b-619de8b6ad39" into testID
+
+put DAIServer & "/ai/runlogs/"&TestID into URL
+put "bearer" && token.access_token into RH."Authorization"
+put "application/x-www-form-urlencoded" into RH."Content-Type"
+DAI_API(httpMethod:"GET",url:URL,requestheaders:RH)
+put JSONValue(api().responseBody) into ResponseInformation
+return ResponseInformation
+
+to SetAccessToken DAIServer, DAIClientID ,DAIClientSecret
+	put DAIServer &"/auth/realms/eggplant/protocol/openid-connect/token" into URL
+	
+	put "application/x-www-form-urlencoded" into RH."Content-Type"
+	put (grant_type:"client_credentials",client_id:DAIClientID,client_secret:DAIClientSecret) into RB
+	
+	DAI_API(httpMethod:"POST",url:URL,requestBody:RB,requestheaders:RH)
+	
+	put JSONValue(api().responsebody) into ResponseInformation
+	
+	put ResponseInformation.access_token into access_token
+	if api().statusCode = "200" then
+		Logsuccess "Able to Access DAI Server, and grab a access token"
+	else
+		logerror "Unable to Access DAI Server (Bad Username,Password, or DAI Server)"
+		logwarning ResponseInformation
+		logwarning API()
+		exit all
+	end if
+	
+	return ResponseInformation
+	
+end SetAccessToken
+

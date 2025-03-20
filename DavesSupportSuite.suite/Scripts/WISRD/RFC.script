@@ -1,0 +1,60 @@
+﻿//Launch Chrome web browser and log into WISRD as wisrdadmin
+Common.LaunchBrowserLogin "https://test.wisrd.com"
+
+//Navigate to Collection tools using the navigation window on the left side
+Common.NavigationBar "Collection Management", "Collection Tools"
+Click "RfcIcon"
+
+set the SearchRectangle to Rectangle's ScreenPart ("TopRightQuadrant")
+
+//Create new RFC
+Click text: "Create"
+Set the SearchRectangle to empty
+Set the SearchRectangle to ("RFCForumRectangle_A","RFCForumRectangle_B")
+click (text: "Tracking ID", hotspot: [0,10]) 
+put Common's CreateRandomName() into varname
+Typetext varname
+Click text: "Send To (Unit)"
+Click text: "Filter", hotspot: [0,10]
+TypeText "3 m"
+Click text: "3 MDTF"
+Click text: "Requested Capabilities"
+set the SearchRectangle to (650,400,950,675)
+MoveTo text: "COMINT"
+
+//Scroll to FMV and click to select
+Common.ScrollToText FMV
+
+TypeText Escape
+Set the SearchRectangle to empty
+Set the SearchRectangle to ("RFCForumRectangle_A","RFCForumRectangle_B")
+Click text: "Status"
+Click text: "Approved"
+
+//Select today's date for start and the first of next month for end time
+Common.SetDates
+set the SearchRectangle to Empty
+
+
+to handle Create_buttonClick_Bottom
+	set the SearchRectangle to rectangle.ScreenPart ("BottomHalf")
+	Click imageName:"Create_button", waitFor:8
+	set the SearchRectangle to empty
+end Create_buttonClick_Bottom
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

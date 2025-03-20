@@ -1,0 +1,23 @@
+﻿(* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+  Script generated:  2025-02-20 12:22:13
+  From session:  untitled session
+  Captured on:  2025-02-20 12:09:30
+  From server:  SingleSystem
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *)
+click Configuration
+click Administration
+click BDA_Admin
+click "RedColorBox"
+click "SelectInsideRedColorPicker"
+click "RedBox"
+Typetext escape
+drag CurrentStrength
+drop CurrentStrengthDrop
+click "Max"
+click UpDownforNumbers
+
+click "BDA Admin/ThreeDotsNearBlue"
+
+click InsertAfter
+
+

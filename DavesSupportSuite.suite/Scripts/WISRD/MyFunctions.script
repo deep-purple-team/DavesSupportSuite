@@ -1,0 +1,36 @@
+﻿-- Using 'To' handler
+to welcomeMessage
+	put "Welcome to SenseTalk. Happy scripting!"
+end welcomeMessage
+
+-- Using 'On' handler with one parameter
+on AddToTotal number
+	add number to Global total
+	put Global Total
+	return total
+end AddToTotal
+
+-- Using 'function' handler with two parameters
+function divideNumbers dividend, divisor
+	if divisor is 0 then
+		return "Error: Division by zero"
+	else
+		return dividend / divisor
+	end if
+end divideNumbers
+
+function fromUI
+	//This function uses the View element on the screen to identify each row of data in the table.
+	put second item of everyImageRectangle (text: "UNCLASSIFIED") into Rows
+	put imageRectangle (text: "Name") into NameLoc
+	
+	repeat with each Row of Rows
+		set theTop to Row's top
+		set theBottom to Row's bottom
+		put readText (NameLoc's left,theTop,theBottom) into theName
+		insert (Name:theName) into TableRead
+	end repeat
+	
+	return TableRead
+end fromUI
+

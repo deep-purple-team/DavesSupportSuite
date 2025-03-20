@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>URLparameters</key>
+    <array>
+	<dict>
+	    <key>checkedNumber</key>
+	    <true/>
+	    <key>param</key>
+	    <string></string>
+	    <key>showCheckedNumber</key>
+	    <true/>
+	    <key>value</key>
+	    <string></string>
+	</dict>
+    </array>
+    <key>authenticationType</key>
+    <string>None</string>
+    <key>httpVerb</key>
+    <string>PUT</string>
+    <key>oauth1Token</key>
+    <string></string>
+    <key>password</key>
+    <string></string>
+    <key>requestBody</key>
+    <string>{
+  &quot;id&quot;: &quot;af80e290-fad2-4b04-99d5-a24b60ec69eb&quot;,
+  &quot;systemName&quot;: &quot;Self-APITest&quot;,
+  &quot;systemType&quot;: &quot;UNKNOWN&quot;,
+  &quot;systemVersion&quot;: &quot;1&quot;,
+  &quot;urn&quot;: 8685309,
+  &quot;securityMarkings&quot;: {
+    &quot;classification&quot;: &quot;Unclassified&quot;
+  },
+  &quot;priority&quot;: &quot;MEDIUM&quot;
+}</string>
+    <key>requestBodyFormat</key>
+    <string>JSON (application/json)</string>
+    <key>requestHeaders</key>
+    <string>&lt;![CDATA[]]&gt;</string>
+    <key>requests</key>
+    <string></string>
+    <key>testResults</key>
+    <string></string>
+    <key>testScript</key>
+    <string></string>
+    <key>url</key>
+    <string>https://test.wisrd.com/wisrdservice/rest/v1/address-book/save</string>
+    <key>userName</key>
+    <string></string>
+</dict>
+</plist>

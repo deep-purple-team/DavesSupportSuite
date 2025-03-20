@@ -83,7 +83,7 @@ repeat with each item line in the records of global myExcelDB by reference
 		
 		//Use the GET Request to read the data
 		put "https://d80000000cqmweau--pbdqa.sandbox.my.salesforce.com/services/data/v58.0/sobjects/Account/Provider_ID__c/"&line.Provider_ID into URL
-		put "application/json;charset=UFT-8" into RH."Content-Type"
+		put "application/json;charset=UTF-8" into RH."Content-Type"
 		put "Bearer "&global accesstoken into RH."Authorization"
 		put (EmptyAPI(httpMethod:"GET",url:URL,requestheaders:RH(*,requestBody:querybody*))) into getresponse
 		//put api() into response	
@@ -131,7 +131,7 @@ repeat with each item line in the records of global myExcelDB by reference
 		
 		//Populate/update the fields for the Provider using PATCH
 		put "https://d80000000cqmweau--pbdqa.sandbox.my.salesforce.com/services/data/v58.0/sobjects/Account/Provider_ID__c/"&line.Provider_ID into URL
-		put "application/json;charset=UFT-8" into RH."Content-Type"
+		put "application/json;charset=utf-8" into RH."Content-Type"
 		put "Bearer "&global accesstoken into RH."Authorization"
 		put (EmptyAPI(httpMethod:"PATCH",url:URL,requestheaders:RH,requestBody:patchbody,requestBodyFormat:"JSON (application/json)")) into responseInfo
 		
@@ -152,7 +152,7 @@ repeat with each item line in the records of global myExcelDB by reference
 		
 		//Validate the fields using GET
 		put "https://d80000000cqmweau--pbdqa.sandbox.my.salesforce.com/services/data/v58.0/sobjects/Account/Provider_ID__c/"&line.Provider_ID into URL
-		put "application/json;charset=UFT-8" into RH."Content-Type"
+		put "application/json;charset=UTF-8" into RH."Content-Type"
 		put "Bearer "&global accesstoken into RH."Authorization"
 		put (EmptyAPI(httpMethod:"GET",url:URL,requestheaders:RH,requestBody:RB)) into responseInfo
 		

@@ -1,0 +1,223 @@
+(*** Autosnippet script "Untitled" generated 2025-03-05 by Kevin Stanley. Keep this comment for use with Eggplant AI. ***)
+(* Already generated snippets can be edited in the script below *)
+(* To customize the snippet generation templates, affecting snippets generated in the future,
+go to Eggplant > Preferences... > Script > General > Customize *)
+
+
+(* Autosnippets for Checkpoint "Create Mission Entry" (using OCR) *)
+
+to handle Create_Mission_Entry_Validate duration
+    if duration is not a number then set duration to 8
+    WaitFor duration, Text:"Create Mission Entry"
+end Create_Mission_Entry_Validate
+
+to handle Create_Mission_Entry_IsFound duration
+    if duration is not a number then set duration to 8
+    return imageFound(Text:"Create Mission Entry", waitFor:duration)
+end Create_Mission_Entry_IsFound
+
+-----------------------------------
+
+
+(* Autosnippets for Field "Planned" (using OCR) *)
+
+to handle Planned_EnterText theValue, terminator
+    // Assumes the hot spot has been set over the text field
+	// and that the field is already empty.
+	
+	// Click the location of the hot spot.
+	Click Text:"Planned", waitFor:8
+	//Type theValue and optional terminator (such as 'return' or 'tab') into the field.
+    TypeText theValue, terminator
+end Planned_EnterText
+
+to handle Planned_ReadText
+    // Assumes the hot spot has been set over the text field.
+	
+    // Use OCR to read the text around that hot spot point.
+    set theText to readText(imageLocation(Text:"Planned"))
+    // Any additional cleanup of the text could be done here before returning the value, such as:
+    // set theText to trim(theText) -- remove leading/trailing whitespace
+    return theText
+end Planned_ReadText
+
+-----------------------------------
+
+
+(* Autosnippets for RadioButton "YesRadio" *)
+
+to handle YesRadio_Select
+	// Assumes the hot spot has been set over the radio button or 
+	// that clicking on the center of the radio button label will select the radio button.
+	
+	Click imageName:"YesRadio", waitFor:8
+end YesRadio_Select
+
+-----------------------------------
+
+
+(* Autosnippets for RadioButton "NoRadio" *)
+
+to handle NoRadio_Select
+	// Assumes the hot spot has been set over the radio button or 
+	// that clicking on the center of the radio button label will select the radio button.
+	
+	Click imageName:"NoRadio", waitFor:8
+end NoRadio_Select
+
+-----------------------------------
+
+
+(* Autosnippets for Checkpoint "Populates on PIR/IR selection" (using OCR) *)
+
+to handle Populates_on_PIR_IR_selection_Validate duration
+    if duration is not a number then set duration to 8
+    WaitFor duration, Text:"Populates on PIR/IR selection"
+end Populates_on_PIR_IR_selection_Validate
+
+to handle Populates_on_PIR_IR_selection_IsFound duration
+    if duration is not a number then set duration to 8
+    return imageFound(Text:"Populates on PIR/IR selection", waitFor:duration)
+end Populates_on_PIR_IR_selection_IsFound
+
+-----------------------------------
+
+
+(* Autosnippets for Button "Cancel" (using OCR) *)
+
+to handle Cancel_Click
+    Click Text:"Cancel", waitFor:8
+end Cancel_Click
+
+-----------------------------------
+
+
+(* Autosnippets for Button "Create_button" *)
+
+to handle Create_button_Click
+    Click imageName:"Create_button", waitFor:8
+end Create_button_Click
+
+-----------------------------------
+
+
+(* Autosnippets for Button "Start Time" (using OCR) *)
+
+to handle Start_Time_Click
+    Click Text:"Start Time", HotSpot:(404,27), waitFor:8
+end Start_Time_Click
+
+-----------------------------------
+
+
+(* Autosnippets for Button "End Time" (using OCR) *)
+
+to handle End_Time_Click
+    Click Text:"End Time", HotSpot:(412,30), waitFor:8
+end End_Time_Click
+
+-----------------------------------
+
+
+(* Autosnippets for Field "Description" (using OCR) *)
+
+to handle Description_EnterText theValue, terminator
+    // Assumes the hot spot has been set over the text field
+	// and that the field is already empty.
+	
+	// Click the location of the hot spot.
+	Click Text:"Description", HotSpot:(2,21), waitFor:8
+	//Type theValue and optional terminator (such as 'return' or 'tab') into the field.
+    TypeText theValue, terminator
+end Description_EnterText
+
+to handle Description_ReadText
+    // Assumes the hot spot has been set over the text field.
+	
+    // Use OCR to read the text around that hot spot point.
+    set theText to readText(imageLocation(Text:"Description", HotSpot:(2,21)))
+    // Any additional cleanup of the text could be done here before returning the value, such as:
+    // set theText to trim(theText) -- remove leading/trailing whitespace
+    return theText
+end Description_ReadText
+
+-----------------------------------
+
+
+(* Autosnippets for Field "Assiqned Asset" (using OCR) *)
+
+to handle Assiqned_Asset_EnterText theValue, terminator
+    // Assumes the hot spot has been set over the text field
+	// and that the field is already empty.
+	
+	// Click the location of the hot spot.
+	Click Text:"Assiqned Asset", HotSpot:(34,26), waitFor:8
+	//Type theValue and optional terminator (such as 'return' or 'tab') into the field.
+    TypeText theValue, terminator
+end Assiqned_Asset_EnterText
+
+to handle Assiqned_Asset_ReadText
+    // Assumes the hot spot has been set over the text field.
+	
+    // Use OCR to read the text around that hot spot point.
+    set theText to readText(imageLocation(Text:"Assiqned Asset", HotSpot:(34,26)))
+    // Any additional cleanup of the text could be done here before returning the value, such as:
+    // set theText to trim(theText) -- remove leading/trailing whitespace
+    return theText
+end Assiqned_Asset_ReadText
+
+-----------------------------------
+
+
+(* Autosnippets for Field "RFCs" (using OCR) *)
+
+to handle RFCs_EnterText theValue, terminator
+    // Assumes the hot spot has been set over the text field
+	// and that the field is already empty.
+	
+	// Click the location of the hot spot.
+	Click Text:"RFCs", HotSpot:(10,24), waitFor:8
+	//Type theValue and optional terminator (such as 'return' or 'tab') into the field.
+    TypeText theValue, terminator
+end RFCs_EnterText
+
+to handle RFCs_ReadText
+    // Assumes the hot spot has been set over the text field.
+	
+    // Use OCR to read the text around that hot spot point.
+    set theText to readText(imageLocation(Text:"RFCs", HotSpot:(10,24)))
+    // Any additional cleanup of the text could be done here before returning the value, such as:
+    // set theText to trim(theText) -- remove leading/trailing whitespace
+    return theText
+end RFCs_ReadText
+
+-----------------------------------
+
+
+(* Autosnippets for Field "PIR/IR" (using OCR) *)
+
+to handle PIR_IR_EnterText theValue, terminator
+    // Assumes the hot spot has been set over the text field
+	// and that the field is already empty.
+	
+	// Click the location of the hot spot.
+	Click Text:"PIR/IR", HotSpot:(22,26), waitFor:8
+	//Type theValue and optional terminator (such as 'return' or 'tab') into the field.
+    TypeText theValue, terminator
+end PIR_IR_EnterText
+
+to handle PIR_IR_ReadText
+    // Assumes the hot spot has been set over the text field.
+	
+    // Use OCR to read the text around that hot spot point.
+    set theText to readText(imageLocation(Text:"PIR/IR", HotSpot:(22,26)))
+    // Any additional cleanup of the text could be done here before returning the value, such as:
+    // set theText to trim(theText) -- remove leading/trailing whitespace
+    return theText
+end PIR_IR_ReadText
+
+-----------------------------------
+
+
+(*** End of Autosnippet script Untitled.script ***)
+

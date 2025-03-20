@@ -1,0 +1,47 @@
+{
+	"originalcapturelocation": [
+		974,
+		573,
+		73,
+		21
+	],
+	"lastmodifieddate": 1742487840.1820002,
+	"createddate": 1742487840.1820002,
+	"name": "Windows_OkButton",
+	"lastfounddate": 1742488940.326,
+	"ocrcapturestring": "OK",
+	"lastfoundlocation": [
+		974,
+		573,
+		73,
+		21
+	],
+	"testlocationdata": [
+		{
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[39,10]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"Type": "Testplant Screen Image"
+				},
+				"name": "Windows_OkButton.png",
+				"connectionname": "ITT PC read PASS.png",
+				"type": 1,
+				"connectionserverid": "C:/Users/davihest/Documents/CustomerFiles/ITT PC read PASS.png",
+				"capturerect": [
+					974,
+					573,
+					73,
+					21
+				],
+				"connectiontype": "Screenshot",
+				"capturedocrtext": "OK"
+			}
+	]
+}

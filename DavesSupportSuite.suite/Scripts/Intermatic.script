@@ -1,0 +1,9 @@
+﻿put ImageRectangle(imageName:"Windows_OkButton", waitFor:1) + (-214, -187, 95, 30) into mySearchArea-- [974,573,1047,594]
+put the left of ImageRectangle(imageName:"ModalPopup_UL", waitFor:1, SearchRectangle: mySearchArea) into x1
+put the bottom of ImageRectangle(imageName:"ModalPopup_UL", waitFor:1, SearchRectangle: mySearchArea) into y1
+put the right of ImageRectangle(imageName:"ModalPopup_BR", waitFor:1, SearchRectangle: mySearchArea) into x2
+put the top of ImageRectangle(imageName:"ModalPopup_BR", waitFor:1, SearchRectangle: mySearchArea) into y2
+put ReadText(x1,y1,x2,y2) into myModalMessage
+split myModalMessage by "=="
+put trim(item 2 of myModalMessage) into myStatus
+put myStatus

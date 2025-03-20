@@ -1,0 +1,14 @@
+﻿put "RecordCompare" into myFilename
+
+set myUnquotedExcelConnection to {type:"excel", file:ResourcePath(myfilename&".xlsx"), name:"Unquoted", writable: Yes}
+put the number of records of myUnquotedExcelConnection into myRecordCountUEC
+
+set myQuotedExcelConnection to {type:"excel", file:ResourcePath(myfilename&".xlsx"), name:"Quoted", writable: Yes}
+put the number of records of myQuotedExcelConnection into myRecordCountQEC
+
+repeat myRecordCountUEC times
+	put the record of myUnquotedExcelConnection where "_pk_" equals (RepeatIndex() + 1000) into myCurrentRecordCompareU
+	put the record of myQuotedExcelConnection where "SerialNumber" equals myCurrentRecordCompareU.SerialNumber into myCurrentRecordCompareC
+	put myCurrentRecordCompareU.PartName equals myCurrentRecordCompareC.PartName
+	put myCurrentRecordCompareU.Price equals trim(myCurrentRecordCompareC.Price,quote)
+end repeat

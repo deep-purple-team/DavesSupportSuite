@@ -1,0 +1,11 @@
+{
+  "id": "af80e290-fad2-4b04-99d5-a24b60ec69eb",
+  "systemName": "Self-APITest",
+  "systemType": "UNKNOWN",
+  "systemVersion": "1",
+  "urn": 8685309,
+  "securityMarkings": {
+    "classification": "Unclassified"
+  },
+  "priority": "MEDIUM"
+}

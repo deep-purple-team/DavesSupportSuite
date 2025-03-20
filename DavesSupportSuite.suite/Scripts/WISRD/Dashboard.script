@@ -1,0 +1,58 @@
+﻿Click "Dashboard/AddComponent"
+set the SearchRectangle to rectangle.ScreenPart ("RightHalf")
+MoveTo text:"Analysis", waitFor:1
+MoveTo text:"Data", waitFor:1
+click text: "Entity"
+Click "Dashboard/AddComponent"
+MoveTo text:"Analysis", waitFor:1
+MoveTo text:"Data", waitFor:1
+click text: "Link"
+
+set the SearchRectangle to rectangle.ScreenPart ("TopHalf")
+Drag text:"Link Analysis", caseSensitive:yes
+Drop (1575,500)
+
+Click text: "Unit"
+
+click text: "Search"
+
+typetext "90 INF BN"
+
+drag item 2 of EveryImageLocation(text:"UNCLASSIFIED")
+wait .5
+drop (1575,500)
+
+Click text: "Equipment"
+
+click text: "90 INF BN"
+typetext controlKey,a
+typetext deleteKey
+
+typetext "T-72"
+
+rightclick item 2 of EveryImageLocation(text:"UNCLASSIFIED")
+wait .5
+set the SearchRectangle to rectangle.ScreenPart ("LeftHalf")
+moveto item 2 in EveryImageLocation(text:"Send")
+click text:"Link"
+
+set the SearchRectangle to rectangle.ScreenPart ("RightHalf")
+
+drag text: "90 INF BN"
+drop text: "T-72"
+
+click text:"RELATES TO", caseSensitive: yes
+
+typetext "Owns"
+
+click item 2 in EveryImageLocation(text:"OWNS")
+click "PEsaveIcon"
+
+
+
+
+
+
+
+
+

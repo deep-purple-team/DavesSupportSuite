@@ -1,0 +1,10 @@
+﻿Run "FolderFullOfScripts/Script1"
+Run "FolderFullOfScripts/Script2"
+Run "FolderFullOfScripts/Script3"
+
+put "FolderFullOfScripts" into myScriptsFolder
+put the files of (suiteinfo().scriptsfolder&"/FolderFullOfScripts") into myScriptsList
+
+repeat with each item myCurrentScript of myScriptsList
+	run (myScriptsFolder & slash & myCurrentScript)
+end repeat

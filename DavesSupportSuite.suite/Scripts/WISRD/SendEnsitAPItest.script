@@ -1,0 +1,83 @@
+﻿common.LaunchBrowserLogin "https://test.wisrd.com"
+
+common.NavigationBar "Interop", "Journal"
+
+ENSITtoTest
+
+if ImageFound("RefreshJournalEmpty") then
+	LogError "Message not received" 
+else
+	LogSuccess "Message Successfully received"
+end if
+
+click "RefreshCenter"
+
+click first item in EveryImageLocation("HighlightedJournalExpand")
+
+-- Store image rectangles
+put everyImageRectangle("JournalRefresh") into Rows
+put everyImageRectangle(text: "Name") into Namevar
+put second item of Namevar into NameLoc
+
+-- Verify we have valid data before proceeding
+if Rows is empty then
+	LogError "No JournalRefresh rows found"
+	exit script
+end if
+
+if NameLoc is empty then
+	LogError "Name location not found"
+	exit script
+end if
+
+-- Initialize empty list for table data
+set TableRead to empty list
+
+-- Process each row
+repeat with each Row of Rows
+	set theTop to Row's top
+	set theBottom to Row's bottom
+	
+	-- Read text with error handling
+	try
+		put readText(NameLoc's left - 100, theTop, Nameloc's right + 100, theBottom) into theName
+	catch error
+		LogWarning "Error reading text at row: " & Row
+		put "READ_ERROR" into theName
+	end try
+	
+	-- Clean up the read text (remove extra spaces, convert to text)
+	set theName to theName as text
+	log "Found name: " & theName
+	insert (Name:theName) into TableRead
+end repeat
+
+-- Check if "5323 AT BN" exists as a Name property value
+set foundIt to false
+repeat with each item entry of TableRead
+	if entry's Name is "5323 AT BN" then
+		set foundIt to true
+		exit repeat
+	end if
+end repeat
+
+if foundIt then
+	LogSuccess "Message successfully ingested into Journal with Name property."
+else
+	LogError "Message not ingested into Journal or missing Name property."
+end if
+
+click "ViewMSGcontent_Selected"
+
+put ReadText("ReadEnsitMsg_A","ReadEnsitMsg_B") into MsgContents
+
+if MsgContents contains "66 MI BDE"
+	logsuccess "Message contents loaded."
+else
+	logfailure "Message contents did not load."
+end if
+
+set the SearchRectangle to rectangle.ScreenPart ("BottomHalf")
+click text: "close"
+set the SearchRectangle to empty
+

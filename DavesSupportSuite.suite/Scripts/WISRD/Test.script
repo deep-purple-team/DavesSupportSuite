@@ -1,0 +1,58 @@
+﻿
+-- Define the Excel file path
+set excelFile to {type: "excel", file:"C:\Users\slimp\Downloads\Export-EventMatrix-20250227101209.xlsx"}
+
+put the records of excelFile
+
+put
+put table 1 of excelFile into tableOne
+set tableOne's columnsToFetch to ["Name", "Threat Activity","Threat COA"]
+
+put the records of tableOne into searchhere
+
+log searchhere
+
+set foundIt to false
+repeat with each item of searchhere
+	if item's Name is "91 Smoke Test" then
+		set foundIt to true
+		exit repeat
+	end if
+end repeat
+
+if foundIt then
+	LogSuccess "Message successfully ingested into Journal with Name property."
+else
+	LogError "Message not ingested into Journal or missing Name property."
+end if
+
+compare
+
+
+
+
+
+
+set excelFile to {type: "excel", file:"C:\Users\slimp\Downloads\Export-EventMatrix-20250227101209.xlsx"}
+put table 1 of excelFile into tableOne
+set tableOne's columnsToFetch to ["Name", "Threat Activity", "Threat COA"]
+put the records of tableOne into searchhere
+
+log "Searchhere: " & searchhere
+
+set foundIt to false
+repeat with each item record of searchhere
+	set nameValue to record's Name
+	log "Checking Name: " & nameValue  -- Debug each value
+	set nameValue to trim(nameValue)  -- Remove leading/trailing spaces
+	if nameValue is "91 Smoke Test" then
+		set foundIt to true
+		exit repeat
+	end if
+end repeat
+
+if foundIt then
+	LogSuccess "Message successfully ingested into Journal with Name property."
+else
+	LogError "Message not ingested into Journal or missing Name property."
+end if

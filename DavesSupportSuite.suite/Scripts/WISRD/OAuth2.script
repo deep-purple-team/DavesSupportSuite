@@ -1,0 +1,64 @@
+﻿///--Grab all the Logs about your Model Based on the UID
+put "https://test.wisrd.com" into WISRDServer
+//put "myClientID" into WISRDClientID
+//put "mySecret" into WISRDClientSecret
+
+put "eggplant-test" into WISRDClientID
+put "Ao1QHJdHFRFdqxR1TucaoDhYuowGtKc7" into WISRDClientSecret
+
+//get oAuth2 Bearer Token
+put SetAccessToken (WISRDServer, WISRDClientID ,WISRDClientSecret) into token
+put "bearer" && token.access_token into RH."Authorization"
+
+//API Get Endpoint
+put WISRDServer & "/wisrdservice/rest/v1/wisrd/entities/entityCount/Equipment" into URL
+
+WISRD_API(httpMethod:"GET",url:URL,requestheaders:RH)
+put JSONValue(api().responseBody) into ListofModels
+log ListofModels
+
+// AddAddressBookEntry API Call
+put WISRDServer & "/wisrdservice/rest/v1/wisrd/address-book/save" into URL
+put "bearer" && token.access_token into RH."Authorization"
+put "application/json;charset=UTF-8" into RH."Content-Type"
+
+put file ResourcePath("fred.json") into jsonbody
+
+EMPTYAPI(httpMethod:"PUT",url:URL,requestheaders:RH,requestbody:jsonbody)
+TestForMeghan(httpMethod:"PUT",url:URL,requestheaders:RH)
+(*AddAddressBookEntry(httpMethod:"PUT", url:URL, requestheaders:RH)*)
+
+// Debug the response
+log "Status Code: " & api().statusCode
+log "Raw Response Body: " & api().responseBody
+
+put JSONValue(api().responseBody) into ResponseInformation
+return ResponseInformation
+
+to SetAccessToken WISRDServer, WISRDClientID ,WISRDClientSecret
+	put WISRDServer &"/auth/realms/WISRD/protocol/openid-connect/token" into URL
+	
+	put "application/x-www-form-urlencoded" into RH."Content-Type"
+	put (grant_type:"client_credentials",client_id:WISRDClientID,client_secret:WISRDClientSecret) into RB
+	
+	WISRD_API(httpMethod:"POST",url:URL,requestBody:RB,requestheaders:RH)
+	
+	put JSONValue(api().responsebody) into ResponseInformation
+	
+	put ResponseInformation.access_token into access_token
+	if api().statusCode = "200" then
+		Logsuccess "Able to Access WISRD Server, and grab a access token"
+	else
+		logerror "Unable to Access WISRD Server (Bad Username,Password, or DAI Server)"
+		logwarning ResponseInformation
+		logwarning API()
+		exit all
+	end if
+	
+	return ResponseInformation
+	
+end SetAccessToken
+
+
+
+

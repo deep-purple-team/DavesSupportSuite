@@ -1,0 +1,9 @@
+﻿TypeText windowskey,"r"
+typetext "chrome.exe https://test.wisrd.com"
+typetext return
+
+WaitFor 10, "Username/Username.png"
+Click  "Username/Username_1"
+TypeText "wisrdadmin",Tab,"ANarmy0f1!@#$%^"
+Click "SignIn"
+Click "Agree"

@@ -1,0 +1,83 @@
+﻿to handle ConnectSUT SUTName
+	Connect SUTName
+end ConnectSUT
+
+-------------------------------------------
+
+to handle LaunchBrowserLogin URL
+	TypeText windowskey,"r"
+	typetext "chrome.exe", returnkey
+	typetext URL, returnkey
+	set the SearchRectangle to (1000,275,1325,750)
+	WaitFor 10, text: "Username"
+	Click  text:"Username"
+	TypeText "wisrdadmin",Tab,"ANarmy0f1!@#$%^"
+	Set the CaseSensitive to true  -- Enable case-sensitive text search
+	Click (Text: "Sign In")
+	Set the CaseSensitive to false  -- Reset to default after clicking
+	set the SearchRectangle to Rectangle.ScreenPart ("Center")
+	click the last item of EveryImageLocation(text:"Agree")
+	set the SearchRectangle to empty
+end LaunchBrowserLogin
+
+-----------------------------------------------
+
+to handle NavigationBar TopMenu, SubMenu
+	set the SearchRectangle to Rectangle.ScreenPart ("NavigationBar")
+	Click text: TopMenu
+	Click text: SubMenu
+	set the SearchRectangle to empty
+end NavigationBar
+
+------------------------------------------------
+
+to handle CreateRandomName
+	repeat 12 times
+		put any item of (0..9 &&& "a".."f") after varName
+	end repeat
+	return varname
+end CreateRandomName
+
+------------------------------------------------
+
+to handle ScrollToText SearchText
+	set scrollCount to 0
+	
+	Repeat until ImageFound(text:SearchText) or scrollCount ≥ 20
+		ScrollWheelDown 2
+		add 1 to scrollCount
+	End repeat
+	
+	if ImageFound(text:SearchText) then
+		LogSuccess "Image " & SearchText & "found after " & scrollCount & " scroll attempts."
+	else
+		LogError "Image " & SearchText & "was not found after reaching the scroll limit of 20."
+	end if
+	Click text:SearchText
+end ScrollToText
+
+-------------------------------------------------
+
+to handle SetDates
+	Click text: "Start Time", hotspot: [250,10]
+	Click "Checkmark"
+	Click Text: "End Time",hotspot: [250,10]
+	Click "NextOnCalendar"
+	set the SearchRectangle to (965,575,1258,750)
+	click the first item of EveryImageLocation(text:"1")
+	wait 2
+	set the SearchRectangle to (965,575,1258,950)
+	Click "Checkmark"
+end SetDates
+
+-------------------------------------------------
+
+to handle ClickCreateButtomBottom
+	set the SearchRectangle to rectangle.ScreenPart ("BottomHalf")
+	Click imageName:"Create_button", waitFor:8
+	set the SearchRectangle to empty
+end ClickCreateButtomBottom
+
+
+-----------------------------------------------------
+

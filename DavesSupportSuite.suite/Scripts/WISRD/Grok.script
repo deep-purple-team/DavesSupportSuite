@@ -1,0 +1,35 @@
+﻿set excelFile to {type: "excel", file:"C:\Users\slimp\Downloads\Export-EventMatrix-20250227101209.xlsx"}
+put table 1 of excelFile into tableOne
+set tableOne's columnsToFetch to ["Name", "Threat Activity", "Threat COA"]
+put the records of tableOne into searchhere
+
+log "Searchhere: " & searchhere
+
+set foundName to false
+set foundThreat to false
+repeat with each item record of searchhere
+	set nameValue to record's Name
+	set threatValue to record's "threat activity"  -- Match the exact key from the log
+	log "Name: " & nameValue & ", Threat Activity: " & threatValue
+	if nameValue is "91 Smoke Test" then
+		set foundName to true
+	end if
+	if threatValue is "Testing WISRD on Test" then
+		set foundThreat to true
+	end if
+	if foundName and foundThreat then
+		exit repeat
+	end if
+end repeat
+
+if foundName then
+	LogSuccess "Found '91 Smoke Test' in Name column."
+else
+	LogError "Did not find '91 Smoke Test' in Name column."
+end if
+
+if foundThreat then
+	LogSuccess "Found 'Testing WISRD on Test' in Threat Activity column."
+else
+	LogError "Did not find 'Testing WISRD on Test' in Threat Activity column."
+end if

@@ -1,0 +1,87 @@
+﻿//Launch Chrome and log into wisrd with admin accoung
+Common.LaunchBrowserLogin "https://test.wisrd.com"
+
+//Navigate to map
+Common.NavigationBar "ISR Visualization","Map"
+
+Set the SearchRectangle to Rectangle's ScreenPart ("TopLeftQuadrant")
+WaitFor 30, text:"3D", InvertImage:"Yes"
+Set the SearchRectangle to empty
+
+MoveTo (1050,550)
+repeat 4 times
+	ScrollWheelUp 4
+end repeat
+
+rightclick text: "3D", hotspot: [700,200]
+wait 1
+
+Set the SearchRectangle to rectangle.ScreenPart ("Center")
+click text: "Create"
+wait .5
+click text: "Entities"
+wait .5
+Set the SearchRectangle to rectangle.ScreenPart ("righthalf")
+click text: "Equipment"
+Set the SearchRectangle to empty
+Wait 2
+Set the SearchRectangle to ("PropertiesEditorRectangle_A","PropertiesEditorRectangle_B")
+click text: "Nomenclature", Hotspot: [0,10]
+Typetext "T-72A"
+Wait 1
+click the first item of EveryImageLocation(text:"TANK,MBT,125MM,T-72A")
+typetext escapeKey
+
+If ImageFound(text:"PMNBU") 
+	Logsuccess "The equpment code was correctly set."	
+else
+	LogError "The equipment code was not set correctly"
+End If
+
+click text: "Affiliation", Hotspot: [0,10]
+typetext "hostile"
+click the last item of EveryImageLocation(text:"HOSTILE")
+typetext escapeKey
+
+If ImageFound(text:"SHGPEVATM") 
+	Logsuccess "The symbol code was correctly set."	
+else
+	LogError "The symbol code was not set correctly"
+End If
+Set the SearchRectangle to empty
+
+Click "PEsaveIcon"
+
+Set the SearchRectangle to rectangle.ScreenPart ("HorizontalMiddle")
+
+Click "AddNewLayertoMap"
+Wait 1
+click text: "New Entity Layer"
+typetext controlKey,a
+typetext deleteKey
+typetext "Automated 001"
+click text: "Next"
+wait 1
+click text: "Next"
+wait .1
+Set the SearchRectangle to rectangle.ScreenPart ("BottomHalf")
+If ImageFound(text:"TANK", caseSensitive:"Yes" )
+	Logsuccess "Entity added to layer query."	
+else
+	LogError "Entity not added to layer query."
+End If
+
+click text: "Next"
+wait .5
+
+click text: "Edit and Save"
+
+Set the SearchRectangle to rectangle.ScreenPart ("TopHalf")
+If ImageFound(text:"Successfully saved layer") 
+	Logsuccess "Map layer saved"	
+else
+	LogError "Map layer did not save correctly"
+End If
+Set the SearchRectangle to empty
+
+

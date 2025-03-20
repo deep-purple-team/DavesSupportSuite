@@ -1,0 +1,70 @@
+{
+    URLparameters = (
+	{
+	    checkedNumber = <*BY>;
+	    param = "";
+	    showCheckedNumber = <*BY>;
+	    value = "";
+	}
+    );
+    authenticationType = "Basic Auth";
+    httpVerb = POST;
+    oauth1Token = "";
+    password = "";
+    requestBody = "  {
+    \"id\": \"af80e290-fad2-4b04-99d5-a24b60ec69eb\",
+    \"systemName\": \"Self-APITest\",
+    \"systemType\": \"UNKNOWN\",
+    \"systemVersion\": \"1\",
+    \"urn\": 8685309,
+    \"protocolPriorityList\": [],
+    \"properties\": {},
+    \"securityMarkings\": {
+      \"classification\": \"U\",
+      \"ownerProducer\": []
+    },
+    \"messageRetryConfig\": null,
+    \"connectionStatus\": {},
+    \"priority\": \"MEDIUM\",
+    \"healthIntervalMinutes\": null
+  }";
+    requestBodyFormat = "JSON (application/json)";
+    requestHeaders = "<![CDATA[]]>";
+    requests = "";
+    testResults = "";
+    testScript = "put \"https://test.wisrd.com\" into WISRDServer
+put \"eggplant-test\" into WISRDClientID
+put \"Ao1QHJdHFRFdqxR1TucaoDhYuowGtKc7\" into WISRDClientSecret
+
+//get oAuth2 Bearer Token
+put SetAccessToken (WISRDServer, WISRDClientID ,WISRDClientSecret) into token
+put \"bearer\" && token.access_token into RH.\"Authorization\"
+
+to SetAccessToken WISRDServer, WISRDClientID ,WISRDClientSecret
+	put WISRDServer &\"/auth/realms/WISRD/protocol/openid-connect/token\" into URL
+	
+	put \"application/x-www-form-urlencoded\" into RH.\"Content-Type\"
+	put (grant_type:\"client_credentials\",client_id:WISRDClientID,client_secret:WISRDClientSecret) into RB
+	
+	WISRD_API(httpMethod:\"POST\",url:URL,requestBody:RB,requestheaders:RH)
+	
+	put JSONValue(api().responsebody) into ResponseInformation
+	
+	put ResponseInformation.access_token into access_token
+	if api().statusCode = \"200\" then
+		Logsuccess \"Able to Access WISRD Server, and grab a access token\"
+	else
+		logerror \"Unable to Access WISRD Server (Bad Username,Password, or DAI Server)\"
+		logwarning ResponseInformation
+		logwarning API()
+		exit all
+	end if
+	
+	return ResponseInformation
+	
+end SetAccessToken
+
+end SetAccessToken";
+    url = "http://test.wisrd.com/wisrdservice/rest/v1/wisrd/address-book/save";
+    userName = "";
+}
