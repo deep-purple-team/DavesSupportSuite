@@ -1,0 +1,61 @@
+﻿If HospAnc.HospAbbr <> JDH then
+	// Quality Manager Login NOT FOR JDH
+	WaitFor 60, "SunAndMoon"
+	WaitFor 5, text:"User ID", textdifference: 1, SearchRectangle:HandlerGarage.ScreenPart("Lynde")
+	Click FoundImageLocation()
+	typetext UserIDQM of HospANC //User ID from excel spreadsheet
+	typetext tab
+	typetext "model", return
+	
+	
+	If imagefound( imagename:"Job TST Login", waitfor: 10, searchrectangle: HandlerGarage.ScreenPart("IFS")) then
+		typetext backspace
+		typetext QMJobID of HospANC
+		Typetext altkey, "o"
+	End If
+	If imagefound( text:"department", waitfor: 10, searchrectangle: HandlerGarage.ScreenPart("IFS")) then
+		wait 2
+		Typetext backspace
+		TypeText AdmitUnit of HospANC//Department from excel spreadsheet
+		TypeText Return
+		TypeText Return
+		typetext altkey, "o"
+	End If
+	wait 5
+	typetext altkey, "o"
+	
+	(* Sizing and Verification Point that Epic Opened *)
+	TypeText windowsKey, upArrow
+	waitfor 100, text: "Log Out", searchrectangle: HandlerGarage.ScreenPart("TopRightQuadrant")
+	
+	(* Swap to High Contrast *)
+	Click (1894, 46)
+	Click text: "Look and Feel", textdifference: 2, waitfor: 10, searchrectangle: HandlerGarage.ScreenPart("TopRightQuadrant")
+	Click text: "High Contrast", waitfor: 10, searchrectangle: HandlerGarage.ScreenPart("LeftHalf")
+	wait 3
+	typetext controlkey, "w"
+	
+	
+	
+	Click text: "My Dashboards", SearchRectangle:HandlerGarage.ScreenPart("HyperspaceToolbar")
+	Typetext "FH IP QM", return
+	Moveto text: "Sepsis Patients", SearchRectangle:HandlerGarage.ScreenPart("ClinicalDocumentationArea")
+	Click text: "QM Sepsis Patients", SearchRectangle:HandlerGarage.ScreenPart("ClinicalDocumentationArea")
+	Typetext altkey, "o"
+	Moveto text: "Detail List", SearchRectangle:HandlerGarage.ScreenPart("TopHalf")
+	Typetext controlkey, "w"
+	Wait 2
+	Typetext escapeKey
+	Click text: "Patient Lists", SearchRectangle:HandlerGarage.ScreenPart("HyperspaceToolbar")
+	waitfor 20, text: "Available List", SearchRectangle:HandlerGarage.ScreenPart("Storyboard")
+	Click (56,745)
+	Click (93, 768)
+	Click (97,797)
+	doubleclick text: "qaclindoc, ancillaryjs", textdifference: 1, searchrectangle: HandlerGarage.ScreenPart("ClinicalDocumentationArea")
+	Click text: "Flowsheets", SearchRectangle:HandlerGarage.ScreenPart("HyperspaceReportButtons")
+	Moveto text: "99", SearchRectangle:HandlerGarage.ScreenPart("ClinicalDocumentationArea") //Verification point to make sure RN documentation pulls in 
+	Click text: "Notes", SearchRectangle:HandlerGarage.ScreenPart("HyperspaceReportButtons")
+	moveto text: "A progress note for", SearchRectangle:HandlerGarage.ScreenPart("ClinicalDocumentationArea")
+	Click text: "Log Out", SearchRectangle:HandlerGarage.ScreenPart("TopRightQuadrant")
+
+End If

@@ -1,0 +1,17 @@
+﻿set CharacterToFind to ["x","Y","Z","dps","lsb"]
+
+put readtext((783,563,1189,657),saveimagefile:ResourcePath("example.png"))
+
+repeat with each item of CharacterToFind
+	click {text:it,searchrectangle:[783,563,1189,657]}
+	wait 2
+end repeat
+
+
+set the SearchRectangle to [783,563,1189,657]
+repeat with EveryImageRectangle("Checkbox")
+	put (right of IT + 1, top of IT -1, right of IT + 35, bottom of IT + 1) into myReadArea
+	put ReadText(myReadArea,saveimagefile:ResourcePath("checkbox"&repeatindex()&".png"))
+end repeat
+
+

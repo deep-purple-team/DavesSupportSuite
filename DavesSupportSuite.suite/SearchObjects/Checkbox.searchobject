@@ -1,0 +1,45 @@
+{
+	"lastmodifieddate": 1744032391.7309999,
+	"lastfoundlocation": [
+		977,
+		575,
+		24,
+		24
+	],
+	"originalcapturelocation": [
+		977,
+		575,
+		24,
+		24
+	],
+	"createddate": 1744032348.536,
+	"lastfounddate": 1744033612.5799999,
+	"testlocationdata": [
+		{
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[15,15]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"Type": "Testplant Screen Image"
+				},
+				"name": "Checkbox/Checkbox_unselected.png",
+				"connectionname": "TestDataExport.PNG",
+				"type": 1,
+				"capturerect": [
+					977,
+					575,
+					24,
+					24
+				],
+				"connectiontype": "Screenshot",
+				"connectionserverid": "C:/Users/davihest/Downloads/TestDataExport.PNG"
+			}
+	],
+	"name": "Checkbox"
+}

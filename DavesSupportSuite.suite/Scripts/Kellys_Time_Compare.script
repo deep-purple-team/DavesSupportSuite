@@ -1,0 +1,2 @@
+﻿put "13:09:24" into myTime
+assert myTime is between "07:00:00" and "17:00:00"

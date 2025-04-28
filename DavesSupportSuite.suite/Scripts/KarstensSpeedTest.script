@@ -1,0 +1,10 @@
+﻿put version().archive
+put everyimagerectangle(text:<7digits>) into temp --
+put the result into temp2 -- all entries are the same
+begintimer
+put foundtext of each item of temp2 -- why does this take 14 seconds to finish and the output is already printed after 1 second?
+endtimer
+put -
+
+put [10,15,20,25] into myRect
+put myRect.left --10

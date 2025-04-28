@@ -1,0 +1,21 @@
+﻿set phoneBook to {Mark:"555-1234", John:"555-2345", Eli:"555-3456"}
+repeat with each name in the keys of phoneBook
+	set phoneNum to phoneBook.(name) // use name (the key) to get its corresponding value
+	put name & ":" && phoneNum
+end repeat
+
+Run EggDoc "C:\ScriptRepositories\MedtronicDemo.suite"
+
+CaptureScreen (Name: suiteinfo().imagesfolder&slash&"foo")
+
+
+set myText to "09Team0199910"
+put myText split by <letters> into myString
+put last item in myString into myNum
+put 1 plus myNum into mySum
+log mySum
+if mySum < 10 then set mySum = "0" & mySum
+replace the last occurrence of myNum with mySum in myText
+log myText
+
+click "foo", waitFor:5

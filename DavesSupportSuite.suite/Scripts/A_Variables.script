@@ -1,0 +1,7 @@
+﻿put "Frederick" into myFirstName
+
+put "Fred" into myNickname
+
+Log "My name is"  && myFirstName&& "but you can call me" && myNickname
+
+

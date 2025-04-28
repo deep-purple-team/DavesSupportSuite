@@ -39,8 +39,8 @@
 					"device_os": "Android",
 					"remote_adb_port": "0",
 					"os_version": "13",
-					"model": "motorola edge (2021)",
-					"serial": "ZY22D3LG4W"
+					"serial": "ZY22D3LG4W",
+					"model": "motorola edge (2021)"
 				},
 				"name": "OurGroceries_mobile.png",
 				"connectionname": "MotorolaG7",
@@ -77,8 +77,8 @@
 					"device_os": "Android",
 					"remote_adb_port": "0",
 					"os_version": "13",
-					"serial": "ZY22D3LG4W",
-					"model": "motorola edge (2021)"
+					"model": "motorola edge (2021)",
+					"serial": "ZY22D3LG4W"
 				},
 				"name": "OurGroceries_mobile.png",
 				"connectionname": "MotorolaG7",
@@ -115,8 +115,8 @@
 					"device_os": "Android",
 					"remote_adb_port": "0",
 					"os_version": "13",
-					"serial": "ZY22D3LG4W",
-					"model": "motorola edge (2021)"
+					"model": "motorola edge (2021)",
+					"serial": "ZY22D3LG4W"
 				},
 				"name": "OurGroceries_mobile.png",
 				"connectionname": "MotorolaG7",

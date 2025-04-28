@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "sensetalk",
+            "request": "launch",
+            "name": "Run Current Script",
+            "program": "${file}"
+        }
+    ]
+}

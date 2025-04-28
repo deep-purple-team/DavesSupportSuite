@@ -132,4 +132,16 @@
   <ReturnValue>[{errorCode:&quot;REQUIRED_FIELD_MISSING&quot;, fields:[&quot;LastName&quot;,&quot;BHMG_MCI__c&quot;], message:&quot;Required fields are missing: [LastName, BHMG_MCI__c]&quot;}]</ReturnValue>
   <ErrorMessage></ErrorMessage>
  </run>
+ <run>
+  <RunDate>2025-03-24 08:12:03.158 -0400</RunDate>
+  <Status>Failure</Status>
+  <Duration>0.711000</Duration>
+  <Errors>2</Errors>
+  <Warnings>0</Warnings>
+  <Exceptions>0</Exceptions>
+  <Successes>0</Successes>
+  <LogFile>20250324_081203.158/LogFile.txt</LogFile>
+  <ReturnValue></ReturnValue>
+  <ErrorMessage>Invalid JSON -- Can&#x27;t get value of JSON expression</ErrorMessage>
+ </run>
 </runHistory>

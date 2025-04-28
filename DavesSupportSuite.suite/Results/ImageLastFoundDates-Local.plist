@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <key>Checkbox/Checkbox_selected.png</key>
+    <string>2025-04-07 13:46 +0000</string>
+    <key>Checkbox/Checkbox_unselected.png</key>
+    <string>2025-04-07 13:46 +0000</string>
     <key>Chrome_refresh.png</key>
     <string>2025-02-25 22:03 +0000</string>
     <key>ModalPopup_BR.png</key>
@@ -22,5 +26,7 @@
     <string>2025-02-25 22:02 +0000</string>
     <key>Windows_OkButton.png</key>
     <string>2025-03-20 16:42 +0000</string>
+    <key>foo.png</key>
+    <string>2025-04-25 20:22 +0000</string>
 </dict>
 </plist>

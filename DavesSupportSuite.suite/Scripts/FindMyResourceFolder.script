@@ -1,0 +1,3 @@
+﻿put "This is my Resource path" && ResourcePath()
+put "This is my Suite info for DavesSupportSuite" && SuiteInfo("DavesSupportSuite.suite")
+put "This is my Suite info for BattleNet" && SuiteInfo("BattleNet.suite")

@@ -1,0 +1,1 @@
+put readtext([208,264,369,987],ValidPattern:"CA-MANUF_INT-[0-9]+")
