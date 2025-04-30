@@ -1,3 +1,7 @@
 ﻿put "This is my Resource path" && ResourcePath()
-put "This is my Suite info for DavesSupportSuite" && SuiteInfo("DavesSupportSuite.suite")
-put "This is my Suite info for BattleNet" && SuiteInfo("BattleNet.suite")
+put ResourcePath() into mySuitePath
+delete "/Resources" from mySuitePath
+put "This is my Suite info for DavesSupportSuite when referenced by full path" && SuiteInfo(mySuitePath)
+put "This is my Suite info for DavesSupportSuite when referenced by suite name only" && SuiteInfo("DavesSupportSuite/DavesSupportSuite.suite")
+put SuiteInfo(mySuitePath) equals SuiteInfo("DavesSupportSuite.suite")
+--put "This is my Suite info for BattleNet" && SuiteInfo("BattleNet.suite")
