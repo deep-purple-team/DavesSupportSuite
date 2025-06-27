@@ -1,0 +1,4 @@
+﻿to SuperClick myParams
+	click myParams
+	CaptureScreen (Name: ResourcePath("foo.png"), Rectangle: foundImageRectangle())
+end SuperClick

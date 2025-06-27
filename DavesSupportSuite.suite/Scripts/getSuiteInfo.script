@@ -1,0 +1,23 @@
+log suiteinfo()
+put pathlist (suiteinfo().path) into pathInfo
+//put split(suiteinfo().path, "/") into pathInfo
+if RunningFromCommandLine() then
+	log "running from command line"
+	put item 7 of pathInfo into myUserName
+	log "agent environment name is "&myUserName
+	else
+	put item 4 of pathInfo into myUserName
+	log "username is "&myUserName
+end if
+
+log "user info: "&userinfo()
+
+(*log "system info: "&systemInfo()
+
+log "system version: "&systemVersion()
+
+log "OS info: "&the OSInfo
+
+log "machine info: "&the machine
+
+log "platform info: "&the platform*)

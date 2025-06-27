@@ -1,32 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-    <key>Checkbox/Checkbox_selected.png</key>
-    <string>2025-04-07 13:46 +0000</string>
-    <key>Checkbox/Checkbox_unselected.png</key>
-    <string>2025-04-07 13:46 +0000</string>
-    <key>Chrome_refresh.png</key>
-    <string>2025-02-25 22:03 +0000</string>
-    <key>ModalPopup_BR.png</key>
-    <string>2025-03-20 16:42 +0000</string>
-    <key>ModalPopup_UL.png</key>
-    <string>2025-03-20 16:42 +0000</string>
-    <key>OurGroceries_add.png</key>
-    <string>2025-02-25 22:02 +0000</string>
-    <key>OurGroceries_backbutton.png</key>
-    <string>2025-02-25 22:02 +0000</string>
-    <key>OurGroceries_barcodeReader.png</key>
-    <string>2025-02-25 22:02 +0000</string>
-    <key>OurGroceries_icon.png</key>
-    <string>2025-02-25 22:03 +0000</string>
-    <key>OurGroceries_listsearch.png</key>
-    <string>2025-02-25 20:45 +0000</string>
-    <key>OurGroceries_mobile.png</key>
-    <string>2025-02-25 22:02 +0000</string>
-    <key>Windows_OkButton.png</key>
-    <string>2025-03-20 16:42 +0000</string>
-    <key>foo.png</key>
-    <string>2025-04-25 20:22 +0000</string>
-</dict>
-</plist>
+{
+    "Checkbox/Checkbox_selected.png" = "2025-04-07 13:46 +0000";
+    "Checkbox/Checkbox_unselected.png" = "2025-04-07 13:46 +0000";
+    "Chrome_refresh.png" = "2025-02-25 22:03 +0000";
+    "FavoritesIcon.png" = "2025-05-08 14:42 +0000";
+    "ModalPopup_BR.png" = "2025-03-20 16:42 +0000";
+    "ModalPopup_UL.png" = "2025-03-20 16:42 +0000";
+    "OurGroceries_add.png" = "2025-02-25 22:02 +0000";
+    "OurGroceries_backbutton.png" = "2025-02-25 22:02 +0000";
+    "OurGroceries_barcodeReader.png" = "2025-02-25 22:02 +0000";
+    "OurGroceries_icon.png" = "2025-02-25 22:03 +0000";
+    "OurGroceries_listsearch.png" = "2025-02-25 20:45 +0000";
+    "OurGroceries_mobile.png" = "2025-02-25 22:02 +0000";
+    "Windows_OkButton.png" = "2025-03-20 16:42 +0000";
+    "[Character_Collections]/Popeyes_Receipt/digit_1.png" = "2025-06-06 15:57 +0000";
+    "[Character_Collections]/Popeyes_Receipt/digit_2.png" = "2025-06-06 15:57 +0000";
+    "[Character_Collections]/Popeyes_Receipt/lower_a.png" = "2025-06-06 13:28 +0000";
+    "[Character_Collections]/Popeyes_Receipt/lower_c.png" = "2025-06-06 15:57 +0000";
+    "[Character_Collections]/Popeyes_Receipt/lower_d.png" = "2025-06-06 15:57 +0000";
+    "[Character_Collections]/Popeyes_Receipt/lower_e.png" = "2025-06-06 13:28 +0000";
+    "[Character_Collections]/Popeyes_Receipt/lower_f.png" = "2025-06-06 13:24 +0000";
+    "[Character_Collections]/Popeyes_Receipt/lower_l.png" = "2025-06-06 15:57 +0000";
+    "[Character_Collections]/Popeyes_Receipt/lower_n.png" = "2025-06-06 15:57 +0000";
+    "[Character_Collections]/Popeyes_Receipt/lower_o.png" = "2025-06-06 13:28 +0000";
+    "[Character_Collections]/Popeyes_Receipt/lower_p.png" = "2025-06-06 13:24 +0000";
+    "[Character_Collections]/Popeyes_Receipt/lower_r.png" = "2025-06-06 15:57 +0000";
+    "[Character_Collections]/Popeyes_Receipt/lower_s.png" = "2025-06-06 15:57 +0000";
+    "[Character_Collections]/Popeyes_Receipt/lower_u.png" = "2025-06-06 13:28 +0000";
+    "[Character_Collections]/Popeyes_Receipt/lower_y.png" = "2025-06-06 13:28 +0000";
+    "[Character_Collections]/Popeyes_Receipt/upper_B.png" = "2025-06-06 13:28 +0000";
+    "[Character_Collections]/Popeyes_Receipt/upper_C.png" = "2025-06-06 15:57 +0000";
+    "[Character_Collections]/Popeyes_Receipt/upper_H.png" = "2025-06-06 13:28 +0000";
+    "[Character_Collections]/Popeyes_Receipt/upper_P.png" = "2025-06-06 15:57 +0000";
+    "[Character_Collections]/Popeyes_Receipt/upper_T.png" = "2025-06-06 15:57 +0000";
+    "foo.png" = "2025-04-25 20:22 +0000";
+}

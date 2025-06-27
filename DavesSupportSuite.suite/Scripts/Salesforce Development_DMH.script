@@ -129,6 +129,8 @@ repeat with each item line in the records of global myExcelDB by reference
 "BillingStreet": ">> & (line.Address) & <<",
 },>>
 		
+		wait 5
+		
 		//Populate/update the fields for the Provider using PATCH
 		put "https://d80000000cqmweau--pbdqa.sandbox.my.salesforce.com/services/data/v58.0/sobjects/Account/Provider_ID__c/"&line.Provider_ID into URL
 		put "application/json;charset=utf-8" into RH."Content-Type"

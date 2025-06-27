@@ -1,0 +1,10 @@
+{
+    adaptiveConstant = <*I7>;
+    commandList = "[{captureRect:[180, 385.727273, 191, 398.727273], character:\"C\", elementName:\"upper_C\", eventNum:2, folderPath:\"\", hotSpot:[186, 687.272727], imageName:\"upper_C\", itemEvent:\"TurboListItemEvent_Character\", itemMode:\"TurboListItemMode_New\", itemType:\"TurboListItemType_Character\", screenShotFile:\"Screen0001.png\", searchType:\"Tolerant of Background\", skipStep:False, userModified:False, usingTempImageName:True, waitForTime:-1}, {captureRect:[203, 385.745455, 213, 399.745455], character:\"l\", elementName:\"lower_l\", eventNum:3, folderPath:\"\", hotSpot:[207, 688.254545], imageName:\"lower_l\", itemEvent:\"TurboListItemEvent_Character\", itemMode:\"TurboListItemMode_New\", itemType:\"TurboListItemType_Character\", screenShotFile:\"Screen0001.png\", searchType:\"Tolerant of Background\", skipStep:False, userModified:False, usingTempImageName:True, waitForTime:-1}, {captureRect:[225, 385.781818, 235, 396.781818], character:\"s\", elementName:\"lower_s\", eventNum:4, folderPath:\"\", hotSpot:[229, 690.218182], imageName:\"lower_s\", itemEvent:\"TurboListItemEvent_Character\", itemMode:\"TurboListItemMode_New\", itemType:\"TurboListItemType_Character\", screenShotFile:\"Screen0001.png\", searchType:\"Tolerant of Background\", skipStep:False, userModified:False, usingTempImageName:True, waitForTime:-1}, {captureRect:[246, 385.763636, 257, 399.763636], character:\"c\", elementName:\"lower_c\", eventNum:5, folderPath:\"\", hotSpot:[252, 689.236364], imageName:\"lower_c\", itemEvent:\"TurboListItemEvent_Character\", itemMode:\"TurboListItemMode_New\", itemType:\"TurboListItemType_Character\", screenShotFile:\"Screen0001.png\", searchType:\"Tolerant of Background\", skipStep:False, userModified:False, usingTempImageName:True, waitForTime:-1}]";
+    dilations = <*I3>;
+    maxSize = <*I300>;
+    minSize = <*I16>;
+    savedWithEpfVersion = <*I202505290445>;
+    sessionType = characterCollection;
+    sessionUsesDOMObjects = <*BN>;
+}

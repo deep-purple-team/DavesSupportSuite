@@ -1,0 +1,9 @@
+﻿Click WaitFor:1, image: "FavoritesIcon", name:"Favorites Icon 3"
+
+
+to handle click myParams
+	assert imageFound(myParams)
+	CaptureScreen (Name: ResourcePath(myParams.name), Rectangle: foundImageInfo().imageRectangle)
+	tell SenseTalk to click FoundImageLocation()
+end click
+

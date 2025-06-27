@@ -1,0 +1,25 @@
+﻿set myRequestBody to <<	
+{
+"grant_type": ">> & authGrant_Type & <<",
+"scope": ">> & authScope & <<",
+"client_id": ">> & authClient_ID & <<",
+"client_secret": ">> & authClient_Secret & <<",
+},>>
+
+//Populate/update the fields for the Provider using PATCH
+put "https://some.apiaddress.com/" into URL
+put "application/json;charset=utf-8" into RH."Content-Type"
+put "Bearer "&global accesstoken into RH."Authorization"
+put "Accept" into RH."Accept"
+put (EmptyAPI(httpMethod:"PUT",url:URL,requestheaders:RH,requestBody:myRequestBody,requestBodyFormat:"JSON (application/json)")) into responseInfo
+
+put api() into response
+//Validate that the Status Code is between 200 and 201-Note-201 is success code for POST/PATCH -creation of an item
+If response.statusCode is between 200 and 201
+	Log "Status Code is ="&getresponse.statusCode
+	LogSuccess "Provider updated successfully"
+	set myResult to "TRUE"
+else
+	LogError response
+	throw "Error", "Unable to get response"
+End If

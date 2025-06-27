@@ -1,60 +1,78 @@
-{
-    URLparameters = (
-	{
-	    checkedNumber = <*BY>;
-	    param = "";
-	    showCheckedNumber = <*BY>;
-	    value = "";
-	}
-    );
-    authenticationType = "Basic Auth";
-    httpVerb = POST;
-    oauth1Token = "";
-    password = "";
-    requestBody = "  {
-    \"id\": \"af80e290-fad2-4b04-99d5-a24b60ec69eb\",
-    \"systemName\": \"Self-APITest\",
-    \"systemType\": \"UNKNOWN\",
-    \"systemVersion\": \"1\",
-    \"urn\": 8685309,
-    \"protocolPriorityList\": [],
-    \"properties\": {},
-    \"securityMarkings\": {
-      \"classification\": \"U\",
-      \"ownerProducer\": []
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>URLparameters</key>
+    <array>
+	<dict>
+	    <key>checkedNumber</key>
+	    <true/>
+	    <key>param</key>
+	    <string></string>
+	    <key>showCheckedNumber</key>
+	    <true/>
+	    <key>value</key>
+	    <string></string>
+	</dict>
+    </array>
+    <key>authenticationType</key>
+    <string>Basic Auth</string>
+    <key>httpVerb</key>
+    <string>POST</string>
+    <key>oauth1Token</key>
+    <string></string>
+    <key>password</key>
+    <string></string>
+    <key>requestBody</key>
+    <string>  {
+    &quot;id&quot;: &quot;af80e290-fad2-4b04-99d5-a24b60ec69eb&quot;,
+    &quot;systemName&quot;: &quot;Self-APITest&quot;,
+    &quot;systemType&quot;: &quot;UNKNOWN&quot;,
+    &quot;systemVersion&quot;: &quot;1&quot;,
+    &quot;urn&quot;: 8685309,
+    &quot;protocolPriorityList&quot;: [],
+    &quot;properties&quot;: {},
+    &quot;securityMarkings&quot;: {
+      &quot;classification&quot;: &quot;U&quot;,
+      &quot;ownerProducer&quot;: []
     },
-    \"messageRetryConfig\": null,
-    \"connectionStatus\": {},
-    \"priority\": \"MEDIUM\",
-    \"healthIntervalMinutes\": null
-  }";
-    requestBodyFormat = "JSON (application/json)";
-    requestHeaders = "<![CDATA[]]>";
-    requests = "";
-    testResults = "";
-    testScript = "put \"https://test.wisrd.com\" into WISRDServer
-put \"eggplant-test\" into WISRDClientID
-put \"Ao1QHJdHFRFdqxR1TucaoDhYuowGtKc7\" into WISRDClientSecret
+    &quot;messageRetryConfig&quot;: null,
+    &quot;connectionStatus&quot;: {},
+    &quot;priority&quot;: &quot;MEDIUM&quot;,
+    &quot;healthIntervalMinutes&quot;: null
+  }</string>
+    <key>requestBodyFormat</key>
+    <string>JSON (application/json)</string>
+    <key>requestHeaders</key>
+    <string>&lt;![CDATA[]]&gt;</string>
+    <key>requests</key>
+    <string></string>
+    <key>testResults</key>
+    <string></string>
+    <key>testScript</key>
+    <string>put &quot;https://test.wisrd.com&quot; into WISRDServer
+put &quot;eggplant-test&quot; into WISRDClientID
+put &quot;Ao1QHJdHFRFdqxR1TucaoDhYuowGtKc7&quot; into WISRDClientSecret
 
 //get oAuth2 Bearer Token
 put SetAccessToken (WISRDServer, WISRDClientID ,WISRDClientSecret) into token
-put \"bearer\" && token.access_token into RH.\"Authorization\"
+put &quot;bearer&quot; &amp;&amp; token.access_token into RH.&quot;Authorization&quot;
 
 to SetAccessToken WISRDServer, WISRDClientID ,WISRDClientSecret
-	put WISRDServer &\"/auth/realms/WISRD/protocol/openid-connect/token\" into URL
+	put WISRDServer &amp;&quot;/auth/realms/WISRD/protocol/openid-connect/token&quot; into URL
 	
-	put \"application/x-www-form-urlencoded\" into RH.\"Content-Type\"
-	put (grant_type:\"client_credentials\",client_id:WISRDClientID,client_secret:WISRDClientSecret) into RB
+	put &quot;application/x-www-form-urlencoded&quot; into RH.&quot;Content-Type&quot;
+	put (grant_type:&quot;client_credentials&quot;,client_id:WISRDClientID,client_secret:WISRDClientSecret) into RB
 	
-	WISRD_API(httpMethod:\"POST\",url:URL,requestBody:RB,requestheaders:RH)
+	WISRD_API(httpMethod:&quot;POST&quot;,url:URL,requestBody:RB,requestheaders:RH)
 	
 	put JSONValue(api().responsebody) into ResponseInformation
 	
 	put ResponseInformation.access_token into access_token
-	if api().statusCode = \"200\" then
-		Logsuccess \"Able to Access WISRD Server, and grab a access token\"
+	if api().statusCode = &quot;200&quot; then
+		Logsuccess &quot;Able to Access WISRD Server, and grab a access token&quot;
 	else
-		logerror \"Unable to Access WISRD Server (Bad Username,Password, or DAI Server)\"
+		logerror &quot;Unable to Access WISRD Server (Bad Username,Password, or DAI Server)&quot;
 		logwarning ResponseInformation
 		logwarning API()
 		exit all
@@ -64,7 +82,10 @@ to SetAccessToken WISRDServer, WISRDClientID ,WISRDClientSecret
 	
 end SetAccessToken
 
-end SetAccessToken";
-    url = "http://test.wisrd.com/wisrdservice/rest/v1/wisrd/address-book/save";
-    userName = "";
-}
+end SetAccessToken</string>
+    <key>url</key>
+    <string>http://test.wisrd.com/wisrdservice/rest/v1/wisrd/address-book/save</string>
+    <key>userName</key>
+    <string></string>
+</dict>
+</plist>

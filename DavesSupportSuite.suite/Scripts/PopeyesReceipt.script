@@ -1,0 +1,15 @@
+﻿put EveryImageRectangle(characters:"1", characterCollection:"Popeyes_Receipt", SearchRectangle:(0,570,64,932))
+
+set the SearchRectangle to ()
+
+Put ReadCharacters((60,675,404,698),characterCollection:"Popeyes_Receipt", maximumAdjacentGap:12)
+
+//(60,675,404,698)
+
+--HighlightRectangle FoundImageLocation().ImageRectangle, (duration:5)
+
+Wait 5
+
+Put ReadText((60,675,404,698))
+
+

@@ -1,0 +1,97 @@
+{
+	"originalcapturelocation": [
+		140,
+		580,
+		42,
+		40
+	],
+	"lastmodifieddate": 1746628786.599,
+	"createddate": 1746628786.599,
+	"name": "FavoritesIcon",
+	"lastfounddate": 1746715345.0039999,
+	"ocrcapturestring": "☆",
+	"lastfoundlocation": [
+		140,
+		580,
+		42,
+		40
+	],
+	"testlocationdata": [
+		{
+				"connectionportnum": 5900,
+				"domelements": [
+					{
+							"elementName": "ContactsButton",
+							"elementType": "Button",
+							"elementScale": 1,
+							"elementLocation": "{{9, 578}, {93, 62}}"
+						},
+					{
+							"elementName": "FavoritesButton",
+							"elementType": "Button",
+							"elementScale": 1,
+							"elementLocation": "{{111, 578}, {93, 62}}"
+						},
+					{
+							"elementName": "HistoryButton",
+							"elementType": "Button",
+							"elementScale": 1,
+							"elementLocation": "{{222, 578}, {93, 62}}"
+						},
+					{
+							"elementName": "DownloadsButton",
+							"elementType": "Button",
+							"elementScale": 1,
+							"elementLocation": "{{327, 578}, {93, 62}}"
+						},
+					{
+							"elementName": "Wifi Indicator",
+							"elementType": "Checkpoint",
+							"elementScale": 1,
+							"elementLocation": "{{4, 3}, {82, 22}}"
+						},
+					{
+							"elementName": "Clock",
+							"elementType": "Checkpoint",
+							"elementScale": 1,
+							"elementLocation": "{{174, 4}, {78, 20}}"
+						},
+					{
+							"elementName": "Battery Indicator",
+							"elementType": "Checkpoint",
+							"elementScale": 1,
+							"elementLocation": "{{382, 3}, {42, 24}}"
+						},
+					{
+							"elementName": "Screen Text",
+							"elementType": "Checkpoint",
+							"elementScale": 1,
+							"elementLocation": "{{12, 198}, {326, 60}}"
+						}
+				],
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[19,25]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"Type": "Testplant Tutorial"
+				},
+				"name": "FavoritesIcon.png",
+				"connectionname": "Tutorial Connection",
+				"type": 1,
+				"connectionserverid": "TutorialSUT",
+				"capturerect": [
+					140,
+					580,
+					42,
+					40
+				],
+				"capturedocrtext": "☆"
+			}
+	]
+}

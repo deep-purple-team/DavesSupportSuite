@@ -19,3 +19,38 @@ replace the last occurrence of myNum with mySum in myText
 log myText
 
 click "foo", waitFor:5
+
+setoption remoteWorkInterval, 5
+
+//works as expected - RWI has no effect
+repeat 5 times
+	log waiting
+	wait 1
+end repeat
+
+//works as expected - RWI adds 5 seconds to each step
+repeat 5 times
+	MoveTo text:"phone"
+end repeat
+
+//does NOT work as expected - RWI has no effect
+repeat 5 times
+	WaitFor 1, text:"phone"
+end repeat
+
+//does NOT work as expected - RWI has no effect
+repeat 5 times
+	log ImageRectangle(text:"phone")
+end repeat
+
+//does NOT work as expected - RWI has no effect
+repeat 5 times
+	log ReadText(ImageRectangle(text:"phone"))
+end repeat
+
+to getSession URL, PORT	
+	set url to "http://"& URL ":"& PORT &"/sessions"
+	return JSONValue(appiumEndpoint(httpMethod:"GET",url:url).responseBody).value.id
+end getSession
+
+

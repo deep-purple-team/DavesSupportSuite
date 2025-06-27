@@ -1,0 +1,28 @@
+﻿set MyExcelFile to Workbook(ResourcePath("fscallextract.xlsx")) // Sets MyExcelFile as a reference variable for the TestCases.xlsx Excel file
+
+set myWorksheet to Worksheet(MyExcelFile, 1) // Sets worksheet2 to refer to the second worksheet in the Excel file
+
+deleteRows myWorksheet, 1..4 // deletes 5 rows from 1 to 5
+
+set myConnectionString to {type:"Excel", file:ResourcePath("fscallextract.xlsx"), writable:yes}
+
+put the number of records of myConnectionString into myRecordCount
+
+set memberIterator to iterate over the records of myConnectionString
+
+repeat myRecordCount times
+	put memberIterator's nextValue into myCurrentLine
+	if myCurrentLine."FEE SCHEDULE ID" is not empty then
+		put myCurrentLine."FEE SCHEDULE ID" into myCurrentID
+	else
+		put myCurrentID into myCurrentLine."FEE SCHEDULE ID"
+	end if
+end repeat
+
+
+put the records of myConnectionString into myCachedExcel
+
+repeat with each item myCurrentLine of myCachedExcel by reference
+	put myCurrentLine."FEE SCHEDULE ID"
+end repeat
+
