@@ -1,0 +1,21 @@
+﻿put "$12.99" into originalPrice
+
+// find sales tag
+put remoteScreenSize() into rss
+put rss * [0.65, 0] into topLeftAnchor
+put rss * [0.9, 1] into botRightAnchor
+put [topLeftAnchor, botRightAnchor] into tempRect
+put imageRectangle(image: "discountPriceTag", searchRectangle: tempRect) into tagRect
+// search for sale price currency symbol to the left of sales tag
+put tagRect.topLeft + [-200, 0] into topLeftAnchor
+put tagRect.bottomLeft into botRightAnchor
+put [topLeftAnchor, botRightAnchor] into salePriceSearchRect
+put imageRectangle(text: "$", searchRectangle: salePriceSearchRect) into symbolRect
+// use sale price currency symbol as left constraint; search above sale price for original price
+put [symbolRect.left - 5, salePriceSearchRect.top - 30] into topLeftAnchor
+put tagRect.topRight + [20, 0] into botRightAnchor
+put [topLeftAnchor, botRightAnchor] into origPriceSearchRect
+put readText(origPriceSearchRect, validCharacters: "$.,0123456789", DPI:144) into displayedOriginalPrice
+
+//Validate Price is correct
+assert that displayedOriginalPrice is equal to originalPrice

@@ -1,0 +1,22 @@
+﻿//(280,432,300,455) - Case Drilldown Icon
+//(255,413,1880,465) - Case Headers
+//(255,469,1880,497) - Case Header Values
+
+put ImageRectangle(imageName:"Medrisk_CaseDrilldown", waitFor:1) + (-25, -19, 1580, 10) into myCaseHeadersSearchArea
+put myCaseHeadersSearchArea + (0, 56, 0, 42) into myCaseHeadersValuesSearchArea
+
+//(1305,419,1347,429) - # DOS rectangle
+put ImageRectangle(text:"# DOS", waitFor:1, SearchRectangle:myCaseHeadersSearchArea) into myCaseCountHeader
+
+put the left of myCaseCountHeader into x1
+put the right of myCaseCountHeader into x2
+put the top of myCaseHeadersValuesSearchArea into y1
+put the bottom of myCaseHeadersValuesSearchArea into y2
+put (x1,y1,x2,y2) into myCaseCountSearchArea
+
+put ReadText(myCaseCountSearchArea) into myCaseCount
+
+Log "My case count is:" && myCaseCount
+
+
+

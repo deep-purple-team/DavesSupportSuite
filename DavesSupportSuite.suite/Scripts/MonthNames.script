@@ -1,0 +1,9 @@
+﻿put "August 15" + 1 month -- September 15
+put "March 15" + 1 month -- April 15
+put "Februar 15" + 1 month -- failed Value is not a number: 'Februar 15'
+put "Januar 15" + 1 month -- failed Value is not a number: 'Januar 15'
+put "Juni 15" + 1 month -- failed Value is not a number: 'Juni 15'
+put "March 15" + 1 month -- was not working for him but also März and Maerz weren't
+put "Februar 15" + 1 month -- was working and outputting March 15
+put "Januar 15" + 1 month -- was working and outputting February 15
+put "Juni 15" + 1 month -- July 15 

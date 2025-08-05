@@ -3,6 +3,11 @@
 set myUnquotedExcelConnection to {type:"excel", file:ResourcePath(myfilename&".xlsx"), name:"Unquoted", writable: Yes}
 put the number of records of myUnquotedExcelConnection into myRecordCountUEC
 
+Repeat with each item myCurrentRecord of the records of myUnquotedExcelConnection
+	put myCurrentRecord
+End repeat
+
+
 set myQuotedExcelConnection to {type:"excel", file:ResourcePath(myfilename&".xlsx"), name:"Quoted", writable: Yes}
 put the number of records of myQuotedExcelConnection into myRecordCountQEC
 

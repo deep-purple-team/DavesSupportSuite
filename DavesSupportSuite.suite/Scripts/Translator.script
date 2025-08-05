@@ -1,0 +1,44 @@
+﻿#Translate
+params ImagePropertyList //Receives the property list passed by the test script.
+
+global Translator
+global Language
+
+//Manage a list of OCR languages. You must have a localization data file of translations for each of these languages.
+set OCRLanguages to ("Spanish","English")
+//Manage a list of image-only languages (no OCR support). You must have a suite of images for each of these languages.
+set ImageLanguages to ("Hebrew","Tongan")
+
+//Determines whether the search should use OCR or images.
+if Language is among the items of OCRLanguages
+	set Type to "text"
+	set IsOCRLanguage to true
+	set WordtoTranslate to ImagePropertyList's Name
+else if Language is among the items of ImageLanguages
+	set Type to "image"
+	set TranslatedWord to ImagePropertyList's Name
+	if the InitialSuites is not Language then set the InitialSuites to Language //Uses the InitialSuites global property to point the test script at the appropriate suite of images for the given language. The code assumes the suite has the same name as the language (i.e. "Hebrew").
+else
+throw "Language global variable value problem", "Language is not defined as OCR or image language."
+end if
+
+//Creates a property list of translated strings if one doesn't already exist for the current language.
+if IsOCRLanguage is true and if Translator.(Language) is empty then
+	put file resourcePath(Language&".txt") into LocalizationData
+	//Example contents for a LocalizationData file named Spanish.txt, stored in the suite Resources.
+	//PaperSize,Tamaño de papel
+	//InkColor,Color de tinta
+	repeat with each line Translation of LocalizationData
+		put the trim of item 1 of Translation into ElementName
+		put the trim of item 2 of Translation into String
+		set Dictionary.(ElementName) to String
+	end repeat
+	set Translator.(Language) to Dictionary
+end if
+
+if IsOCRLanguage is true then put Translator.(Language).(WordToTranslate) into TranslatedWord //Retrieves the translation for the element from the property list of translations, runs only if the current language is an OCR language.
+
+set ImagePropertyList to ((type):TranslatedWord) adding properties of imagePropertyList //Combines the original property list passed from the test script with the property that specifies whether the search should use images or OCR.
+remove property ("name") from ImagePropertyList //Cleans up the property list to remove the now redundant name: property.
+if IsOCRLanguage is true then add property (Language:(Language)) to ImagePropertyList //Adds the OCR language: property and value if the language is an OCR language.
+return ImagePropertyList //Returns the new image or OCR property list back to the original search in the test script.

@@ -1,7 +1,0 @@
-﻿2025-02-24 08:44:11.829 -0500	START		Running DefineRectangleCorners.script
-2025-02-24 08:44:12.028 -0500	Log		The default remote work interval is 0.07	5	function_screenpart	HandlerGarage.script
-2025-02-24 08:44:12.034 -0500	setoption		remoteWorkInterval = 0.01	6	function_screenpart	HandlerGarage.script
-2025-02-24 08:44:12.048 -0500	Log		The current remote work interval is 0.01	7	function_screenpart	HandlerGarage.script
-2025-02-24 08:44:12.065 -0500	Throw		Parameter error -  is not a recognized screen portion.	230	function_screenpart	HandlerGarage.script
-2025-02-24 08:44:12.169 -0500	EndTestCase		(Duration:"0.334", Errors:"1", Exceptions:"1", StartTime:"2025-02-24 08:44:11 -0500", Successes:"0", TestCase:"DefineRectangleCorners.script", Warnings:"0")
-2025-02-24 08:44:12.280 -0500	FAILURE	Screen_Error.png	Parameter error:  is not a recognized screen portion. -- Execution Time 0:00:00 DefineRectangleCorners.script

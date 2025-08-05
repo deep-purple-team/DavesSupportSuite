@@ -1,0 +1,45 @@
+{
+	"lastmodifieddate": 1753880065.8509998,
+	"lastfoundlocation": [
+		14,
+		64,
+		26,
+		16
+	],
+	"originalcapturelocation": [
+		14,
+		64,
+		26,
+		16
+	],
+	"createddate": 1753880065.8509998,
+	"lastfounddate": 1753880156.901,
+	"testlocationdata": [
+		{
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[13,8]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"Type": "Testplant Screen Image"
+				},
+				"name": "UpArrow.png",
+				"connectionname": "Screenshot 2025-07-24 at 2.11.12 PM.png",
+				"type": 1,
+				"capturerect": [
+					14,
+					64,
+					26,
+					16
+				],
+				"connectiontype": "Screenshot",
+				"connectionserverid": "C:/Users/davihest/Downloads/Screenshot 2025-07-24 at 2.11.12 PM.png"
+			}
+	],
+	"name": "UpArrow"
+}

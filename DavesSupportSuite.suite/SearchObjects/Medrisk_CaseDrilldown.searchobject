@@ -1,0 +1,47 @@
+{
+	"originalcapturelocation": [
+		280,
+		432,
+		20,
+		23
+	],
+	"lastmodifieddate": 1754397714.5380001,
+	"createddate": 1754397714.5380001,
+	"name": "Medrisk_CaseDrilldown",
+	"lastfounddate": 1754398537.0869999,
+	"ocrcapturestring": "\\z",
+	"lastfoundlocation": [
+		280,
+		432,
+		20,
+		23
+	],
+	"testlocationdata": [
+		{
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[8,11]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"Type": "Testplant Screen Image"
+				},
+				"name": "Medrisk_CaseDrilldown.png",
+				"connectionname": "MedriskExampleForDateOfService.png",
+				"type": 1,
+				"connectionserverid": "C:/Users/davihest/OneDrive - Keysight Technologies/Customer Communication/Medrisk/MedriskExampleForDateOfService.png",
+				"capturerect": [
+					280,
+					432,
+					20,
+					23
+				],
+				"connectiontype": "Screenshot",
+				"capturedocrtext": "\\z"
+			}
+	]
+}

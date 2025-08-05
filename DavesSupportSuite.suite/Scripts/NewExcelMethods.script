@@ -1,0 +1,20 @@
+﻿set myExcelDB to {type:"excel", file:ResourcePath("SimpleTest.xlsx"), name:"Example1", writable: Yes}
+
+put the number of records of myExcelDB
+
+//writes to only the first record
+repeat with each item myCurrentRecord in (the records of myExcelDB)
+	Log !"The serial number for the part [[myCurrentRecord.PartName]] is [[myCurrentRecord.SerialNumber]] and its unit price is [[myCurrentRecord.Price]]"
+	put myCurrentRecord.Counter -- no value
+	put repeatindex() into myCurrentRecord.Counter
+	put myCurrentRecord.Counter -- iterated value
+end repeat
+
+//writes to all records
+//must have parentheses and "by reference"
+repeat with each item myCurrentRecord in (the records of myExcelDB) by reference
+	Log !"The serial number for the part [[myCurrentRecord.PartName]] is [[myCurrentRecord.SerialNumber]] and its unit price is [[myCurrentRecord.Price]]"
+	put myCurrentRecord.CounterByReference -- no value
+	put repeatindex() into myCurrentRecord.CounterByReference
+	put myCurrentRecord.CounterByReference -- iterated value
+end repeat

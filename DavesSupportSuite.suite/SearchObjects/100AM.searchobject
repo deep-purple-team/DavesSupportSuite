@@ -1,0 +1,47 @@
+{
+	"originalcapturelocation": [
+		159,
+		172,
+		85,
+		27
+	],
+	"lastmodifieddate": 1753880020.2259998,
+	"createddate": 1753880020.2259998,
+	"name": "100AM",
+	"lastfounddate": 1753880156.7,
+	"ocrcapturestring": "1:00 AM",
+	"lastfoundlocation": [
+		159,
+		171,
+		85,
+		27
+	],
+	"testlocationdata": [
+		{
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[42,13]",
+					"Tolerance": "_59",
+					"Discrepancy": "_0",
+					"SearchType": "Smoothed for Text"
+				},
+				"sutinfo": {
+					"Type": "Testplant Screen Image"
+				},
+				"name": "100AM.png",
+				"connectionname": "Screenshot 2025-07-24 at 2.11.12 PM.png",
+				"type": 1,
+				"connectionserverid": "C:/Users/davihest/Downloads/Screenshot 2025-07-24 at 2.11.12 PM.png",
+				"capturerect": [
+					159,
+					172,
+					85,
+					27
+				],
+				"connectiontype": "Screenshot",
+				"capturedocrtext": "1:00 AM"
+			}
+	]
+}

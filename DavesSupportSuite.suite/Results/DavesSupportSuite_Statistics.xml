@@ -1,116 +1,36 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <statistics>
- <script name="WISRD/Test">
-  <LastStatus>Failure</LastStatus>
-  <NumberOfRuns>1</NumberOfRuns>
-  <NumberOfFails>1</NumberOfFails>
-  <FirstRun>2025-03-21 06:59:29 -0400</FirstRun>
-  <LastRun>2025-03-21 06:59:29 -0400</LastRun>
-  <TotalTimeOnSuccess>0.000000</TotalTimeOnSuccess>
- </script>
- <script name="Epic_PRD_TimeStudy - DMH">
-  <LastStatus>Failure</LastStatus>
-  <NumberOfRuns>5</NumberOfRuns>
-  <NumberOfFails>5</NumberOfFails>
-  <FirstRun>2025-01-14 16:04:45 -0500</FirstRun>
-  <LastRun>2025-01-14 16:39:02 -0500</LastRun>
-  <TotalTimeOnSuccess>0.000000</TotalTimeOnSuccess>
- </script>
- <script name="Finalgetandpatchforprovider-API">
-  <LastStatus>Failure</LastStatus>
-  <NumberOfRuns>8</NumberOfRuns>
-  <NumberOfFails>7</NumberOfFails>
-  <FirstRun>2025-02-24 13:52:47 -0500</FirstRun>
-  <LastRun>2025-03-24 08:12:03 -0400</LastRun>
-  <TotalTimeOnSuccess>0.690000</TotalTimeOnSuccess>
- </script>
- <script name="WVU_OCR_Issues">
+ <script name="Sandbox">
   <LastStatus>Success</LastStatus>
-  <NumberOfRuns>7</NumberOfRuns>
-  <NumberOfFails>2</NumberOfFails>
-  <FirstRun>2025-02-06 15:55:03 -0500</FirstRun>
-  <LastRun>2025-02-07 14:09:14 -0500</LastRun>
-  <TotalTimeOnSuccess>170.759000</TotalTimeOnSuccess>
- </script>
- <script name="NHS_OCR_Issues">
-  <LastStatus>Success</LastStatus>
-  <NumberOfRuns>7</NumberOfRuns>
+  <NumberOfRuns>4</NumberOfRuns>
   <NumberOfFails>0</NumberOfFails>
-  <FirstRun>2025-02-03 14:54:43 -0500</FirstRun>
-  <LastRun>2025-02-03 17:03:59 -0500</LastRun>
-  <TotalTimeOnSuccess>25.787000</TotalTimeOnSuccess>
+  <FirstRun>2025-03-24 08:48:39 -0400</FirstRun>
+  <LastRun>2025-04-22 16:28:30 -0400</LastRun>
+  <TotalTimeOnSuccess>12.996000</TotalTimeOnSuccess>
  </script>
- <script name="FindMyResourceFolder">
+ <script name="Manscaped_MB">
   <LastStatus>Success</LastStatus>
-  <NumberOfRuns>11</NumberOfRuns>
-  <NumberOfFails>2</NumberOfFails>
-  <FirstRun>2025-04-28 16:25:10 -0400</FirstRun>
-  <LastRun>2025-06-03 09:44:58 -0400</LastRun>
-  <TotalTimeOnSuccess>1.393000</TotalTimeOnSuccess>
- </script>
- <script name="Salesforce Development">
-  <LastStatus>Failure</LastStatus>
   <NumberOfRuns>3</NumberOfRuns>
-  <NumberOfFails>3</NumberOfFails>
-  <FirstRun>2025-02-24 13:58:01 -0500</FirstRun>
-  <LastRun>2025-02-24 14:03:00 -0500</LastRun>
-  <TotalTimeOnSuccess>0.000000</TotalTimeOnSuccess>
+  <NumberOfFails>2</NumberOfFails>
+  <FirstRun>2025-08-01 10:10:07 -0400</FirstRun>
+  <LastRun>2025-08-01 10:11:14 -0400</LastRun>
+  <TotalTimeOnSuccess>24.148000</TotalTimeOnSuccess>
  </script>
- <script name="OurGroceries">
-  <LastStatus>Success</LastStatus>
-  <NumberOfRuns>15</NumberOfRuns>
-  <NumberOfFails>1</NumberOfFails>
-  <FirstRun>2025-02-25 15:45:25 -0500</FirstRun>
-  <LastRun>2025-02-25 17:02:24 -0500</LastRun>
-  <TotalTimeOnSuccess>320.736000</TotalTimeOnSuccess>
- </script>
- <script name="Kellys_Time_Compare">
+ <script name="Manscaped">
   <LastStatus>Success</LastStatus>
   <NumberOfRuns>1</NumberOfRuns>
   <NumberOfFails>0</NumberOfFails>
-  <FirstRun>2025-04-14 15:11:01 -0400</FirstRun>
-  <LastRun>2025-04-14 15:11:01 -0400</LastRun>
-  <TotalTimeOnSuccess>0.083000</TotalTimeOnSuccess>
+  <FirstRun>2025-08-01 09:42:40 -0400</FirstRun>
+  <LastRun>2025-08-01 09:42:40 -0400</LastRun>
+  <TotalTimeOnSuccess>0.188000</TotalTimeOnSuccess>
  </script>
- <script name="WISRD/OAuth2">
-  <LastStatus>Success</LastStatus>
-  <NumberOfRuns>2</NumberOfRuns>
-  <NumberOfFails>1</NumberOfFails>
-  <FirstRun>2025-03-11 17:23:03 -0400</FirstRun>
-  <LastRun>2025-03-11 17:41:33 -0400</LastRun>
-  <TotalTimeOnSuccess>27.480000</TotalTimeOnSuccess>
- </script>
- <script name="SuperClick_test">
-  <LastStatus>Success</LastStatus>
-  <NumberOfRuns>9</NumberOfRuns>
-  <NumberOfFails>4</NumberOfFails>
-  <FirstRun>2025-05-07 10:40:40 -0400</FirstRun>
-  <LastRun>2025-05-08 10:42:24 -0400</LastRun>
-  <TotalTimeOnSuccess>13.269000</TotalTimeOnSuccess>
- </script>
- <script name="A_Variables">
-  <LastStatus>Success</LastStatus>
-  <NumberOfRuns>2</NumberOfRuns>
-  <NumberOfFails>0</NumberOfFails>
-  <FirstRun>2025-04-03 14:59:12 -0400</FirstRun>
-  <LastRun>2025-04-04 07:09:20 -0400</LastRun>
-  <TotalTimeOnSuccess>0.165000</TotalTimeOnSuccess>
- </script>
- <script name="CallStack_primary">
+ <script name="Intermatic">
   <LastStatus>Success</LastStatus>
   <NumberOfRuns>10</NumberOfRuns>
   <NumberOfFails>0</NumberOfFails>
-  <FirstRun>2025-02-27 12:31:04 -0500</FirstRun>
-  <LastRun>2025-06-10 08:58:00 -0400</LastRun>
-  <TotalTimeOnSuccess>33.792000</TotalTimeOnSuccess>
- </script>
- <script name="TestForMeghan-API">
-  <LastStatus>Failure</LastStatus>
-  <NumberOfRuns>3</NumberOfRuns>
-  <NumberOfFails>3</NumberOfFails>
-  <FirstRun>2025-03-11 16:45:00 -0400</FirstRun>
-  <LastRun>2025-03-11 16:48:11 -0400</LastRun>
-  <TotalTimeOnSuccess>0.000000</TotalTimeOnSuccess>
+  <FirstRun>2025-03-20 12:25:39 -0400</FirstRun>
+  <LastRun>2025-03-20 12:42:20 -0400</LastRun>
+  <TotalTimeOnSuccess>3.751000</TotalTimeOnSuccess>
  </script>
  <script name="WISRD/Untitled">
   <LastStatus>Success</LastStatus>
@@ -120,21 +40,37 @@
   <LastRun>2025-03-21 06:59:39 -0400</LastRun>
   <TotalTimeOnSuccess>0.079000</TotalTimeOnSuccess>
  </script>
- <script name="FFOS_Primary">
+ <script name="Kellys_Time_Compare">
   <LastStatus>Success</LastStatus>
   <NumberOfRuns>1</NumberOfRuns>
   <NumberOfFails>0</NumberOfFails>
-  <FirstRun>2025-03-07 06:55:58 -0800</FirstRun>
-  <LastRun>2025-03-07 06:55:58 -0800</LastRun>
-  <TotalTimeOnSuccess>0.255000</TotalTimeOnSuccess>
+  <FirstRun>2025-04-14 15:11:01 -0400</FirstRun>
+  <LastRun>2025-04-14 15:11:01 -0400</LastRun>
+  <TotalTimeOnSuccess>0.083000</TotalTimeOnSuccess>
  </script>
- <script name="Sandbox">
+ <script name="PopeyesReceipt">
   <LastStatus>Success</LastStatus>
+  <NumberOfRuns>10</NumberOfRuns>
+  <NumberOfFails>4</NumberOfFails>
+  <FirstRun>2025-06-05 17:56:49 -0400</FirstRun>
+  <LastRun>2025-06-06 11:57:38 -0400</LastRun>
+  <TotalTimeOnSuccess>24.745000</TotalTimeOnSuccess>
+ </script>
+ <script name="Translator">
+  <LastStatus>Failure</LastStatus>
   <NumberOfRuns>4</NumberOfRuns>
-  <NumberOfFails>0</NumberOfFails>
-  <FirstRun>2025-03-24 08:48:39 -0400</FirstRun>
-  <LastRun>2025-04-22 16:28:30 -0400</LastRun>
-  <TotalTimeOnSuccess>12.996000</TotalTimeOnSuccess>
+  <NumberOfFails>4</NumberOfFails>
+  <FirstRun>2025-07-11 09:07:08 -0400</FirstRun>
+  <LastRun>2025-07-11 09:14:21 -0400</LastRun>
+  <TotalTimeOnSuccess>0.000000</TotalTimeOnSuccess>
+ </script>
+ <script name="Salesforce Development">
+  <LastStatus>Failure</LastStatus>
+  <NumberOfRuns>3</NumberOfRuns>
+  <NumberOfFails>3</NumberOfFails>
+  <FirstRun>2025-02-24 13:58:01 -0500</FirstRun>
+  <LastRun>2025-02-24 14:03:00 -0500</LastRun>
+  <TotalTimeOnSuccess>0.000000</TotalTimeOnSuccess>
  </script>
  <script name="EggDoc">
   <LastStatus>Success</LastStatus>
@@ -144,29 +80,45 @@
   <LastRun>2025-04-22 16:24:32 -0400</LastRun>
   <TotalTimeOnSuccess>134.127000</TotalTimeOnSuccess>
  </script>
- <script name="Sandeep_OCR_Issue">
-  <LastStatus>Failure</LastStatus>
-  <NumberOfRuns>2</NumberOfRuns>
-  <NumberOfFails>2</NumberOfFails>
-  <FirstRun>2025-04-07 09:20:03 -0400</FirstRun>
-  <LastRun>2025-04-07 09:20:32 -0400</LastRun>
-  <TotalTimeOnSuccess>0.000000</TotalTimeOnSuccess>
+ <script name="SuperClick_test">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>9</NumberOfRuns>
+  <NumberOfFails>4</NumberOfFails>
+  <FirstRun>2025-05-07 10:40:40 -0400</FirstRun>
+  <LastRun>2025-05-08 10:42:24 -0400</LastRun>
+  <TotalTimeOnSuccess>13.269000</TotalTimeOnSuccess>
  </script>
- <script name="ModifyFSC_Extract_UMMS">
-  <LastStatus>Failure</LastStatus>
-  <NumberOfRuns>3</NumberOfRuns>
-  <NumberOfFails>1</NumberOfFails>
-  <FirstRun>2025-05-27 19:55:59 -0400</FirstRun>
-  <LastRun>2025-05-27 20:02:16 -0400</LastRun>
-  <TotalTimeOnSuccess>2.343000</TotalTimeOnSuccess>
+ <script name="NewExcelMethods">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>13</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2025-08-01 13:41:38 -0400</FirstRun>
+  <LastRun>2025-08-01 14:10:19 -0400</LastRun>
+  <TotalTimeOnSuccess>3.816000</TotalTimeOnSuccess>
  </script>
- <script name="DefineRectangleCorners">
+ <script name="Finalgetandpatchforprovider-API">
+  <LastStatus>Failure</LastStatus>
+  <NumberOfRuns>8</NumberOfRuns>
+  <NumberOfFails>7</NumberOfFails>
+  <FirstRun>2025-02-24 13:52:47 -0500</FirstRun>
+  <LastRun>2025-03-24 08:12:03 -0400</LastRun>
+  <TotalTimeOnSuccess>0.690000</TotalTimeOnSuccess>
+ </script>
+ <script name="WISRD/Test">
   <LastStatus>Failure</LastStatus>
   <NumberOfRuns>1</NumberOfRuns>
   <NumberOfFails>1</NumberOfFails>
-  <FirstRun>2025-02-24 08:44:11 -0500</FirstRun>
-  <LastRun>2025-02-24 08:44:11 -0500</LastRun>
+  <FirstRun>2025-03-21 06:59:29 -0400</FirstRun>
+  <LastRun>2025-03-21 06:59:29 -0400</LastRun>
   <TotalTimeOnSuccess>0.000000</TotalTimeOnSuccess>
+ </script>
+ <script name="NHS_OCR_Issues">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>7</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2025-02-03 14:54:43 -0500</FirstRun>
+  <LastRun>2025-02-03 17:03:59 -0500</LastRun>
+  <TotalTimeOnSuccess>25.787000</TotalTimeOnSuccess>
  </script>
  <script name="RecordCompare">
   <LastStatus>Success</LastStatus>
@@ -184,13 +136,77 @@
   <LastRun>2025-03-24 08:12:59 -0400</LastRun>
   <TotalTimeOnSuccess>310.327000</TotalTimeOnSuccess>
  </script>
- <script name="PopeyesReceipt">
+ <script name="_DefineRectangleCorners">
+  <LastStatus>Failure</LastStatus>
+  <NumberOfRuns>1</NumberOfRuns>
+  <NumberOfFails>1</NumberOfFails>
+  <FirstRun>2025-02-24 08:44:11 -0500</FirstRun>
+  <LastRun>2025-02-24 08:44:11 -0500</LastRun>
+  <TotalTimeOnSuccess>0.000000</TotalTimeOnSuccess>
+ </script>
+ <script name="WVU_OCR_Issues">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>7</NumberOfRuns>
+  <NumberOfFails>2</NumberOfFails>
+  <FirstRun>2025-02-06 15:55:03 -0500</FirstRun>
+  <LastRun>2025-02-07 14:09:14 -0500</LastRun>
+  <TotalTimeOnSuccess>170.759000</TotalTimeOnSuccess>
+ </script>
+ <script name="TraceScreenScript">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>1</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2025-07-30 08:55:56 -0400</FirstRun>
+  <LastRun>2025-07-30 08:55:56 -0400</LastRun>
+  <TotalTimeOnSuccess>0.953000</TotalTimeOnSuccess>
+ </script>
+ <script name="Medrisk_CaseCount">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>5</NumberOfRuns>
+  <NumberOfFails>1</NumberOfFails>
+  <FirstRun>2025-08-05 08:42:44 -0400</FirstRun>
+  <LastRun>2025-08-05 08:55:36 -0400</LastRun>
+  <TotalTimeOnSuccess>7.807000</TotalTimeOnSuccess>
+ </script>
+ <script name="TestForMeghan-API">
+  <LastStatus>Failure</LastStatus>
+  <NumberOfRuns>3</NumberOfRuns>
+  <NumberOfFails>3</NumberOfFails>
+  <FirstRun>2025-03-11 16:45:00 -0400</FirstRun>
+  <LastRun>2025-03-11 16:48:11 -0400</LastRun>
+  <TotalTimeOnSuccess>0.000000</TotalTimeOnSuccess>
+ </script>
+ <script name="Epic_PRD_TimeStudy - DMH">
+  <LastStatus>Failure</LastStatus>
+  <NumberOfRuns>5</NumberOfRuns>
+  <NumberOfFails>5</NumberOfFails>
+  <FirstRun>2025-01-14 16:04:45 -0500</FirstRun>
+  <LastRun>2025-01-14 16:39:02 -0500</LastRun>
+  <TotalTimeOnSuccess>0.000000</TotalTimeOnSuccess>
+ </script>
+ <script name="A_Variables">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>2</NumberOfRuns>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2025-04-03 14:59:12 -0400</FirstRun>
+  <LastRun>2025-04-04 07:09:20 -0400</LastRun>
+  <TotalTimeOnSuccess>0.165000</TotalTimeOnSuccess>
+ </script>
+ <script name="ModifyFSC_Extract_UMMS">
+  <LastStatus>Failure</LastStatus>
+  <NumberOfRuns>3</NumberOfRuns>
+  <NumberOfFails>1</NumberOfFails>
+  <FirstRun>2025-05-27 19:55:59 -0400</FirstRun>
+  <LastRun>2025-05-27 20:02:16 -0400</LastRun>
+  <TotalTimeOnSuccess>2.343000</TotalTimeOnSuccess>
+ </script>
+ <script name="CallStack_primary">
   <LastStatus>Success</LastStatus>
   <NumberOfRuns>10</NumberOfRuns>
-  <NumberOfFails>4</NumberOfFails>
-  <FirstRun>2025-06-05 17:56:49 -0400</FirstRun>
-  <LastRun>2025-06-06 11:57:38 -0400</LastRun>
-  <TotalTimeOnSuccess>24.745000</TotalTimeOnSuccess>
+  <NumberOfFails>0</NumberOfFails>
+  <FirstRun>2025-02-27 12:31:04 -0500</FirstRun>
+  <LastRun>2025-06-10 08:58:00 -0400</LastRun>
+  <TotalTimeOnSuccess>33.792000</TotalTimeOnSuccess>
  </script>
  <script name="KarstensSpeedTest">
   <LastStatus>Success</LastStatus>
@@ -200,12 +216,60 @@
   <LastRun>2025-03-25 09:35:33 -0400</LastRun>
   <TotalTimeOnSuccess>6.919000</TotalTimeOnSuccess>
  </script>
- <script name="Intermatic">
+ <script name="Sandeep_OCR_Issue">
+  <LastStatus>Failure</LastStatus>
+  <NumberOfRuns>2</NumberOfRuns>
+  <NumberOfFails>2</NumberOfFails>
+  <FirstRun>2025-04-07 09:20:03 -0400</FirstRun>
+  <LastRun>2025-04-07 09:20:32 -0400</LastRun>
+  <TotalTimeOnSuccess>0.000000</TotalTimeOnSuccess>
+ </script>
+ <script name="WISRD/OAuth2">
   <LastStatus>Success</LastStatus>
-  <NumberOfRuns>10</NumberOfRuns>
+  <NumberOfRuns>2</NumberOfRuns>
+  <NumberOfFails>1</NumberOfFails>
+  <FirstRun>2025-03-11 17:23:03 -0400</FirstRun>
+  <LastRun>2025-03-11 17:41:33 -0400</LastRun>
+  <TotalTimeOnSuccess>27.480000</TotalTimeOnSuccess>
+ </script>
+ <script name="OurGroceries">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>15</NumberOfRuns>
+  <NumberOfFails>1</NumberOfFails>
+  <FirstRun>2025-02-25 15:45:25 -0500</FirstRun>
+  <LastRun>2025-02-25 17:02:24 -0500</LastRun>
+  <TotalTimeOnSuccess>320.736000</TotalTimeOnSuccess>
+ </script>
+ <script name="Manscaped_CropReviver">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>7</NumberOfRuns>
+  <NumberOfFails>5</NumberOfFails>
+  <FirstRun>2025-08-05 10:08:59 -0400</FirstRun>
+  <LastRun>2025-08-05 10:15:26 -0400</LastRun>
+  <TotalTimeOnSuccess>0.444000</TotalTimeOnSuccess>
+ </script>
+ <script name="MonthNames">
+  <LastStatus>Failure</LastStatus>
+  <NumberOfRuns>4</NumberOfRuns>
+  <NumberOfFails>4</NumberOfFails>
+  <FirstRun>2025-07-14 13:09:18 -0400</FirstRun>
+  <LastRun>2025-07-14 13:12:01 -0400</LastRun>
+  <TotalTimeOnSuccess>0.000000</TotalTimeOnSuccess>
+ </script>
+ <script name="FindMyResourceFolder">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>11</NumberOfRuns>
+  <NumberOfFails>2</NumberOfFails>
+  <FirstRun>2025-04-28 16:25:10 -0400</FirstRun>
+  <LastRun>2025-06-03 09:44:58 -0400</LastRun>
+  <TotalTimeOnSuccess>1.393000</TotalTimeOnSuccess>
+ </script>
+ <script name="FFOS_Primary">
+  <LastStatus>Success</LastStatus>
+  <NumberOfRuns>1</NumberOfRuns>
   <NumberOfFails>0</NumberOfFails>
-  <FirstRun>2025-03-20 12:25:39 -0400</FirstRun>
-  <LastRun>2025-03-20 12:42:20 -0400</LastRun>
-  <TotalTimeOnSuccess>3.751000</TotalTimeOnSuccess>
+  <FirstRun>2025-03-07 06:55:58 -0800</FirstRun>
+  <LastRun>2025-03-07 06:55:58 -0800</LastRun>
+  <TotalTimeOnSuccess>0.255000</TotalTimeOnSuccess>
  </script>
 </statistics>

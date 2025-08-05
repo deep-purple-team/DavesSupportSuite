@@ -1,0 +1,47 @@
+﻿TypeText WindowsKey, "r"
+WaitFor 10.0, "WindowsRunIcon"
+
+TypeText "https://www.manscaped.com/products/lawn-mower-5", Return
+
+WaitFor 5.8, "Chrome_refresh"
+
+put ImageLocation("ManscapedSalesTag") into mySalesTagLocation//(1404,494)
+//(1360,468) original price
+//(1355,494) sales price
+
+//Captures the sale price
+TripleClick (mySalesTagLocation - (44,26))
+TypeText controlKey, "c"
+put RemoteClipboard(1) into myRegularPrice
+
+//Captures the regular price
+TripleClick (mySalesTagLocation - (44,0))
+TypeText controlKey, "c"
+put RemoteClipboard(1) into mySalesPrice
+
+Log "The regular price is" && myRegularPrice && "but it is currently on sale for" && mySalesPrice
+
+
+
+on TripleClick imageToClick
+	// The next 3 lines change the timing between Eggplant Functional commands so that 3 quick clicks can be sent in succession.
+	
+	put the RemoteWorkInterval into defaultRWI -- stores the current Remote Work Interval value so that it can be restored later
+	put the MouseDoubleClickDelay into clickTime -- gets the current time interval between clicks in a double-click
+	set the RemoteWorkInterval to clickTime -- sets the Remote Work Interval to the double-click time
+	
+	// These 3 lines click the image once and then click twice more in the same location.
+	
+	Click imageToClick
+	Click -- quickly clicks in the current mouse location
+	Click -- quickly clicks again in the same location to achieve a triple-click
+	
+	// The last line restores the timing between Eggplant Functional commands by resetting the RemoteWorkInterval global property to its original value.
+	
+	set the RemoteWorkInterval to defaultRWI
+end TripleClick
+
+
+
+
+

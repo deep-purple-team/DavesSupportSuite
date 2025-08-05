@@ -1,8 +1,11 @@
 {
+    "100AM.png" = "2025-07-30 12:55 +0000";
     "Checkbox/Checkbox_selected.png" = "2025-04-07 13:46 +0000";
     "Checkbox/Checkbox_unselected.png" = "2025-04-07 13:46 +0000";
-    "Chrome_refresh.png" = "2025-02-25 22:03 +0000";
+    "Chrome_refresh.png" = "2025-08-01 13:59 +0000";
     "FavoritesIcon.png" = "2025-05-08 14:42 +0000";
+    "ManscapedSalesTag.png" = "2025-08-01 13:59 +0000";
+    "Medrisk_CaseDrilldown.png" = "2025-08-05 12:55 +0000";
     "ModalPopup_BR.png" = "2025-03-20 16:42 +0000";
     "ModalPopup_UL.png" = "2025-03-20 16:42 +0000";
     "OurGroceries_add.png" = "2025-02-25 22:02 +0000";
@@ -11,6 +14,8 @@
     "OurGroceries_icon.png" = "2025-02-25 22:03 +0000";
     "OurGroceries_listsearch.png" = "2025-02-25 20:45 +0000";
     "OurGroceries_mobile.png" = "2025-02-25 22:02 +0000";
+    "UpArrow.png" = "2025-07-30 12:55 +0000";
+    "WindowsRunIcon.png" = "2025-08-01 13:43 +0000";
     "Windows_OkButton.png" = "2025-03-20 16:42 +0000";
     "[Character_Collections]/Popeyes_Receipt/digit_1.png" = "2025-06-06 15:57 +0000";
     "[Character_Collections]/Popeyes_Receipt/digit_2.png" = "2025-06-06 15:57 +0000";
@@ -32,5 +37,7 @@
     "[Character_Collections]/Popeyes_Receipt/upper_H.png" = "2025-06-06 13:28 +0000";
     "[Character_Collections]/Popeyes_Receipt/upper_P.png" = "2025-06-06 15:57 +0000";
     "[Character_Collections]/Popeyes_Receipt/upper_T.png" = "2025-06-06 15:57 +0000";
+    "discountPriceTag.png" = "2025-08-05 14:15 +0000";
+    "discount_tag.png" = "2025-08-05 14:07 +0000";
     "foo.png" = "2025-04-25 20:22 +0000";
 }

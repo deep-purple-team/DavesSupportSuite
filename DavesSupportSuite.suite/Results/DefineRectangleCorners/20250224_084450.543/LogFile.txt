@@ -1,9 +1,0 @@
-﻿2025-02-24 08:44:50.549 -0500	START		Running DefineRectangleCorners.script
-2025-02-24 08:44:50.730 -0500	Log		The default remote work interval is 0.07	5	function_screenpart	HandlerGarage.script
-2025-02-24 08:44:50.734 -0500	setoption		remoteWorkInterval = 0.01	6	function_screenpart	HandlerGarage.script
-2025-02-24 08:44:50.750 -0500	Log		The current remote work interval is 0.01	7	function_screenpart	HandlerGarage.script
-2025-02-24 08:44:50.764 -0500	setoption		remoteWorkInterval = 0.07	234	function_screenpart	HandlerGarage.script
-2025-02-24 08:44:50.779 -0500	Log		The current remote work interval is 0.07	236	function_screenpart	HandlerGarage.script
-2025-02-24 08:44:50.788 -0500	pausescript			7	on_definerectanglecorners	DefineRectangleCorners.script
-2025-02-24 08:46:00.590 -0500	EndTestCase		(Duration:"70.037", Errors:"1", Exceptions:"0", StartTime:"2025-02-24 08:44:50 -0500", Successes:"0", TestCase:"DefineRectangleCorners.script", Warnings:"0")
-2025-02-24 08:46:00.607 -0500	ABORTED		Execution Time 0:01:10 DefineRectangleCorners.script

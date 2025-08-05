@@ -1,0 +1,12 @@
+﻿TraceScreen On
+Click (Image:"100AM", WaitFor:1)
+WaitFor 5.0, "UpArrow"
+If ImageFound(text:"Time") then
+	LogSuccess "I found the column header"
+Else
+	LogWarning "I did not find the column header"
+End If
+MoveTo (15,15)
+TraceScreen Off
+
+

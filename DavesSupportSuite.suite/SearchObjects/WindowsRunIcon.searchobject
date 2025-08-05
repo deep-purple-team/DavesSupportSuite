@@ -1,21 +1,19 @@
 {
-	"originalcapturelocation": [
-		86,
-		54,
-		18,
-		18
-	],
-	"lastmodifieddate": 1740520424.2649999,
-	"createddate": 1740520424.2649999,
-	"name": "Chrome_refresh",
-	"lastfounddate": 1754056773.5650001,
-	"ocrcapturestring": "3",
+	"lastmodifieddate": 1754055799.0539999,
 	"lastfoundlocation": [
-		86,
-		54,
-		18,
-		18
+		26,
+		878,
+		37,
+		25
 	],
+	"originalcapturelocation": [
+		26,
+		878,
+		37,
+		25
+	],
+	"createddate": 1754055799.0539999,
+	"lastfounddate": 1754055799.132,
 	"testlocationdata": [
 		{
 				"connectionportnum": 3389,
@@ -23,7 +21,7 @@
 					"CropRectangle": "[0,0,0,0]",
 					"Rotate": 0,
 					"Scale": "    1",
-					"HotSpot": "[9,6]",
+					"HotSpot": "[16,12]",
 					"Tolerance": "_45",
 					"Discrepancy": "_0",
 					"SearchType": "Tolerant of Background"
@@ -31,18 +29,18 @@
 				"sutinfo": {
 					"type": "Unknown RDP"
 				},
-				"name": "Chrome_refresh.png",
+				"name": "WindowsRunIcon.png",
 				"connectionname": "NewTower",
 				"type": 1,
-				"connectionserverid": "192.168.4.62",
 				"capturerect": [
-					86,
-					54,
-					18,
-					18
+					26,
+					878,
+					37,
+					25
 				],
 				"connectiontype": "RDP",
-				"capturedocrtext": "3"
+				"connectionserverid": "192.168.4.81"
 			}
-	]
+	],
+	"name": "WindowsRunIcon"
 }
